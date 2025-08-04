@@ -49,7 +49,7 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        'text-sm font-medium transition-colors hover:text-accent',
+        'px-3 py-2 text-sm font-medium transition-colors hover:text-accent rounded-md',
         pathname === href ? 'text-accent' : 'text-foreground/80'
       )}
       onClick={() => setIsMobileMenuOpen(false)}
@@ -81,7 +81,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-1 md:flex">
           {mainNavLinks.map((link) => (
             <NavLink key={link.href} href={link.href}>
               {link.label}
@@ -89,12 +89,12 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-1">
            {/* Desktop App Menu */}
           <div className="hidden md:block">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" className="rounded-md h-9 w-9" size="icon">
                   <MoreVertical className="h-5 w-5" />
                   <span className="sr-only">Open app menu</span>
                 </Button>
