@@ -45,7 +45,7 @@ export default function Home() {
           <div className="relative mt-8 overflow-hidden rounded-xl" style={{ paddingTop: '56.25%' }}>
             <iframe
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/4yB4y_21Tz4?autoplay=1&mute=1&loop=1&playlist=4yB4y_21Tz4&controls=0"
+              src="https://www.youtube.com/embed/FT3G5gG4Zso?autoplay=1&mute=1&loop=1&playlist=FT3G5gG4Zso&controls=0"
               title="Project Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
