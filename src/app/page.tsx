@@ -8,27 +8,24 @@ import { ArrowRight } from 'lucide-react';
 
 const projects = [
   {
-    name: 'Project Alpha',
+    name: 'PortfolioPro',
     image: 'https://placehold.co/600x400.png',
-    "data-ai-hint": "technology abstract",
-    description: 'An innovative platform for seamless project management and collaboration.',
-    benefits: 'Boosts productivity by 40% and improves team communication.',
+    "data-ai-hint": "portfolio website",
+    description: 'A modern portfolio template with project showcase, resume integration, and contact form.',
     link: '/project',
   },
   {
-    name: 'Project Beta',
+    name: 'BizLaunch Landing Page',
     image: 'https://placehold.co/600x400.png',
-    "data-ai-hint": "data analytics",
-    description: 'A data analytics solution that provides deep insights into market trends.',
-    benefits: 'Enables data-driven decisions and uncovers new revenue streams.',
+    "data-ai-hint": "landing page",
+    description: 'A single-page responsive landing site for businesses to showcase services, pricing, and testimonials.',
     link: '/project',
   },
   {
-    name: 'Project Gamma',
+    name: 'TaskMaster App',
     image: 'https://placehold.co/600x400.png',
-    "data-ai-hint": "cloud computing",
-    description: 'A scalable cloud infrastructure for modern web applications.',
-    benefits: 'Ensures 99.9% uptime and reduces operational costs significantly.',
+    "data-ai-hint": "task manager",
+    description: 'A full CRUD task manager with user authentication, built using React and a backend like Firebase.',
     link: '/project',
   },
 ];
@@ -115,7 +112,7 @@ export default function Home() {
               Explore some of the groundbreaking projects that define our capabilities and success.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:gricd-cols-3 gap-8 mt-12">
             {projects.map((project) => (
               <Card key={project.name} className="overflow-hidden">
                 <Image
@@ -129,7 +126,6 @@ export default function Home() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold">{project.name}</h3>
                   <p className="mt-2 text-muted-foreground">{project.description}</p>
-                  <p className="mt-4 font-semibold text-accent">{project.benefits}</p>
                   <Button asChild variant="link" className="p-0 h-auto mt-4">
                     <Link href={project.link}>Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                   </Button>
