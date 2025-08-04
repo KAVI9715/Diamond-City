@@ -76,10 +76,25 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center gap-2 mr-2">
+          <Link href="/" className="flex items-center gap-2 mr-6">
             <Gem className="h-6 w-6 text-accent" />
             <span className="font-bold">Diamond City</span>
           </Link>
+        </div>
+
+        <div className="flex items-center justify-center flex-1">
+          {/* Desktop Navigation */}
+          <nav className="hidden items-center gap-1 md:flex">
+            {mainNavLinks.map((link) => (
+              <NavLink key={link.href} href={link.href}>
+                {link.label}
+              </NavLink>
+            ))}
+          </nav>
+        </div>
+
+
+        <div className="flex items-center gap-1">
            {/* Desktop App Menu */}
           <div className="hidden md:block">
             <DropdownMenu>
@@ -89,7 +104,7 @@ export function Header() {
                   <span className="sr-only">Open app menu</span>
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start">
+              <DropdownMenuContent align="end">
                 {appMenuItems.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
                     <Link href={item.href}>{item.label}</Link>
@@ -108,23 +123,8 @@ export function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-        </div>
-
-        <div className="flex items-center justify-center flex-1">
-          {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-1 md:flex">
-            {mainNavLinks.map((link) => (
-              <NavLink key={link.href} href={link.href}>
-                {link.label}
-              </NavLink>
-            ))}
-          </nav>
-        </div>
-
-
-        <div className="flex items-center gap-1 md:hidden">
           {/* Mobile Menu */}
-          <div>
+          <div className='md:hidden'>
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
