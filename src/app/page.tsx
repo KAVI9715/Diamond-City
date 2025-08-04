@@ -45,7 +45,7 @@ export default function Home() {
           <div className="relative mt-8 overflow-hidden rounded-xl" style={{ paddingTop: '56.25%' }}>
             <iframe
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0"
+              src="https://www.youtube.com/embed/ApuD24a_b2k?autoplay=1&mute=1&loop=1&playlist=ApuD24a_b2k&controls=0"
               title="Project Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -112,7 +112,7 @@ export default function Home() {
               Explore some of the groundbreaking projects that define our capabilities and success.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:gricd-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {projects.map((project) => (
               <Card key={project.name} className="overflow-hidden">
                 <Image
