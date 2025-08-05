@@ -12,21 +12,21 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1550622824-c11e494a4b65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8cG9ydGZvbGlvcHJvJTIwdGVtcGxhdGUlMjB3aGl0aCUyMHByb2plY3QlMjBidXNpbmVzc3xlbnwwfHx8fDE3NTQzNjYyNDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "portfolio website",
     description: 'A modern portfolio template with project showcase, resume integration, and contact form.',
-    link: '/project',
+    link: '/project/portfoliopro',
   },
   {
     name: 'BizLaunch Landing Page',
     image: 'https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxCSVpMQVVOQ0glMjAlMjBCVVNJTkVTUyUyMFRFU1RJTU9OSUFMU3xlbnwwfHx8fDE3NTQzNjYzNzl8MA&ixlib=rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "landing page",
     description: 'A single-page responsive landing site for businesses to showcase services, pricing, and testimonials.',
-    link: '/project',
+    link: '/project/bizlaunch-landing-page',
   },
   {
     name: 'TaskMaster App',
     image: 'https://images.unsplash.com/photo-1694365899936-850bc6c2b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxUQVNLTUFTVCUyMEFQUHxlbnwwfHx8fDE3NTQzNjY0NzN8MA&ixlib=rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "task manager",
     description: 'A full CRUD task manager with user authentication, built using React and a backend like Firebase.',
-    link: '/project',
+    link: '/project/taskmaster-app',
   },
 ];
 
@@ -93,7 +93,7 @@ export default function Home() {
             </p>
           </div>
           <Image
-            src="https://images.unsplash.com/photo-1528460033278-a6ba57020470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYWNrZ3JvdW5kJTIwY29sb3J8ZW58MHx8fHwxNzU0MzY1OTkzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="https://images.unsplash.com/photo-1606216836560-25cf33c04b0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8c3VjZXNzZnVsbCUyMGVtcGxveWVlcyUyMGdyb3VwJTIwcGhvdG8lMjBhY2hpZXZlfGVufDB8fHx8MTc1NDM2NzI1NXww&ixlib=rb-4.1.0&q=80&w=1080"
             data-ai-hint="team collaboration"
             alt="Hardworking Employees"
             width={600}
