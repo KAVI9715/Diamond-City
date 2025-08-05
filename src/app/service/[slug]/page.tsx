@@ -122,7 +122,7 @@ const allServices = [
     },
     {
       name: 'Website Speed & SEO Optimization',
-      image: 'https://images.unsplash.com/photo-1599339942296-b6cf8824a7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwc3BlZWQlMjBzZW8lMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1593438002985-ce805be04da9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwc3BlZWQlMjB8ZW58MHx8fHwxNzU0MzY4OTU4fDA&ixlib=rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'seo optimization',
       description: 'Improve load time and search rankings. Improve your site’s speed, search visibility, and Google ranking with performance and SEO enhancements.',
       clients: ['All website owners'],
@@ -198,5 +198,3 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
     </main>
   );
 }
-
-    
