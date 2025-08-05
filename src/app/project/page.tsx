@@ -20,7 +20,7 @@ const allProjects = [
   },
   {
     name: 'TaskMaster App',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1694365899936-850bc6c2b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxUQVNLTUFTVCUyMEFQUHxlbnwwfHx8fDE3NTQzNjY0NzN8MA&ixlib=rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "task manager",
     description: 'A full CRUD task manager with user authentication. Built using React and Firebase/MongoDB backend.',
   },
