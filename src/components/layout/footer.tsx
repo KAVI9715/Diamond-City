@@ -21,7 +21,7 @@ const referenceLinks = [
 const supportLinks = [
   { href: '/terms-and-conditions', label: 'Terms & Conditions' },
   { href: '/privacy-policy', label: 'Privacy Policy' },
-  { href: '/cookies', label: 'Cookies' },
+  { href: '/cookies', label: 'Cookies Policy' },
 ];
 
 const socialLinks = [

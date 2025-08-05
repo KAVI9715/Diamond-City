@@ -32,7 +32,7 @@ const appMenuItems = [
   { href: '/purpose', label: 'Purpose' },
   { href: '/terms-and-conditions', label: 'Terms & Conditions' },
   { href: '/privacy-policy', label: 'Privacy Policy' },
-  { href: '/cookies', label: 'Cookies' },
+  { href: '/cookies', label: 'Cookies Policy' },
 ];
 
 const socialLinks = [
