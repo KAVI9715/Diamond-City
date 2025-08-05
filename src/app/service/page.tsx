@@ -42,7 +42,7 @@ const allServices = [
   },
   {
     name: 'Invoice & Billing System',
-    image: 'https://images.unsplash.com/photo-1579621970795-87f54f597987?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnZvaWNlJTIwYmlsbGluZyUyMHN5c3RlbXxlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1735825764457-ffdf0b5aa5dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8aW52b2ljZSUyMHxlbnwwfHx8fDE3NTQzNjg3NjR8MA&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'billing system',
     description: 'Web-based invoicing for businesses. Generate professional invoices online with download, email, and auto-numbering features — perfect for freelancers and small businesses.',
   },
