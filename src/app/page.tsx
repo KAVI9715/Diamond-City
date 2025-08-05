@@ -93,7 +93,7 @@ export default function Home() {
             </p>
           </div>
           <Image
-            src="https://placehold.co/600x400.png"
+            src="https://images.unsplash.com/photo-1528460033278-a6ba57020470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYWNrZ3JvdW5kJTIwY29sb3J8ZW58MHx8fHwxNzU0MzY1OTkzfDA&ixlib=rb-4.1.0&q=80&w=1080"
             data-ai-hint="team collaboration"
             alt="Hardworking Employees"
             width={600}
