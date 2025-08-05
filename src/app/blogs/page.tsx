@@ -56,7 +56,7 @@ const blogPosts = [
   {
     title: 'Why Small Businesses Trust Diamond City With Their First Website',
     description: 'Focused on your trust-building and beginner-friendly process — show that you guide clients from scratch.',
-    image: 'https://images.unsplash.com/photo-1554224155-169544351742?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWFsbCUyMGJ1c2luZXNzJTIwdHJ1c3R8ZW58MHx8fHwxNzU0MzcwMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1560821648-a31f6ddaa9a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8d2h5JTIwc21hbGwlMjBidXNpbmVzc2VzJTIwdHJ1c3QlMjBkaWFtb25kJTIwY2l0eSUyMHdpdGglMjB0aGVpciUyMGZpcnN0JTIwd2Vic2l0ZXxlbnwwfHx8fDE3NTQzNzE2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'small business',
     slug: 'why-small-businesses-trust-diamond-city'
   },
