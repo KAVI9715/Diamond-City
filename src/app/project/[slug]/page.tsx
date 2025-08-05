@@ -1,7 +1,11 @@
 
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
-import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { ArrowLeft } from 'lucide-react';
 
 const allProjects = [
   {
@@ -98,37 +102,54 @@ const allProjects = [
 
 const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
 
-export default function ProjectPage() {
+const getProjectBySlug = (slug: string) => {
+  return allProjects.find(project => slugify(project.name) === slug);
+}
+
+export default function ProjectDetailPage({ params }: { params: { slug: string } }) {
+  const project = getProjectBySlug(params.slug);
+
+  if (!project) {
+    notFound();
+  }
+
   return (
     <main className="container mx-auto py-12 px-4 md:px-6">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
-          Our Projects
-        </h1>
-        <p className="mt-4 text-lg text-muted-foreground">
-          Explore our portfolio of groundbreaking projects and success stories.
-        </p>
+       <div className="mb-8">
+        <Button asChild variant="outline">
+            <Link href="/project">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Projects
+            </Link>
+        </Button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {allProjects.map((project) => (
-           <Link href={`/project/${slugify(project.name)}`} key={project.name} className="flex">
-            <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300">
-              <Image
-                src={project.image}
-                data-ai-hint={project['data-ai-hint']}
-                alt={project.name}
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-              />
-              <CardContent className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold">{project.name}</h3>
-                <p className="mt-2 text-muted-foreground flex-grow">{project.description}</p>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </div>
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-4xl font-bold text-primary">{project.name}</CardTitle>
+        </CardHeader>
+        <CardContent className="grid md:grid-cols-2 gap-8">
+          <div>
+            <Image
+              src={project.image}
+              data-ai-hint={project['data-ai-hint']}
+              alt={project.name}
+              width={800}
+              height={600}
+              className="w-full rounded-lg object-cover"
+            />
+          </div>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-2xl font-bold text-accent mb-2">Description</h3>
+              <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+            </div>
+            <div>
+                <h3 className="text-2xl font-bold text-accent mb-2">Category</h3>
+                <Badge variant="secondary">{project['data-ai-hint']}</Badge>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
     </main>
   );
 }
