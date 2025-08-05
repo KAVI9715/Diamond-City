@@ -16,7 +16,7 @@ const projects = [
   },
   {
     name: 'BizLaunch Landing Page',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxCSVpMQVVOQ0glMjAlMjBCVVNJTkVTUyUyMFRFU1RJTU9OSUFMU3xlbnwwfHx8fDE3NTQzNjYzNzl8MA&ixlib=rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "landing page",
     description: 'A single-page responsive landing site for businesses to showcase services, pricing, and testimonials.',
     link: '/project',
