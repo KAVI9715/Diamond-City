@@ -77,8 +77,14 @@ const allServices = [
     description: 'Mobile-first versions of existing or new sites. Your website — optimized for every screen. We ensure fast, smooth, mobile-friendly designs for better user experience.',
   },
   {
+    name: 'Mobile Optimization',
+    image: 'https://images.unsplash.com/photo-1609921143027-a742848480e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzU0Mzg5NjUxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    'data-ai-hint': 'mobile optimization',
+    description: 'Enhance your existing site for mobile users with improved speed, navigation, and readability on all devices.',
+  },
+  {
     name: 'Multi-Language Website',
-    image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdWx0aS1sYW5ndWFnZSUyMHdlYnNpdGV8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdWx0aS1sYW5ndWFnZSUyMHdlYnNpdGV8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlibrb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'language globe',
     description: 'Translate site content into multiple languages. Expand your reach with websites that support multiple languages and regional formats, including RTL (right-to-left) support.',
   },
