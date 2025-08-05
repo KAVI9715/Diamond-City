@@ -34,7 +34,7 @@ const allServices = [
     },
     {
       name: 'Educational / LMS Platform',
-      image: 'https://images.unsplash.com/photo-1503676260728-1c65c692620a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlZHVjYXRpb25hbCUyMGxtcyUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDM2ODAwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1614793319738-bde496bbe85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlZHVjYXRpb25hbCUyMCUyRiUyMGxtcyUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDM2ODU3OHww&ixlib=rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'education platform',
       description: 'Learning management system for online courses. Launch your own online learning platform with course uploads, video content, quizzes, and user progress tracking.',
       clients: ['Tutors', 'Schools', 'E-learning startups'],
