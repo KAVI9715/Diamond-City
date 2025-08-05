@@ -142,7 +142,7 @@ export default function Home() {
           <Card className="p-8">
             <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
               <Avatar className="w-48 h-48 mx-auto">
-                <AvatarImage src="https://images.unsplash.com/photo-1649899265653-07c57d813971?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8YnVzaW5lc3MlMjBtYW4lMjBwaWN0dXJlfGVufDB8fHx8MTc1NDM3MjA3M3ww&ixlib=rb-4.1.0&q=80&w=1080" data-ai-hint="ceo portrait" />
+                <AvatarImage src="https://images.unsplash.com/photo-1676377630534-a08fd9778701?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMG1hbiUyMHBob3RvfGVufDB8fHx8MTc1NDM3MjQ4OXww&ixlib=rb-4.1.0&q=80&w=1080" data-ai-hint="ceo portrait" />
                 <AvatarFallback>CEO</AvatarFallback>
               </Avatar>
               <div className="space-y-4">
