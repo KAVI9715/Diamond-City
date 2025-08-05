@@ -9,7 +9,7 @@ import { ArrowRight } from 'lucide-react';
 const projects = [
   {
     name: 'PortfolioPro',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1550622824-c11e494a4b65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8cG9ydGZvbGlvcHJvJTIwdGVtcGxhdGUlMjB3aGl0aCUyMHByb2plY3QlMjBidXNpbmVzc3xlbnwwfHx8fDE3NTQzNjYyNDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "portfolio website",
     description: 'A modern portfolio template with project showcase, resume integration, and contact form.',
     link: '/project',
