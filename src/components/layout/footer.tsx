@@ -3,6 +3,7 @@
 
 import Link from 'next/link';
 import { Gem, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const mainNavLinks = [
   { href: '/', label: 'Home' },
@@ -31,6 +32,12 @@ const socialLinks = [
 ];
 
 export function Footer() {
+    const [currentYear, setCurrentYear] = useState('');
+
+    useEffect(() => {
+        setCurrentYear(new Date().getFullYear().toString());
+    }, []);
+
   return (
     <footer className="bg-secondary text-secondary-foreground border-t border-border/40">
       <div className="container max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
@@ -95,7 +102,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border/40 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Diamond City. All rights reserved.</p>
+          <p>&copy; {currentYear} Diamond City. All rights reserved.</p>
         </div>
       </div>
     </footer>

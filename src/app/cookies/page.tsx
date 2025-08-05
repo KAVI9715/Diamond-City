@@ -1,6 +1,9 @@
 
+'use client';
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Cookie, Share2, ShieldCheck, ClipboardCheck, RefreshCw, Phone, Mail } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const policies = [
   {
@@ -36,6 +39,12 @@ const policies = [
 ];
 
 export default function CookiesPage() {
+  const [effectiveDate, setEffectiveDate] = useState('');
+
+  useEffect(() => {
+    setEffectiveDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+  }, []);
+
   return (
     <div className="bg-background text-foreground">
       <main className="container mx-auto py-12 px-4 md:px-6">
@@ -45,7 +54,7 @@ export default function CookiesPage() {
               Cookie Policy
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-                Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                Effective Date: {effectiveDate}
             </p>
              <p className="mt-6 max-w-2xl mx-auto text-muted-foreground">
                 At Diamond City Web Solutions, we use cookies to improve your browsing experience, analyze website traffic, and personalize content. This Cookie Policy explains what cookies are, how we use them, and how you can control them. By using our website, you agree to the use of cookies in accordance with this policy.

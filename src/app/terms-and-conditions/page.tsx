@@ -1,6 +1,9 @@
 
+'use client';
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { FileText, Shield, Briefcase, Users, CreditCard, PenTool, CheckCircle, Phone, Mail, Globe, XCircle, AlertTriangle, Scale, RefreshCw } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const terms = [
   {
@@ -71,6 +74,12 @@ const terms = [
 ];
 
 export default function TermsAndConditionsPage() {
+  const [effectiveDate, setEffectiveDate] = useState('');
+
+  useEffect(() => {
+    setEffectiveDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+  }, []);
+
   return (
     <div className="bg-background text-foreground">
       <main className="container mx-auto py-12 px-4 md:px-6">
@@ -80,7 +89,7 @@ export default function TermsAndConditionsPage() {
               Terms & Conditions
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-                Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                Effective Date: {effectiveDate}
             </p>
              <p className="mt-6 max-w-2xl mx-auto text-muted-foreground">
                 Welcome to Diamond City. These Terms and Conditions ("Terms") govern your use of our website, services, and digital products. By accessing or using any part of our services, you agree to be bound by these Terms.

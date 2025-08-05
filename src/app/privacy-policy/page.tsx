@@ -1,6 +1,9 @@
 
+'use client';
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { User, Shield, Server, Share2, Cookie, CheckSquare, History, ExternalLink, RefreshCw, Phone, Mail } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const policies = [
   {
@@ -51,6 +54,12 @@ const policies = [
 ];
 
 export default function PrivacyPolicyPage() {
+    const [effectiveDate, setEffectiveDate] = useState('');
+
+    useEffect(() => {
+        setEffectiveDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+    }, []);
+
   return (
     <div className="bg-background text-foreground">
       <main className="container mx-auto py-12 px-4 md:px-6">
@@ -60,7 +69,7 @@ export default function PrivacyPolicyPage() {
               Privacy Policy
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-                Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                Effective Date: {effectiveDate}
             </p>
              <p className="mt-6 max-w-2xl mx-auto text-muted-foreground">
                 At Diamond City Web Solutions ("we", "our", or "us"), we respect your privacy and are committed to protecting any personal information you share with us. This Privacy Policy explains how we collect, use, store, and protect your information when you interact with our website or use our services.
