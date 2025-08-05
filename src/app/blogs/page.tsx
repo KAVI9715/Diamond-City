@@ -28,7 +28,7 @@ const blogPosts = [
   {
     title: 'Our Top 5 Favorite Projects (And What We Learned From Them)',
     description: 'Pick 5 past projects and briefly explain what was built, how you solved problems, and what made it special.',
-    image: 'https://images.unsplash.com/photo-1552944150-6dd0130f044d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYXZvcml0ZSUyMHByb2plY3RzfGVufDB8fHx8MTc1NDM3MDAwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1577716334258-196a0c967a7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvdXIlMjB0b3AlMjA1JTIwZmF2b3JpdGUlMjBwcm9qZWN0c3xlbnwwfHx8fDE3NTQzNzE2MDF8MA&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'favorite projects',
     slug: 'our-top-5-favorite-projects'
   },
