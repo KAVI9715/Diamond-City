@@ -48,7 +48,7 @@ const allServices = [
   },
   {
     name: 'Event Management System',
-    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd51622?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldmVudCUyMG1hbmFnZW1lbnQlMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1512573904052-7303e38d683a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8ZXZlbnQlMjBtYW5hZ2VtZW50JTIwc3lzdGVtfGVufDB8fHx8MTc1NDM2ODY3MXww&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'event management',
     description: 'Event creation and booking platform. Create and manage public or private events with RSVP, ticket booking, and event scheduling features.',
   },
