@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Diamond City',
   description: 'Welcome to Diamond City',
   icons: {
-    icon: '/favicon.ico',
+    icon: 'https://6000-firebase-studio-1754287762762.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev/capra/attachedImages/9412cad3-dba1-4f0c-8f94-f3e0e7db9bd1/image_42fb602d-352f-447c-9ad4-32f2be461631.png',
   }
 };
 
