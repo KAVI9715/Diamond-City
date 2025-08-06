@@ -50,36 +50,8 @@ const DiamondLogo = () => (
       xmlns="http://www.w3.org/2000/svg"
       className="text-yellow-500"
     >
-      <path
-        d="M32.0001 5.33331L56.0001 22.6666L32.0001 58.6666L8.00008 22.6666L32.0001 5.33331Z"
-        stroke="#FBBF24"
-        strokeWidth="3"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M8,22.6666L32,32L56,22.6666"
-        stroke="#FBBF24"
-        strokeWidth="3"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M32 58.6666L32 32"
-        stroke="#FBBF24"
-        strokeWidth="3"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M20,28L32,32"
-        stroke="#FBBF24"
-        strokeWidth="3"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M44,28L32,32"
-        stroke="#FBBF24"
-        strokeWidth="3"
-        strokeLinejoin="round"
-      />
+        <path d="M32 2C31.4167 2 30.8333 2.4 30.25 3.2L11.75 22C11.1667 22.8 11.1667 23.6 11.75 24.4L30.25 43.2C30.8333 44 31.4167 44.4 32 44.4C32.5833 44.4 33.1667 44 33.75 43.2L52.25 24.4C52.8333 23.6 52.8333 22.8 52.25 22L33.75 3.2C33.1667 2.4 32.5833 2 32 2Z" fill="#FBBF24"/>
+        <path d="M32 62C33.4 55.3333 36.4667 50.5333 41.2 47.6C45.9333 44.6667 47.6 41.6 46.2 38.4C44.8 35.2 40.9333 34.4667 34.6 36.2C28.2667 37.9333 25.6 40.8 26.6 44.8C27.6 48.8 30.6 54.6667 32 62Z" fill="#FBBF24"/>
     </svg>
 );
 
