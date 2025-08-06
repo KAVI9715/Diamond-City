@@ -48,31 +48,31 @@ const allServices = [
   },
   {
     name: 'Event Management System',
-    image: 'https://images.unsplash.com/photo-1512573904052-7303e38d683a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8ZXZlbnQlMjBtYW5hZ2VtZW50JTIwc3lzdGVtfGVufDB8fHx8MTc1NDM2ODY3MXww&ixlib-rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1512573904052-7303e38d683a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8ZXZlbnQlMjBtYW5hZ2VtZW50JTIwc3lzdGVtfGVufDB8fHx8MTc1NDM2ODY3MXww&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'event management',
     description: 'Event creation and booking platform. Create and manage public or private events with RSVP, ticket booking, and event scheduling features.',
   },
   {
     name: 'Live Chat & Support System',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaXZlJTIwY2hhdCUyMHN1cHBvcnQlMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib-rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaXZlJTIwY2hhdCUyMHN1cHBvcnQlMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'live chat',
     description: 'Real-time chat plugin for websites. Enable real-time messaging on your website for customer queries, support, or sales — integrated with smart responses.',
   },
   {
     name: 'Admin Dashboard / Analytics',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZG1pbiUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZG1pbiUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'admin dashboard',
     description: 'Data dashboards with custom metrics. Get a powerful admin panel to manage your business data, user activity, reports, and sales insights — all in one place.',
   },
   {
     name: 'User Authentication System',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1c2VyJTIwYXV0aGVudGljYXRpb24lMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib-rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1c2VyJTIwYXV0aGVudGljYXRpb24lMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'authentication system',
     description: 'Secure login/register with email or OTP. Secure user login and signup system with email verification, password reset, and role-based access controls.',
   },
   {
     name: 'Responsive Mobile Website',
-    image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNwb25zaXZlJTIwbW9iaWxlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNwb25zaXZlJTIwbW9iaWxlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'responsive design',
     description: 'Mobile-first versions of existing or new sites. Your website — optimized for every screen. We ensure fast, smooth, mobile-friendly designs for better user experience.',
   },
@@ -90,7 +90,7 @@ const allServices = [
   },
   {
     name: 'Custom Web Applications',
-    image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjB3ZWIlMjBhcHBsaWNhdGlvbnN8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib-rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjB3ZWIlMjBhcHBsaWNhdGlvbnN8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'web application',
     description: 'Advanced solutions like ERPs, CRMs, booking engines. Tailor-made web apps built from scratch to suit your business needs — from ERP tools to booking platforms.',
   },
@@ -106,35 +106,42 @@ const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replac
 
 export default function ServicePage() {
   return (
-    <main className="container mx-auto py-12 px-4 md:px-6">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
-          Services We Offer
-        </h1>
-        <p className="mt-4 text-lg text-muted-foreground">
-          Discover the wide range of expert services we provide to our clients.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {allServices.map((service) => (
-           <Link href={`/service/${slugify(service.name)}`} key={service.name} className="flex">
-            <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300">
-              <Image
-                src={service.image}
-                data-ai-hint={service['data-ai-hint']}
-                alt={service.name}
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-              />
-              <CardContent className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold">{service.name}</h3>
-                <p className="mt-2 text-muted-foreground flex-grow">{service.description}</p>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </div>
-    </main>
+    <div
+      className="bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-beautiful-technology-website-business-poster-background-template-image_148436.jpg')",
+      }}
+    >
+      <main className="container mx-auto py-12 px-4 md:px-6 bg-background/80 backdrop-blur-sm">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+            Services We Offer
+          </h1>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Discover the wide range of expert services we provide to our clients.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {allServices.map((service) => (
+            <Link href={`/service/${slugify(service.name)}`} key={service.name} className="flex">
+              <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300">
+                <Image
+                  src={service.image}
+                  data-ai-hint={service['data-ai-hint']}
+                  alt={service.name}
+                  width={600}
+                  height={400}
+                  className="w-full h-48 object-cover"
+                />
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-bold">{service.name}</h3>
+                  <p className="mt-2 text-muted-foreground flex-grow">{service.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </main>
+    </div>
   );
 }
