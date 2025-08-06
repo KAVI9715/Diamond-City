@@ -78,7 +78,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2 mr-6">
-            <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkx5GXke-QdNtxN-6c--m4Qwq9GCplumI_A&s" alt="Diamond City Logo" width={45} height={56} />
+            <Image src="https://scontent.fixm4-1.fna.fbcdn.net/v/t39.30808-6/499602339_1259994212156767_5100678790049392660_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Y7w6hLYWr2cQ7kNvwGPZcjy&_nc_oc=AdlC4txy0nVh8XTDv99ebzClb6_wGpCoclZ7_LqP-3cwy-5ihWStQu3CtD1VHY1YbOE&_nc_zt=23&_nc_ht=scontent.fixm4-1.fna&_nc_gid=fSxcDpsqKatSKln66NK2Yg&oh=00_AfUkZTbl3MEGQuNUXk-Ibp4cv5beb9jBA0-zbRQwUWjY0w&oe=6898E175" alt="Diamond City Logo" width={45} height={56} />
           </Link>
         </div>
 
@@ -134,7 +134,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[85vw] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
-                  <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkx5GXke-QdNtxN-6c--m4Qwq9GCplumI_A&s" alt="Diamond City Logo" width={45} height={56} />
+                  <Image src="https://scontent.fixm4-1.fna.fbcdn.net/v/t39.30808-6/499602339_1259994212156767_5100678790049392660_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Y7w6hLYWr2cQ7kNvwGPZcjy&_nc_oc=AdlC4txy0nVh8XTDv99ebzClb6_wGpCoclZ7_LqP-3cwy-5ihWStQu3CtD1VHY1YbOE&_nc_zt=23&_nc_ht=scontent.fixm4-1.fna&_nc_gid=fSxcDpsqKatSKln66NK2Yg&oh=00_AfUkZTbl3MEGQuNUXk-Ibp4cv5beb9jBA0-zbRQwUWjY0w&oe=6898E175" alt="Diamond City Logo" width={45} height={56} />
                 </Link>
                 <div className="flex flex-col gap-y-4">
                   <div className='flex flex-col gap-y-2'>
