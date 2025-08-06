@@ -78,7 +78,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2 mr-6">
-            <Image src="/logo.png" alt="Diamond City Logo" width={45} height={56} />
+            <Image src="/logo.png" alt="Diamond City Logo" width={140} height={40} />
           </Link>
         </div>
 
@@ -134,7 +134,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[85vw] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
-                  <Image src="/logo.png" alt="Diamond City Logo" width={32} height={32} />
+                  <Image src="/logo.png" alt="Diamond City Logo" width={140} height={40} />
                 </Link>
                 <div className="flex flex-col gap-y-4">
                   <div className='flex flex-col gap-y-2'>
