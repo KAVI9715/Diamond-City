@@ -17,7 +17,7 @@ import {
 import { Menu, MoreVertical, Facebook, Twitter, Linkedin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Separator } from '../ui/separator';
-import { DiamondLogo } from './DiamondLogo';
+import Image from 'next/image';
 
 const mainNavLinks = [
   { href: '/', label: 'Home' },
@@ -78,7 +78,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2">
-            <DiamondLogo />
+            <Image src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t39.30808-6/528068089_122094541496975585_2316637687468881104_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=buydVUzI4KkQ7kNvwEqpJ-5&_nc_oc=AdkOzQ6ayDPBahAD-4ZG5t3zDsMVxw8F8OPecBbyMjEzhF1ntrFoDNckA4yrRTDTkdwDQd754uJWWL_aVvWmFd-h&_nc_zt=23&_nc_ht=scontent.fmaa2-1.fna&_nc_gid=IeCom_gPsHXbOWEzbzlEcA&oh=00_AfVY0HI_8aOEBot2CS26Kh47oz-ys58ssIDw95B3Hdcvhg&oe=6898D876" alt="Diamond City Logo" width={62} height={80} className="h-10 w-auto" />
           </Link>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4">
@@ -130,7 +130,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[85vw] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
-                  <DiamondLogo />
+                  <Image src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t39.30808-6/528068089_122094541496975585_2316637687468881104_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=buydVUzI4KkQ7kNvwEqpJ-5&_nc_oc=AdkOzQ6ayDPBahAD-4ZG5t3zDsMVxw8F8OPecBbyMjEzhF1ntrFoDNckA4yrRTDTkdwDQd754uJWWL_aVvWmFd-h&_nc_zt=23&_nc_ht=scontent.fmaa2-1.fna&_nc_gid=IeCom_gPsHXbOWEzbzlEcA&oh=00_AfVY0HI_8aOEBot2CS26Kh47oz-ys58ssIDw95B3Hdcvhg&oe=6898D876" alt="Diamond City Logo" width={62} height={80} className="h-10 w-auto" />
                 </Link>
                 <div className="flex flex-col gap-y-4">
                   <div className='flex flex-col gap-y-2'>
