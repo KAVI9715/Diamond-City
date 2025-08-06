@@ -10,34 +10,34 @@ export const DiamondLogo = ({ width = 56, height = 56, className }: { width?: nu
             {/* Diamond shape */}
             <path 
                 d="M50 5 L10 40 L50 95 L90 40 Z" 
-                fill="none" 
-                stroke="#FF4136" 
+                fill="none"
+                stroke="hsl(var(--primary))"
                 strokeWidth="4" 
             />
             <path 
                 d="M10 40 L90 40" 
-                stroke="#FF4136" 
+                stroke="hsl(var(--primary))"
                 strokeWidth="4" 
             />
             <path 
                 d="M50 5 L30 40 L50 95 L70 40 Z" 
                 fill="none" 
-                stroke="#FF4136" 
+                stroke="hsl(var(--primary))"
                 strokeWidth="2"
             />
              <path 
                 d="M30 40 L70 40" 
-                stroke="#FF4136" 
+                stroke="hsl(var(--primary))" 
                 strokeWidth="2"
             />
             <path
                 d="M50 5 L10 40"
-                stroke="#FF4136"
+                stroke="hsl(var(--primary))"
                 strokeWidth="2"
             />
              <path
                 d="M50 5 L90 40"
-                stroke="#FF4136"
+                stroke="hsl(var(--primary))"
                 strokeWidth="2"
             />
 
@@ -47,7 +47,7 @@ export const DiamondLogo = ({ width = 56, height = 56, className }: { width?: nu
                 y="65" 
                 fontFamily="cursive, serif" 
                 fontSize="20" 
-                fill="#004d40" 
+                fill="hsl(var(--primary))"
                 textAnchor="middle" 
                 transform="rotate(-10 50 60)"
             >
@@ -60,7 +60,7 @@ export const DiamondLogo = ({ width = 56, height = 56, className }: { width?: nu
                 y="78" 
                 fontFamily="sans-serif" 
                 fontSize="8" 
-                fill="#004d40" 
+                fill="hsl(var(--primary))"
                 textAnchor="middle"
             >
                 CITY
@@ -69,13 +69,13 @@ export const DiamondLogo = ({ width = 56, height = 56, className }: { width?: nu
              {/* Swash */}
             <path 
                 d="M15,55 Q50,40 85,60" 
-                stroke="#004d40" 
+                stroke="hsl(var(--primary))"
                 strokeWidth="2.5" 
                 fill="none" 
             />
              <path 
                 d="M18,53 Q30,65 10,75" 
-                stroke="#004d40" 
+                stroke="hsl(var(--primary))"
                 strokeWidth="2.5" 
                 fill="none" 
             />
