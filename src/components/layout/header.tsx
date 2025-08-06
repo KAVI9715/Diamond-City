@@ -78,7 +78,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2 mr-6">
-            <Image src="https://6000-firebase-studio-1754287762762.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev/capra/attachedImages/9412cad3-dba1-4f0c-8f94-f3e0e7db9bd1/image_42fb602d-352f-447c-9ad4-32f2be461631.png" alt="Diamond City Logo" width={45} height={56} />
+            <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkx5GXke-QdNtxN-6c--m4Qwq9GCplumI_A&s" alt="Diamond City Logo" width={45} height={56} />
           </Link>
         </div>
 
@@ -134,7 +134,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[85vw] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
-                  <Image src="https://6000-firebase-studio-1754287762762.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev/capra/attachedImages/9412cad3-dba1-4f0c-8f94-f3e0e7db9bd1/image_42fb602d-352f-447c-9ad4-32f2be461631.png" alt="Diamond City Logo" width={45} height={56} />
+                  <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkx5GXke-QdNtxN-6c--m4Qwq9GCplumI_A&s" alt="Diamond City Logo" width={45} height={56} />
                 </Link>
                 <div className="flex flex-col gap-y-4">
                   <div className='flex flex-col gap-y-2'>
