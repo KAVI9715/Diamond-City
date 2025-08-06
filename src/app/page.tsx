@@ -36,10 +36,10 @@ export default function Home() {
       {/* Hero Video Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
         <div className="container px-4 md:px-6 text-center">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-primary-foreground">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-primary">
             Built to Shine. Designed to Last.
           </h1>
-          <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl mt-4">
+          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
             Crafting brilliant digital experiences that stand the test of time.
           </p>
           <div className="relative mt-8 overflow-hidden rounded-xl" style={{ paddingTop: '56.25%' }}>
