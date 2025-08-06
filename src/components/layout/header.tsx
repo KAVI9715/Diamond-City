@@ -79,7 +79,6 @@ export function Header() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2 mr-6">
             <Image src="/logo.png" alt="Diamond City Logo" width={32} height={32} />
-            <span className="font-bold">Diamond City</span>
           </Link>
         </div>
 
@@ -136,7 +135,6 @@ export function Header() {
               <SheetContent side="right" className="w-[85vw] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
                   <Image src="/logo.png" alt="Diamond City Logo" width={32} height={32} />
-                  <span className="font-bold text-lg">Diamond City</span>
                 </Link>
                 <div className="flex flex-col gap-y-4">
                   <div className='flex flex-col gap-y-2'>
