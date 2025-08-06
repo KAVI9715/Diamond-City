@@ -45,7 +45,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
              <Link href="/" className="flex items-center gap-2">
-                 <Image src="https://scontent.fmaa2-2.fna.fbcdn.net/v/t39.30808-6/528707405_122094532166975585_3675701913572390484_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AaTgT-2TLecQ7kNvwEP5Q7k&_nc_oc=Adn005DKrTl2wBlLwrMtc0S52jlxvNwNCGjusESPjtiuSxS-h6cwpEbpq5elD3OLosbdSvZWzjXbti4G_aufcdki&_nc_zt=23&_nc_ht=scontent.fmaa2-2.fna&_nc_gid=1c_80rG7qwu19-RxvXTmaQ&oh=00_AfUqsfydaDbgSsQr6pPwXFSOROq5o5tWpQDQeyd1uSmKAA&oe=689908B1" alt="Diamond City Logo" width={55} height={70} />
+                 <Image src="https://scontent.fmaa2-2.fna.fbcdn.net/v/t39.30808-6/528707405_122094532166975585_3675701913572390484_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AaTgT-2TLecQ7kNvwEP5Q7k&_nc_oc=Adn005DKrTl2wBlLwrMtc0S52jlxvNwNCGjusESPjtiuSxS-h6cwpEbpq5elD3OLosbdSvZWzjXbti4G_aufcdki&_nc_zt=23&_nc_ht=scontent.fmaa2-2.fna&_nc_gid=1c_80rG7qwu19-RxvXTmaQ&oh=00_AfUqsfydaDbgSsQr6pPwXFSOROq5o5tWpQDQeyd1uSmKAA&oe=689908B1" alt="Diamond City Logo" width={60} height={80} />
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">
                 Building the future, one project at a time.
