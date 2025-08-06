@@ -42,19 +42,44 @@ const socialLinks = [
 ];
 
 const DiamondLogo = () => (
-    <svg 
-        width="24" 
-        height="24" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-yellow-500"
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 64 64"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="text-yellow-500"
     >
-        <path d="M12 2L2 8.5L12 22L22 8.5L12 2Z" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
-        <path d="M2 8.5L12 12L22 8.5" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
-        <path d="M12 22V12" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
-        <path d="M7 10.25L12 12" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
-        <path d="M17 10.25L12 12" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+      <path
+        d="M32.0001 5.33331L56.0001 22.6666L32.0001 58.6666L8.00008 22.6666L32.0001 5.33331Z"
+        stroke="#FBBF24"
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8,22.6666L32,32L56,22.6666"
+        stroke="#FBBF24"
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M32 58.6666L32 32"
+        stroke="#FBBF24"
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20,28L32,32"
+        stroke="#FBBF24"
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M44,28L32,32"
+        stroke="#FBBF24"
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
     </svg>
 );
 

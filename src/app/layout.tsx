@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="icon" href="data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2L2 8.5L12 22L22 8.5L12 2Z' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M2 8.5L12 12L22 8.5' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M12 22V12' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M7 10.25L12 12' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M17 10.25L12 12' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E" />
+        <link rel="icon" href="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32.0001 5.33331L56.0001 22.6666L32.0001 58.6666L8.00008 22.6666L32.0001 5.33331Z' stroke='%23FBBF24' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M8 22.6666L32 32L56 22.6666' stroke='%23FBBF24' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M32 58.6666V32' stroke='%23FBBF24' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M20 28L32 32' stroke='%23FBBF24' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M44 28L32 32' stroke='%23FBBF24' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"></link>
