@@ -100,35 +100,42 @@ const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replac
 
 export default function ProjectPage() {
   return (
-    <main className="container mx-auto py-12 px-4 md:px-6">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
-          Our Projects
-        </h1>
-        <p className="mt-4 text-lg text-muted-foreground">
-          Explore our portfolio of groundbreaking projects and success stories.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {allProjects.map((project) => (
-           <Link href={`/project/${slugify(project.name)}`} key={project.name} className="flex">
-            <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300">
-              <Image
-                src={project.image}
-                data-ai-hint={project['data-ai-hint']}
-                alt={project.name}
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-              />
-              <CardContent className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold">{project.name}</h3>
-                <p className="mt-2 text-muted-foreground flex-grow">{project.description}</p>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </div>
-    </main>
+    <div
+      className="bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
+      }}
+    >
+      <main className="container mx-auto py-12 px-4 md:px-6 bg-background/80 backdrop-blur-sm">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+            Our Projects
+          </h1>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Explore our portfolio of groundbreaking projects and success stories.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {allProjects.map((project) => (
+            <Link href={`/project/${slugify(project.name)}`} key={project.name} className="flex">
+              <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300">
+                <Image
+                  src={project.image}
+                  data-ai-hint={project['data-ai-hint']}
+                  alt={project.name}
+                  width={600}
+                  height={400}
+                  className="w-full h-48 object-cover"
+                />
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-bold">{project.name}</h3>
+                  <p className="mt-2 text-muted-foreground flex-grow">{project.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </main>
+    </div>
   );
 }
