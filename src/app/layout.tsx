@@ -8,6 +8,9 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: 'Diamond City',
   description: 'Welcome to Diamond City',
+  icons: {
+    icon: '/favicon.ico',
+  }
 };
 
 export default function RootLayout({
@@ -18,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyz5PnXsMkv13IeFjArHZJYJUqP0xQHaD_bQ&s" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"></link>
