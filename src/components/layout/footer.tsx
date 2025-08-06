@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Gem } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const mainNavLinks = [
@@ -31,17 +31,6 @@ const socialLinks = [
   { href: 'https://linkedin.com', label: 'LinkedIn', Icon: Linkedin },
 ];
 
-const DiamondIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      {...props}
-    >
-      <path d="M12 2L2 9.5l10 12.5L22 9.5L12 2z" />
-    </svg>
-  );
-
 export function Footer() {
     const [currentYear, setCurrentYear] = useState('');
 
@@ -55,7 +44,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
              <Link href="/" className="flex items-center gap-2">
-                <DiamondIcon className="h-6 w-6 text-white" />
+                <Gem className="h-6 w-6 text-accent" />
                 <span className="font-bold text-lg">Diamond City</span>
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">
