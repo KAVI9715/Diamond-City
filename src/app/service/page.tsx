@@ -54,7 +54,7 @@ const allServices = [
   },
   {
     name: 'Live Chat & Support System',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaXZlJTIwY2hhdCUyMHN1cHBvcnQlMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaXZlJTIwY2hhdCUyMHN1cHBvcnQlMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib-rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'live chat',
     description: 'Real-time chat plugin for websites. Enable real-time messaging on your website for customer queries, support, or sales — integrated with smart responses.',
   },
@@ -96,7 +96,7 @@ const allServices = [
   },
   {
     name: 'Website Speed & SEO Optimization',
-    image: 'https://images.unsplash.com/photo-1593438002985-ce805be04da9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwc3BlZWQlMjB8ZW58MHx8fHwxNzU0MzY4OTU4fDA&ixlib-rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1593438002985-ce805be04da9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwc3BlZWQlMjB8ZW58MHx8fHwxNzU0MzY4OTU4fDA&ixlib=rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'seo optimization',
     description: 'Improve load time and search rankings. Improve your site’s speed, search visibility, and Google ranking with performance and SEO enhancements.',
   },
@@ -106,42 +106,35 @@ const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replac
 
 export default function ServicePage() {
   return (
-    <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-beautiful-technology-website-business-poster-background-template-image_148436.jpg')",
-      }}
-    >
-      <main className="container mx-auto py-12 px-4 md:px-6 bg-background/80 backdrop-blur-sm">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
-            Services We Offer
-          </h1>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Discover the wide range of expert services we provide to our clients.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {allServices.map((service) => (
-            <Link href={`/service/${slugify(service.name)}`} key={service.name} className="flex">
-              <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300">
-                <Image
-                  src={service.image}
-                  data-ai-hint={service['data-ai-hint']}
-                  alt={service.name}
-                  width={600}
-                  height={400}
-                  className="w-full h-48 object-cover"
-                />
-                <CardContent className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold">{service.name}</h3>
-                  <p className="mt-2 text-muted-foreground flex-grow">{service.description}</p>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
-      </main>
-    </div>
+    <main className="container mx-auto py-12 px-4 md:px-6">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+          Services We Offer
+        </h1>
+        <p className="mt-4 text-lg text-muted-foreground">
+          Discover the wide range of expert services we provide to our clients.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {allServices.map((service) => (
+          <Link href={`/service/${slugify(service.name)}`} key={service.name} className="flex">
+            <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300">
+              <Image
+                src={service.image}
+                data-ai-hint={service['data-ai-hint']}
+                alt={service.name}
+                width={600}
+                height={400}
+                className="w-full h-48 object-cover"
+              />
+              <CardContent className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold">{service.name}</h3>
+                <p className="mt-2 text-muted-foreground flex-grow">{service.description}</p>
+              </CardContent>
+            </Card>
+          </Link>
+        ))}
+      </div>
+    </main>
   );
 }
