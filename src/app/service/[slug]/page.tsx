@@ -66,7 +66,7 @@ const allServices = [
     },
     {
       name: 'Event Management System',
-      image: 'https://images.unsplash.com/photo-1512573904052-7303e38d683a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8ZXZlbnQlMjBtYW5hZ2VtZW50JTIwc3lzdGVtfGVufDB8fHx8MTc1NDM2ODY3MXww&ixlib-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1512573904052-7303e38d683a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8ZXZlbnQlMjBtYW5hZ2VtZW50JTIwc3lzdGVtfGVufDB8fHx8MTc1NDM2ODY3MXww&ixlib-rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'event management',
       description: 'Event creation and booking platform. Create and manage public or private events with RSVP, ticket booking, and event scheduling features.',
       clients: ['Event planners', 'Companies', 'Public groups'],
@@ -106,7 +106,7 @@ const allServices = [
     },
      {
       name: 'Mobile Optimization',
-      image: 'https://images.unsplash.com/photo-1609921143027-a742848480e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzU0Mzg5NjUxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1654764450273-59862da1a259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNHx8bW9iaWxlJTIwb3B0aW1pemF0aW9ufGVufDB8fHx8MTc1NDQ3NTcxM3ww&ixlib=rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'mobile optimization',
       description: 'Enhance your existing site for mobile users with improved speed, navigation, and readability on all devices.',
       clients: ['Existing website owners', 'Businesses with high mobile traffic'],
@@ -114,7 +114,7 @@ const allServices = [
     },
     {
       name: 'Multi-Language Website',
-      image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdWx0aS1sYW5ndWFnZSUyMHdlYnNpdGV8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib-rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdWx0aS1sYW5ndWFnZSUyMHdlYnNpdGV8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'language globe',
       description: 'Translate site content into multiple languages. Expand your reach with websites that support multiple languages and regional formats, including RTL (right-to-left) support.',
       clients: ['International businesses', 'Tourism', 'NGOs'],
