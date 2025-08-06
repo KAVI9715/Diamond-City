@@ -94,7 +94,7 @@ export function Header() {
         </div>
 
 
-        <div className="flex items-center gap-1">
+        <div className="flex items-center ml-auto">
            {/* Desktop App Menu */}
           <div className="hidden md:block">
             <DropdownMenu>
@@ -124,7 +124,7 @@ export function Header() {
             </DropdownMenu>
           </div>
           {/* Mobile Menu */}
-          <div className='md:hidden ml-auto'>
+          <div className='md:hidden'>
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
