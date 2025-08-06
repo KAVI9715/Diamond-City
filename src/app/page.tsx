@@ -85,7 +85,7 @@ export default function Home() {
       
       {/* Employees Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
-        <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+        <div className="container grid items-center justify-between gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-4xl md:text-5xl">Fueled by Our People</h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -93,7 +93,7 @@ export default function Home() {
             </p>
           </div>
           <Image
-            src="https://images.unsplash.com/photo-1606216836560-25cf33c04b0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8c3VjZXNzZnVsbCUyMGVtcGxveWVlcyUyMGdyb3VwJTIwcGhvdG8lMjBhY2hpZXZlfGVufDB8fHx8MTc1NDM2NzI1NXww&ixlib=rb-4.1.0&q=80&w=1080"
+            src="https://7cricinr.com/blog/wp-content/uploads/2023/09/India-National-Cricket-Team-players-1024x576.jpg"
             data-ai-hint="team collaboration"
             alt="Hardworking Employees"
             width={600}
