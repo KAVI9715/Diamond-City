@@ -78,7 +78,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2 mr-6">
-            <Image src="https://scontent.fmaa2-2.fna.fbcdn.net/v/t39.30808-6/528707405_122094532166975585_3675701913572390484_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AaTgT-2TLecQ7kNvwEP5Q7k&_nc_oc=Adn005DKrTl2wBlLwrMtc0S52jlxvNwNCGjusESPjtiuSxS-h6cwpEbpq5elD3OLosbdSvZWzjXbti4G_aufcdki&_nc_zt=23&_nc_ht=scontent.fmaa2-2.fna&_nc_gid=1c_80rG7qwu19-RxvXTmaQ&oh=00_AfUqsfydaDbgSsQr6pPwXFSOROq5o5tWpQDQeyd1uSmKAA&oe=689908B1" alt="Diamond City Logo" width={45} height={56} />
+            <Image src="https://scontent.fmaa2-2.fna.fbcdn.net/v/t39.30808-6/528707405_122094532166975585_3675701913572390484_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AaTgT-2TLecQ7kNvwEP5Q7k&_nc_oc=Adn005DKrTl2wBlLwrMtc0S52jlxvNwNCGjusESPjtiuSxS-h6cwpEbpq5elD3OLosbdSvZWzjXbti4G_aufcdki&_nc_zt=23&_nc_ht=scontent.fmaa2-2.fna&_nc_gid=1c_80rG7qwu19-RxvXTmaQ&oh=00_AfUqsfydaDbgSsQr6pPwXFSOROq5o5tWpQDQeyd1uSmKAA&oe=689908B1" alt="Diamond City Logo" width={55} height={70} />
           </Link>
         </div>
 
@@ -134,7 +134,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[85vw] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
-                  <Image src="https://scontent.fmaa2-2.fna.fbcdn.net/v/t39.30808-6/528707405_122094532166975585_3675701913572390484_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AaTgT-2TLecQ7kNvwEP5Q7k&_nc_oc=Adn005DKrTl2wBlLwrMtc0S52jlxvNwNCGjusESPjtiuSxS-h6cwpEbpq5elD3OLosbdSvZWzjXbti4G_aufcdki&_nc_zt=23&_nc_ht=scontent.fmaa2-2.fna&_nc_gid=1c_80rG7qwu19-RxvXTmaQ&oh=00_AfUqsfydaDbgSsQr6pPwXFSOROq5o5tWpQDQeyd1uSmKAA&oe=689908B1" alt="Diamond City Logo" width={45} height={56} />
+                  <Image src="https://scontent.fmaa2-2.fna.fbcdn.net/v/t39.30808-6/528707405_122094532166975585_3675701913572390484_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AaTgT-2TLecQ7kNvwEP5Q7k&_nc_oc=Adn005DKrTl2wBlLwrMtc0S52jlxvNwNCGjusESPjtiuSxS-h6cwpEbpq5elD3OLosbdSvZWzjXbti4G_aufcdki&_nc_zt=23&_nc_ht=scontent.fmaa2-2.fna&_nc_gid=1c_80rG7qwu19-RxvXTmaQ&oh=00_AfUqsfydaDbgSsQr6pPwXFSOROq5o5tWpQDQeyd1uSmKAA&oe=689908B1" alt="Diamond City Logo" width={55} height={70} />
                 </Link>
                 <div className="flex flex-col gap-y-4">
                   <div className='flex flex-col gap-y-2'>
