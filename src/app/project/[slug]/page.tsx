@@ -114,42 +114,51 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
   }
 
   return (
-    <main className="container mx-auto py-12 px-4 md:px-6">
-       <div className="mb-8">
-        <Button asChild variant="outline">
-            <Link href="/project">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Projects
-            </Link>
-        </Button>
-      </div>
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-4xl font-bold text-primary">{project.name}</CardTitle>
-        </CardHeader>
-        <CardContent className="grid md:grid-cols-2 gap-8">
-          <div>
-            <Image
-              src={project.image}
-              data-ai-hint={project['data-ai-hint']}
-              alt={project.name}
-              width={800}
-              height={600}
-              className="w-full rounded-lg object-cover"
-            />
-          </div>
-          <div className="space-y-6">
+    <div
+      className="bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
+      }}
+    >
+        <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
+        <div className="mb-8">
+            <Button asChild variant="outline">
+                <Link href="/project">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Back to Projects
+                </Link>
+            </Button>
+        </div>
+        <Card className="bg-card/80">
+            <CardHeader>
+            <CardTitle className="text-4xl font-bold text-primary">{project.name}</CardTitle>
+            </CardHeader>
+            <CardContent className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-accent mb-2">Description</h3>
-              <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+                <Image
+                src={project.image}
+                data-ai-hint={project['data-ai-hint']}
+                alt={project.name}
+                width={800}
+                height={600}
+                className="w-full rounded-lg object-cover"
+                />
             </div>
-            <div>
-                <h3 className="text-2xl font-bold text-accent mb-2">Category</h3>
-                <Badge variant="secondary">{project['data-ai-hint']}</Badge>
+            <div className="space-y-6">
+                <div>
+                <h3 className="text-2xl font-bold text-accent mb-2">Description</h3>
+                <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+                </div>
+                <div>
+                    <h3 className="text-2xl font-bold text-accent mb-2">Category</h3>
+                    <Badge variant="secondary">{project['data-ai-hint']}</Badge>
+                </div>
             </div>
-          </div>
-        </CardContent>
-      </Card>
-    </main>
+            </CardContent>
+        </Card>
+        </main>
+    </div>
   );
 }
+
+    
