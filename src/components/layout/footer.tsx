@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import { Facebook, Twitter, Linkedin } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { DiamondLogo } from './DiamondLogo';
 
 const mainNavLinks = [
   { href: '/', label: 'Home' },
@@ -45,7 +45,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
              <Link href="/" className="flex items-center gap-2">
-                <Image src="https://6000-firebase-studio-1754287762762.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev/capra/attachedImages/9412cad3-dba1-4f0c-8f94-f3e0e7db9bd1/image_64a37749-6ce1-49c1-ab5b-d630f3020463.png" alt="Diamond City Logo" width={45} height={56} />
+                <DiamondLogo />
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">
                 Building the future, one project at a time.
