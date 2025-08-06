@@ -78,7 +78,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2 mr-6">
-            <Image src="/logo.png" alt="Diamond City Logo" width={32} height={32} />
+            <Image src="/logo.png" alt="Diamond City Logo" width={45} height={56} />
           </Link>
         </div>
 
