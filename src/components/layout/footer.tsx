@@ -45,7 +45,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
              <Link href="/" className="flex items-center gap-2">
-                <Image src="/logo.png" alt="Diamond City Logo" width={140} height={40} />
+                <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyz5PnXsMkv13IeFjArHZJYJUqP0xQHaD_bQ&s" alt="Diamond City Logo" width={45} height={56} />
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">
                 Building the future, one project at a time.
