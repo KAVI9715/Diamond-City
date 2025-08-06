@@ -52,27 +52,27 @@ const DiamondLogo = () => (
     >
         <path
             d="M45.8,9.1l-28,28.2c-2.3,2.3-3.6,5.5-3.6,8.8v0c0,6.9,5.6,12.5,12.5,12.5h0c3.3,0,6.5-1.3,8.8-3.6l14.5-14.5"
-            stroke="currentColor" stroke-width="5" stroke-miterlimit="10"
+            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
         />
         <path
             d="M45.8,9.1l28.2,28.2c2.3,2.3,3.6,5.5,3.6,8.8v0c0,6.9-5.6,12.5-12.5,12.5h0c-3.3,0-6.5-1.3-8.8-3.6L42,42.1"
-            stroke="currentColor" stroke-width="5" stroke-miterlimit="10"
+            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
         />
         <path
             d="M17.8,62.1L50,94.3l32.2-32.2"
-            stroke="currentColor" stroke-width="5" stroke-miterlimit="10"
+            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
         />
         <line
             x1="50" y1="58.6" x2="50" y2="94.3"
-            stroke="currentColor" stroke-width="5" stroke-miterlimit="10"
+            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
         />
         <path
             d="M33.4,47.7L50,64.3l16.6-16.6"
-            stroke="currentColor" stroke-width="5" stroke-miterlimit="10"
+            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
         />
         <path
             d="M45.8,9.1L50,4.9l4.2,4.2"
-            stroke="currentColor" stroke-width="5" stroke-miterlimit="10"
+            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
         />
     </svg>
 );
