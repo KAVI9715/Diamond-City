@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Facebook, Twitter, Linkedin, Gem } from 'lucide-react';
+import { Facebook, Twitter, Linkedin } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const mainNavLinks = [
@@ -31,6 +31,23 @@ const socialLinks = [
   { href: 'https://linkedin.com', label: 'LinkedIn', Icon: Linkedin },
 ];
 
+const DiamondLogo = () => (
+    <svg 
+        width="24" 
+        height="24" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        className="text-yellow-500"
+    >
+        <path d="M12 2L2 8.5L12 22L22 8.5L12 2Z" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M2 8.5L12 12L22 8.5" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M12 22V12" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M7 10.25L12 12" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M17 10.25L12 12" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+    </svg>
+);
+
 export function Footer() {
     const [currentYear, setCurrentYear] = useState('');
 
@@ -44,7 +61,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
              <Link href="/" className="flex items-center gap-2">
-                <Gem className="h-6 w-6 text-accent" />
+                <DiamondLogo />
                 <span className="font-bold text-lg">Diamond City</span>
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">

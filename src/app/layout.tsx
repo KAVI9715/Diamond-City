@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>" />
+        <link rel="icon" href="data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2L2 8.5L12 22L22 8.5L12 2Z' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M2 8.5L12 12L22 8.5' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M12 22V12' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M7 10.25L12 12' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M17 10.25L12 12' stroke='%23FBBF24' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"></link>

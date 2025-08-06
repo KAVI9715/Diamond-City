@@ -14,7 +14,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Menu, MoreVertical, Facebook, Twitter, Linkedin, Gem } from 'lucide-react';
+import { Menu, MoreVertical, Facebook, Twitter, Linkedin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Separator } from '../ui/separator';
 
@@ -40,6 +40,24 @@ const socialLinks = [
   { href: 'https://twitter.com', label: 'Twitter', Icon: Twitter },
   { href: 'https://linkedin.com', label: 'LinkedIn', Icon: Linkedin },
 ];
+
+const DiamondLogo = () => (
+    <svg 
+        width="24" 
+        height="24" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        className="text-yellow-500"
+    >
+        <path d="M12 2L2 8.5L12 22L22 8.5L12 2Z" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M2 8.5L12 12L22 8.5" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M12 22V12" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M7 10.25L12 12" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M17 10.25L12 12" stroke="#FBBF24" strokeWidth="1.5" strokeLinejoin="round"/>
+    </svg>
+);
+
 
 export function Header() {
   const pathname = usePathname();
@@ -77,7 +95,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2 mr-6">
-            <Gem className="h-6 w-6 text-accent" />
+            <DiamondLogo />
             <span className="font-bold">Diamond City</span>
           </Link>
         </div>
@@ -134,7 +152,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[85vw] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
-                  <Gem className="h-6 w-6 text-accent" />
+                  <DiamondLogo />
                   <span className="font-bold text-lg">Diamond City</span>
                 </Link>
                 <div className="flex flex-col gap-y-4">
