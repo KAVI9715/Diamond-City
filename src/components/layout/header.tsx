@@ -76,25 +76,23 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center">
-        <div className="flex items-center">
+        <div className="mr-4 flex">
           <Link href="/" className="flex items-center gap-2">
             <Image src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t39.30808-6/528068089_122094541496975585_2316637687468881104_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=buydVUzI4KkQ7kNvwEqpJ-5&_nc_oc=AdkOzQ6ayDPBahAD-4ZG5t3zDsMVxw8F8OPecBbyMjEzhF1ntrFoDNckA4yrRTDTkdwDQd754uJWWL_aVvWmFd-h&_nc_zt=23&_nc_ht=scontent.fmaa2-1.fna&_nc_gid=IeCom_gPsHXbOWEzbzlEcA&oh=00_AfVY0HI_8aOEBot2CS26Kh47oz-ys58ssIDw95B3Hdcvhg&oe=6898D876" alt="Diamond City Logo" width={62} height={80} />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-1 items-center justify-center">
-             <nav className="flex items-center gap-4">
-                {mainNavLinks.map((link) => (
-                    <NavLink key={link.href} href={link.href}>
-                    {link.label}
-                    </NavLink>
-                ))}
-            </nav>
-        </div>
+        <nav className="hidden md:flex items-center gap-4">
+            {mainNavLinks.map((link) => (
+                <NavLink key={link.href} href={link.href}>
+                {link.label}
+                </NavLink>
+            ))}
+        </nav>
 
 
-        <div className="flex items-center ml-auto">
+        <div className="flex flex-1 items-center justify-end">
            {/* Desktop App Menu */}
           <div className="hidden md:block">
             <DropdownMenu>
