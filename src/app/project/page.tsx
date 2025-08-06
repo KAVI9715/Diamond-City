@@ -106,7 +106,7 @@ export default function ProjectPage() {
         backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
       }}
     >
-      <main className="container mx-auto py-12 px-4 md:px-6 bg-background/80 backdrop-blur-sm">
+      <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
             Our Projects
