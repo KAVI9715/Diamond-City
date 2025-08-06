@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import { Facebook, Twitter, Linkedin } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const mainNavLinks = [
   { href: '/', label: 'Home' },
@@ -31,42 +32,6 @@ const socialLinks = [
   { href: 'https://linkedin.com', label: 'LinkedIn', Icon: Linkedin },
 ];
 
-const DiamondLogo = () => (
-    <svg
-        width="24"
-        height="24"
-        viewBox="0 0 100 100"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-yellow-500"
-    >
-        <path
-            d="M45.8,9.1l-28,28.2c-2.3,2.3-3.6,5.5-3.6,8.8v0c0,6.9,5.6,12.5,12.5,12.5h0c3.3,0,6.5-1.3,8.8-3.6l14.5-14.5"
-            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
-        />
-        <path
-            d="M45.8,9.1l28.2,28.2c2.3,2.3,3.6,5.5,3.6,8.8v0c0,6.9-5.6,12.5-12.5,12.5h0c-3.3,0-6.5-1.3-8.8-3.6L42,42.1"
-            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
-        />
-        <path
-            d="M17.8,62.1L50,94.3l32.2-32.2"
-            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
-        />
-        <line
-            x1="50" y1="58.6" x2="50" y2="94.3"
-            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
-        />
-        <path
-            d="M33.4,47.7L50,64.3l16.6-16.6"
-            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
-        />
-        <path
-            d="M45.8,9.1L50,4.9l4.2,4.2"
-            stroke="currentColor" strokeWidth="5" strokeMiterlimit="10"
-        />
-    </svg>
-);
-
 export function Footer() {
     const [currentYear, setCurrentYear] = useState('');
 
@@ -80,7 +45,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
              <Link href="/" className="flex items-center gap-2">
-                <DiamondLogo />
+                <Image src="/logo.png" alt="Diamond City Logo" width={24} height={24} />
                 <span className="font-bold text-lg">Diamond City</span>
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">
