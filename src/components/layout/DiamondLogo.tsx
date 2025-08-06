@@ -5,12 +5,12 @@ export const DiamondLogo = ({ width = 56, height = 56, className }: { width?: nu
         viewBox="0 0 100 100" 
         className={className} 
         xmlns="http://www.w3.org/2000/svg"
+        fill="none"
     >
         <g>
             {/* Diamond shape */}
             <path 
                 d="M50 5 L10 40 L50 95 L90 40 Z" 
-                fill="none"
                 stroke="hsl(var(--primary))"
                 strokeWidth="4" 
             />
@@ -21,7 +21,6 @@ export const DiamondLogo = ({ width = 56, height = 56, className }: { width?: nu
             />
             <path 
                 d="M50 5 L30 40 L50 95 L70 40 Z" 
-                fill="none" 
                 stroke="hsl(var(--primary))"
                 strokeWidth="2"
             />
@@ -71,13 +70,11 @@ export const DiamondLogo = ({ width = 56, height = 56, className }: { width?: nu
                 d="M15,55 Q50,40 85,60" 
                 stroke="hsl(var(--primary))"
                 strokeWidth="2.5" 
-                fill="none" 
             />
              <path 
                 d="M18,53 Q30,65 10,75" 
                 stroke="hsl(var(--primary))"
                 strokeWidth="2.5" 
-                fill="none" 
             />
         </g>
     </svg>
