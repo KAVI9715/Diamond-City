@@ -93,7 +93,7 @@ export default function Home() {
             </p>
           </div>
           <Image
-            src="https://7cricinr.com/blog/wp-content/uploads/2023/09/India-National-Cricket-Team-players-1024x576.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctvmQlsml0FbXTWIMHyVSyuHRGSRgf2gtxg&s"
             data-ai-hint="team collaboration"
             alt="Hardworking Employees"
             width={600}
