@@ -142,7 +142,7 @@ export default function Home() {
           <Card className="p-8">
             <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
               <Avatar className="w-48 h-48 mx-auto">
-                <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIads32HqsyE0-8zKnj0gMDqZ4dDECoZB9J3MbO09S0jJQbjl7mGMWiIZJBe1tjNlxBcM&usqp=CAU" data-ai-hint="ceo portrait" />
+                <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctvmQlsml0FbXTWIMHyVSyuHRGSRgf2gtxg&s" data-ai-hint="ceo portrait" />
                 <AvatarFallback>CEO</AvatarFallback>
               </Avatar>
               <div className="space-y-4">
