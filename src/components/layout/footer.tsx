@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -37,7 +38,7 @@ export function Footer() {
     }, []);
 
   return (
-    <footer className="bg-secondary text-secondary-foreground border-t">
+    <footer className="bg-black text-white border-t border-gray-700">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
@@ -46,7 +47,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
                 <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={62} height={80} className="h-12 w-auto" />
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground">
+            <p className="mt-4 text-sm text-gray-400">
                 Crafting brilliant digital experiences that stand the test of time. Built to shine, designed to last.
             </p>
           </div>
@@ -57,7 +58,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-white">
                     {link.label}
                   </Link>
                 </li>
@@ -71,7 +72,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
+                  <Link href={link.href} className="text-sm text-gray-400 hover:text-white">
                     {link.label}
                   </Link>
                 </li>
@@ -82,23 +83,23 @@ export function Footer() {
           {/* Contact Column */}
           <div>
             <h3 className="text-sm font-semibold tracking-wider uppercase">Get in Touch</h3>
-            <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
+            <ul className="mt-4 space-y-3 text-sm text-gray-400">
                 <li className='flex items-center gap-3'>
-                    <MapPin className="h-5 w-5 text-primary" />
+                    <MapPin className="h-5 w-5 text-white" />
                     <span>Tanjore, Tamil Nadu, India</span>
                 </li>
                 <li className='flex items-center gap-3'>
-                    <Mail className="h-5 w-5 text-primary" />
-                    <a href="mailto:contact@diamondcityweb.com" className="hover:text-primary">contact@diamondcityweb.com</a>
+                    <Mail className="h-5 w-5 text-white" />
+                    <a href="mailto:contact@diamondcityweb.com" className="hover:text-white">contact@diamondcityweb.com</a>
                 </li>
                  <li className='flex items-center gap-3'>
-                    <Phone className="h-5 w-5 text-primary" />
-                    <a href="tel:+919876543210" className="hover:text-primary">+91 98765 43210</a>
+                    <Phone className="h-5 w-5 text-white" />
+                    <a href="tel:+919876543210" className="hover:text-white">+91 98765 43210</a>
                 </li>
             </ul>
             <div className="flex space-x-4 mt-6">
               {socialLinks.map((link) => (
-                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                   <link.Icon className="h-6 w-6" />
                   <span className="sr-only">{link.label}</span>
                 </a>
@@ -108,9 +109,9 @@ export function Footer() {
 
         </div>
         
-        <Separator className="my-8" />
+        <Separator className="my-8 bg-gray-700" />
         
-        <div className="text-center text-sm text-muted-foreground">
+        <div className="text-center text-sm text-gray-400">
           <p>&copy; {currentYear} Diamond City. All rights reserved.</p>
         </div>
       </div>
