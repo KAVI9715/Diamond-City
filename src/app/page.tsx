@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Quote } from 'lucide-react';
 
 const projects = [
   {
@@ -61,7 +61,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Growth Story</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Fueled by Our People</h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   From a small startup to a leading force in the industry, our journey is one of passion and perseverance.
                 </p>
@@ -78,7 +78,7 @@ export default function Home() {
               </div>
               <div className="lg:col-span-2 flex items-center justify-center">
                  <Image
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoJNGmw6PulCzjKFR2XjulKspVH63XDq4V3w&s"
+                    src="https://media.licdn.com/dms/image/D4D12AQFG4fTw2M5O-w/article-cover_image-shrink_720_1280/0/1689345224855?e=2147483647&v=beta&t=o1f7hG8N1FjM0s-4M8g9J6G-j_kXo_mZ3B_gJ2A0c9c"
                     data-ai-hint="team collaboration"
                     alt="Hardworking Employees"
                     width={600}
@@ -127,6 +127,41 @@ export default function Home() {
             </div>
           </div>
         </section>
+        
+        {/* CEO Words Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32">
+            <div className="container px-4 md:px-6">
+                <div className="grid gap-10 lg:grid-cols-2">
+                <div className="flex flex-col items-start justify-center space-y-4 text-left">
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Words from Our CEO</h2>
+                    <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic">
+                    "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
+                    </blockquote>
+                    <div className="flex items-center gap-4">
+                    <Avatar>
+                        <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s" />
+                        <AvatarFallback>DC</AvatarFallback>
+                    </Avatar>
+                    <div>
+                        <p className="font-semibold">Sundar Pichai</p>
+                        <p className="text-sm text-muted-foreground">CEO of Diamond City</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="flex items-center justify-center">
+                    <Image
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s"
+                    data-ai-hint="ceo portrait"
+                    alt="CEO of Diamond City"
+                    width={400}
+                    height={400}
+                    className="mx-auto rounded-full object-cover aspect-square"
+                    />
+                </div>
+                </div>
+            </div>
+        </section>
+
       </div>
     </>
   );
