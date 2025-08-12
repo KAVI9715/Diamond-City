@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { ArrowRight, Code, PenTool, Rocket, Users, Award, Star, Quote } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const projects = [
   {
@@ -237,10 +238,13 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
-              <Card key={testimonial.name} className="flex flex-col">
+              <Card key={testimonial.name} className={cn(
+                "flex flex-col",
+                testimonial.name === 'Jane K.' && 'bg-gray-800 text-white'
+              )}>
                 <CardContent className="p-6 flex-grow">
-                  <Quote className="text-primary mb-4 h-8 w-8" />
-                  <p className="text-muted-foreground flex-grow">"{testimonial.quote}"</p>
+                  <Quote className={cn("mb-4 h-8 w-8", testimonial.name === 'Jane K.' ? 'text-accent' : 'text-primary')} />
+                  <p className={cn("flex-grow", testimonial.name === 'Jane K.' ? 'text-gray-300' : 'text-muted-foreground')}>"{testimonial.quote}"</p>
                 </CardContent>
                 <CardHeader className="flex flex-row items-center gap-4">
                   <Avatar>
@@ -248,7 +252,7 @@ export default function Home() {
                   </Avatar>
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                    <p className={cn("text-sm", testimonial.name === 'Jane K.' ? 'text-gray-400' : 'text-muted-foreground')}>{testimonial.title}</p>
                   </div>
                 </CardHeader>
               </Card>
