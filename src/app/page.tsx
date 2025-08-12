@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Code, PenTool, Rocket, Users, Award, Star, Quote } from 'lucide-react';
 
 const projects = [
   {
@@ -29,6 +29,69 @@ const projects = [
     link: '/project/taskmaster-app',
   },
 ];
+
+const services = [
+  {
+    icon: Code,
+    title: 'Web Development',
+    description: 'We build high-performance, scalable websites and applications tailored to your business needs.',
+  },
+  {
+    icon: PenTool,
+    title: 'UI/UX Design',
+    description: 'Crafting intuitive and beautiful user interfaces that provide an exceptional user experience.',
+  },
+  {
+    icon: Rocket,
+    title: 'SEO & Performance',
+    description: 'Optimizing your site for speed and search engines to help you reach a wider audience.',
+  },
+];
+
+const achievements = [
+  {
+    icon: Rocket,
+    value: '50+',
+    label: 'Projects Launched',
+  },
+  {
+    icon: Users,
+    value: '30+',
+    label: 'Happy Clients',
+  },
+  {
+    icon: Award,
+    value: '5',
+    label: 'Years in Business',
+  },
+  {
+    icon: Star,
+    value: '4.9',
+    label: 'Average Rating',
+  },
+];
+
+const testimonials = [
+  {
+    quote: "Diamond City transformed our online presence. Their attention to detail and commitment to quality is unparalleled. We couldn't be happier with the result.",
+    name: 'Sarah L.',
+    title: 'CEO of a Local Business',
+    avatar: 'SL',
+  },
+  {
+    quote: "The team was professional, responsive, and incredibly talented. They delivered our project on time and exceeded our expectations. Highly recommended!",
+    name: 'Mike D.',
+    title: 'Startup Founder',
+    avatar: 'MD',
+  },
+  {
+    quote: "Working with Diamond City was a fantastic experience. They understood our vision and brought it to life with a beautiful and functional website.",
+    name: 'Jane K.',
+    title: 'Marketing Manager',
+    avatar: 'JK',
+  },
+];
+
 
 export default function Home() {
   return (
@@ -57,8 +120,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Company Growth Section */}
+       {/* Our Services Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Core Services</h2>
+            <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
+              We provide a complete suite of services to build and grow your digital presence.
+            </p>
+          </div>
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <Card key={service.title} className="text-center">
+                <CardHeader>
+                  <div className="mx-auto bg-primary text-primary-foreground rounded-full h-16 w-16 flex items-center justify-center">
+                    <service.icon className="h-8 w-8" />
+                  </div>
+                  <CardTitle className="mt-4">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{service.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Company Growth Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
@@ -82,7 +172,7 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+      <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
@@ -118,14 +208,76 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Achievements Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+        <div className="container px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Achievements</h2>
+            <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
+              We are proud of the milestones we have achieved over the years.
+            </p>
+          </div>
+          <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            {achievements.map((achievement) => (
+              <div key={achievement.label}>
+                <achievement.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                <p className="text-4xl font-bold">{achievement.value}</p>
+                <p className="text-muted-foreground">{achievement.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       
-      {/* CEO Words Section */}
+      {/* Testimonials Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What Our Clients Say</h2>
+            <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
+              We take pride in building strong relationships with our clients. Here's what they have to say.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {testimonials.map((testimonial) => (
+              <Card key={testimonial.name} className="flex flex-col">
+                <CardContent className="p-6 flex-grow">
+                  <Quote className="text-primary mb-4 h-8 w-8" />
+                  <p className="text-muted-foreground flex-grow">"{testimonial.quote}"</p>
+                </CardContent>
+                <CardHeader className="flex flex-row items-center gap-4">
+                  <Avatar>
+                    <AvatarFallback>{testimonial.avatar}</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <p className="font-semibold">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                  </div>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CEO Words Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
         <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
+                <div className="flex items-center justify-center">
+                    <Image
+                    src="https://inktalks.com/wp-content/uploads/2021/12/large_Ratan_Tata-Web.jpg"
+                    data-ai-hint="ceo portrait"
+                    alt="CEO of Diamond City"
+                    width={400}
+                    height={400}
+                    className="mx-auto rounded-full object-cover aspect-square"
+                    />
+                </div>
                 <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center">Words from Our CEO</h2>
-                    <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto">
+                    <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto lg:mx-0">
                     "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
                     </blockquote>
                     <div className="flex items-center justify-center lg:justify-start gap-4">
@@ -138,16 +290,6 @@ export default function Home() {
                         <p className="text-sm text-muted-foreground">CEO of Diamond City</p>
                     </div>
                     </div>
-                </div>
-                 <div className="flex items-center justify-center">
-                    <Image
-                    src="https://inktalks.com/wp-content/uploads/2021/12/large_Ratan_Tata-Web.jpg"
-                    data-ai-hint="ceo portrait"
-                    alt="CEO of Diamond City"
-                    width={400}
-                    height={400}
-                    className="mx-auto rounded-full object-cover aspect-square"
-                    />
                 </div>
             </div>
         </div>
