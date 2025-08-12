@@ -32,7 +32,7 @@ const projects = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-w-0">
+    <div className="flex flex-col min-w-0 w-full">
       {/* Hero Video Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
         <div className="container px-4 md:px-6 text-center">
@@ -42,8 +42,8 @@ export default function Home() {
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
             Crafting brilliant digital experiences that stand the test of time.
           </p>
-          <div className="mx-auto max-w-4xl">
-            <div className="relative mt-8 overflow-hidden rounded-xl" style={{ paddingTop: '56.25%' }}>
+          <div className="mx-auto max-w-4xl flex justify-center">
+            <div className="relative mt-8 overflow-hidden rounded-xl w-full" style={{ paddingTop: '56.25%' }}>
                 <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/erEgovG9WBs?autoplay=1&mute=1&loop=1&playlist=erEgovG9WBs&controls=0"
@@ -125,7 +125,7 @@ export default function Home() {
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
                 <div className="flex items-center justify-center">
                     <Image
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s"
+                    src="https://www.behindwoods.com/uploads/5fd0df634ed2b.jpg"
                     data-ai-hint="ceo portrait"
                     alt="CEO of Diamond City"
                     width={400}
@@ -140,7 +140,7 @@ export default function Home() {
                     </blockquote>
                     <div className="flex items-center justify-center gap-4">
                     <Avatar>
-                        <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s" />
+                        <AvatarImage src="https://www.behindwoods.com/uploads/5fd0df634ed2b.jpg" />
                         <AvatarFallback>RT</AvatarFallback>
                     </Avatar>
                     <div>

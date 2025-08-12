@@ -70,6 +70,12 @@ const nextConfig: NextConfig = {
         hostname: 'media.licdn.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.behindwoods.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
