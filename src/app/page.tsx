@@ -32,7 +32,7 @@ const projects = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-w-0">
       {/* Hero Video Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
         <div className="container px-4 md:px-6 text-center">
@@ -121,12 +121,12 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
               <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
+              <div className="flex flex-col justify-center space-y-4 text-center">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Words from Our CEO</h2>
-                  <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic">
+                  <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto">
                   "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
                   </blockquote>
-                  <div className="flex items-center justify-center lg:justify-start gap-4">
+                  <div className="flex items-center justify-center gap-4">
                   <Avatar>
                       <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s" />
                       <AvatarFallback>RT</AvatarFallback>
@@ -139,7 +139,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                   <Image
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwIwfmL9vaxI7AlZapniArvqmkKwkHQnf99U6tlPlzoxtFOPkHlsPbYkZGmtwUxBMLkpg&usqp=CAU"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s"
                   data-ai-hint="ceo portrait"
                   alt="CEO of Diamond City"
                   width={400}
