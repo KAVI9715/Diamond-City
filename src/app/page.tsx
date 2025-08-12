@@ -125,7 +125,7 @@ export default function Home() {
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
                 <div className="flex items-center justify-center">
                     <Image
-                    src="https://i.postimg.cc/4d3QS8T3/528068089-122094541496975585-2316637687468881104-n.webp"
+                    src="https://inktalks.com/wp-content/uploads/2021/12/large_Ratan_Tata-Web.jpg"
                     data-ai-hint="ceo portrait"
                     alt="CEO of Diamond City"
                     width={400}
@@ -140,7 +140,7 @@ export default function Home() {
                     </blockquote>
                     <div className="flex items-center justify-center gap-4">
                     <Avatar>
-                        <AvatarImage src="https://i.postimg.cc/4d3QS8T3/528068089-122094541496975585-2316637687468881104-n.webp" />
+                        <AvatarImage src="https://inktalks.com/wp-content/uploads/2021/12/large_Ratan_Tata-Web.jpg" />
                         <AvatarFallback>RT</AvatarFallback>
                     </Avatar>
                     <div>
