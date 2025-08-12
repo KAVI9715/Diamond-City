@@ -105,15 +105,16 @@ export default function Home() {
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
             Crafting brilliant digital experiences that stand the test of time.
           </p>
-          <div className="mx-auto max-w-4xl flex justify-center mt-8">
-            <Image
-              src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-              data-ai-hint="programming technology"
-              alt="Digital Experience"
-              width={1200}
-              height={675}
-              className="rounded-xl object-cover"
-            />
+          <div className="mx-auto max-w-4xl flex justify-center mt-8 aspect-video">
+            <iframe
+              className="w-full h-full rounded-xl"
+              src="https://www.youtube.com/embed/912844284?si=RjQyL3cRzY9wJ4M2&autoplay=1&mute=1&loop=1&controls=0&playlist=912844284"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen>
+            </iframe>
           </div>
         </div>
       </section>
@@ -300,3 +301,4 @@ export default function Home() {
     
 
     
+
