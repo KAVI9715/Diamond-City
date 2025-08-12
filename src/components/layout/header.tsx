@@ -14,7 +14,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Menu, MoreVertical, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Menu, MoreVertical, Facebook, Twitter, Linkedin, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Separator } from '../ui/separator';
 import Image from 'next/image';
@@ -28,6 +28,7 @@ const mainNavLinks = [
 ];
 
 const appMenuItems = [
+  { href: '/studio', label: 'Studio', icon: Sparkles },
   { href: '/career', label: 'Career' },
   { href: '/blogs', label: 'Blogs' },
   { href: '/purpose', label: 'Purpose' },
@@ -59,15 +60,16 @@ export function Header() {
     </Link>
   );
 
-  const MobileNavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
+  const MobileNavLink = ({ href, children, icon: Icon }: { href: string; children: React.ReactNode; icon?: React.ElementType }) => (
     <SheetClose asChild>
       <Link
         href={href}
         className={cn(
-          'block rounded-md px-3 py-2 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground',
+          'flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground',
           pathname === href ? 'bg-accent text-accent-foreground' : 'text-foreground'
         )}
       >
+        {Icon && <Icon className="h-5 w-5" />}
         {children}
       </Link>
     </SheetClose>
@@ -103,7 +105,10 @@ export function Header() {
               <DropdownMenuContent align="end">
                 {appMenuItems.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
-                    <Link href={item.href}>{item.label}</Link>
+                    <Link href={item.href} className="flex items-center gap-2">
+                      {item.icon && <item.icon className="h-4 w-4" />}
+                      {item.label}
+                    </Link>
                   </DropdownMenuItem>
                 ))}
                 <DropdownMenuSeparator />
@@ -143,7 +148,7 @@ export function Header() {
                   <Separator />
                   <div className='flex flex-col gap-y-2'>
                     {appMenuItems.map((item) => (
-                       <MobileNavLink key={item.href} href={item.href}>
+                       <MobileNavLink key={item.href} href={item.href} icon={item.icon}>
                         {item.label}
                       </MobileNavLink>
                     ))}
