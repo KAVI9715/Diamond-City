@@ -64,6 +64,16 @@ export default function Home() {
               <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 From a small startup to a leading force in the industry, our journey is one of passion and perseverance.
               </p>
+              <div className="flex items-center justify-center lg:justify-start gap-4">
+                <Avatar>
+                  <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoJNGmw6PulCzjKFR2XjulKspVH63XDq4V3w&s" data-ai-hint="ceo portrait" />
+                  <AvatarFallback>CEO</AvatarFallback>
+                </Avatar>
+                <div>
+                    <p className="font-bold">John Doe</p>
+                    <p className="text-sm text-muted-foreground">CEO of Diamond City</p>
+                </div>
+              </div>
             </div>
             <div className="col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <Card>
