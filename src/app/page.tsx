@@ -140,7 +140,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center justify-center">
                     <Image
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwIwfmL9vaxI7AlZapniArvqmkKwkHQnf99U6tlPlzoxtFOPkHlsPbYkZGmtwUxBMLkpg&usqp=CAU"
                     data-ai-hint="ceo portrait"
                     alt="CEO of Diamond City"
                     width={400}
