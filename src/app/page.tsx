@@ -65,16 +65,6 @@ export default function Home() {
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   From a small startup to a leading force in the industry, our journey is one of passion and perseverance.
                 </p>
-                <div className="flex items-center justify-center lg:justify-start gap-4">
-                  <Avatar>
-                    <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s" />
-                    <AvatarFallback>DC</AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <p className="font-semibold">Sundar Pichai</p>
-                    <p className="text-sm text-muted-foreground">CEO of Diamond City</p>
-                  </div>
-                </div>
               </div>
               <div className="lg:col-span-2 flex items-center justify-center">
                  <Image
