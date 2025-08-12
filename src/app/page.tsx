@@ -42,15 +42,17 @@ export default function Home() {
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
             Crafting brilliant digital experiences that stand the test of time.
           </p>
-          <div className="relative mt-8 overflow-hidden rounded-xl" style={{ paddingTop: '56.25%' }}>
-            <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/erEgovG9WBs?autoplay=1&mute=1&loop=1&playlist=erEgovG9WBs&controls=0"
-              title="Project Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="mx-auto max-w-4xl">
+            <div className="relative mt-8 overflow-hidden rounded-xl" style={{ paddingTop: '56.25%' }}>
+                <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/erEgovG9WBs?autoplay=1&mute=1&loop=1&playlist=erEgovG9WBs&controls=0"
+                title="Project Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                ></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -60,8 +62,8 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Fueled by Our People</h2>
-              <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center">Fueled by Our People</h2>
+              <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">
                 From a small startup to a leading force in the industry, our journey is one of passion and perseverance.
               </p>
             </div>
@@ -119,36 +121,36 @@ export default function Home() {
       
       {/* CEO Words Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-              <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="flex items-center justify-center">
-                  <Image
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s"
-                  data-ai-hint="ceo portrait"
-                  alt="CEO of Diamond City"
-                  width={400}
-                  height={400}
-                  className="mx-auto rounded-full object-cover aspect-square"
-                  />
-              </div>
-              <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Words from Our CEO</h2>
-                  <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto lg:mx-0">
-                  "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
-                  </blockquote>
-                  <div className="flex items-center justify-center lg:justify-start gap-4">
-                  <Avatar>
-                      <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s" />
-                      <AvatarFallback>RT</AvatarFallback>
-                  </Avatar>
-                  <div>
-                      <p className="font-semibold">Ratan Tata</p>
-                      <p className="text-sm text-muted-foreground">CEO of Diamond City</p>
-                  </div>
-                  </div>
-              </div>
-              </div>
-          </div>
+        <div className="container mx-auto px-4 md:px-6">
+            <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
+                <div className="flex items-center justify-center">
+                    <Image
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s"
+                    data-ai-hint="ceo portrait"
+                    alt="CEO of Diamond City"
+                    width={400}
+                    height={400}
+                    className="mx-auto rounded-full object-cover aspect-square"
+                    />
+                </div>
+                <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center">Words from Our CEO</h2>
+                    <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto">
+                    "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
+                    </blockquote>
+                    <div className="flex items-center justify-center gap-4">
+                    <Avatar>
+                        <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8WnJlC1yqCf--RX5WPN4uO7KoTwjB8__57Q&s" />
+                        <AvatarFallback>RT</AvatarFallback>
+                    </Avatar>
+                    <div>
+                        <p className="font-semibold">Ratan Tata</p>
+                        <p className="text-sm text-muted-foreground">CEO of Diamond City</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </section>
 
     </div>
