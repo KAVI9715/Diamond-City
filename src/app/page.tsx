@@ -117,17 +117,17 @@ export default function Home() {
       </section>
 
        {/* Our Services Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800 text-white">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Core Services</h2>
-            <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
+            <p className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed mt-4">
               We provide a complete suite of services to build and grow your digital presence.
             </p>
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
-              <Card key={service.title} className="text-center">
+              <Card key={service.title} className="text-center bg-gray-900 border-gray-700 text-white">
                 <CardHeader>
                   <div className="mx-auto bg-primary text-primary-foreground rounded-full h-16 w-16 flex items-center justify-center">
                     <service.icon className="h-8 w-8" />
@@ -135,7 +135,7 @@ export default function Home() {
                   <CardTitle className="mt-4">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <p className="text-gray-300">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -168,17 +168,17 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Take a look at some of the stunning projects we've delivered for our clients.
             </p>
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {projects.map((project) => (
-              <Card key={project.name}>
+              <Card key={project.name} className="bg-gray-900 border-gray-700 text-white">
                 <Image
                   src={project.image}
                   data-ai-hint={project['data-ai-hint']}
@@ -189,8 +189,8 @@ export default function Home() {
                 />
                 <CardContent className="p-4">
                   <h3 className="text-lg font-semibold">{project.name}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
-                  <Link href={project.link} className="mt-4 inline-flex items-center text-primary hover:underline">
+                  <p className="mt-2 text-sm text-gray-300">{project.description}</p>
+                  <Link href={project.link} className="mt-4 inline-flex items-center text-accent hover:underline">
                     View Project <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </CardContent>
