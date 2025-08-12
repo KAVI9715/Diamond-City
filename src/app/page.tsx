@@ -240,11 +240,11 @@ export default function Home() {
             {testimonials.map((testimonial) => (
               <Card key={testimonial.name} className={cn(
                 "flex flex-col",
-                testimonial.name === 'Jane K.' && 'bg-gray-800 text-white'
+                (testimonial.name === 'Jane K.' || testimonial.name === 'Mike D.') && 'bg-gray-800 text-white'
               )}>
                 <CardContent className="p-6 flex-grow">
-                  <Quote className={cn("mb-4 h-8 w-8", testimonial.name === 'Jane K.' ? 'text-accent' : 'text-primary')} />
-                  <p className={cn("flex-grow", testimonial.name === 'Jane K.' ? 'text-gray-300' : 'text-muted-foreground')}>"{testimonial.quote}"</p>
+                  <Quote className={cn("mb-4 h-8 w-8", (testimonial.name === 'Jane K.' || testimonial.name === 'Mike D.') ? 'text-accent' : 'text-primary')} />
+                  <p className={cn("flex-grow", (testimonial.name === 'Jane K.' || testimonial.name === 'Mike D.') ? 'text-gray-300' : 'text-muted-foreground')}>"{testimonial.quote}"</p>
                 </CardContent>
                 <CardHeader className="flex flex-row items-center gap-4">
                   <Avatar>
@@ -252,7 +252,7 @@ export default function Home() {
                   </Avatar>
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
-                    <p className={cn("text-sm", testimonial.name === 'Jane K.' ? 'text-gray-400' : 'text-muted-foreground')}>{testimonial.title}</p>
+                    <p className={cn("text-sm", (testimonial.name === 'Jane K.' || testimonial.name === 'Mike D.') ? 'text-gray-400' : 'text-muted-foreground')}>{testimonial.title}</p>
                   </div>
                 </CardHeader>
               </Card>
