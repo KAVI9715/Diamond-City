@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { ArrowRight, Quote } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const projects = [
   {
@@ -59,7 +59,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-            <div className="flex flex-col justify-center space-y-4 text-left">
+            <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Fueled by Our People</h2>
               <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 From a small startup to a leading force in the industry, our journey is one of passion and perseverance.
@@ -121,7 +121,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
               <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-              <div className="flex flex-col items-start justify-center space-y-4 text-left">
+              <div className="flex flex-col items-center justify-center space-y-4 text-center lg:items-start lg:text-left">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Words from Our CEO</h2>
                   <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic">
                   "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
