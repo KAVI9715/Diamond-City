@@ -48,11 +48,11 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-accent">Milestones</h2>
               </div>
               <ul className="space-y-4 text-muted-foreground">
-                <li><span className="font-semibold text-primary-foreground">2021:</span> Diamond City was born. First 3 projects completed in 3 months.</li>
-                <li><span className="font-semibold text-primary-foreground">2022:</span> Built a custom portfolio CMS and crossed 20+ completed projects.</li>
-                <li><span className="font-semibold text-primary-foreground">2023:</span> Partnered with international teams and launched video-based homepage sites.</li>
-                <li><span className="font-semibold text-primary-foreground">2024:</span> Expanded team to include backend experts and UI/UX designers.</li>
-                <li><span className="font-semibold text-primary-foreground">2025:</span> Launched our flagship web product for project-based businesses.</li>
+                <li><span className="font-bold text-black">2021:</span> Diamond City was born. First 3 projects completed in 3 months.</li>
+                <li><span className="font-bold text-black">2022:</span> Built a custom portfolio CMS and crossed 20+ completed projects.</li>
+                <li><span className="font-bold text-black">2023:</span> Partnered with international teams and launched video-based homepage sites.</li>
+                <li><span className="font-bold text-black">2024:</span> Expanded team to include backend experts and UI/UX designers.</li>
+                <li><span className="font-bold text-black">2025:</span> Launched our flagship web product for project-based businesses.</li>
               </ul>
             </section>
 
