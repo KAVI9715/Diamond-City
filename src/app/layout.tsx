@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Diamond City',
   description: 'Welcome to Diamond City',
   icons: {
-    icon: 'https://i.postimg.cc/4d3QS8T3/528068089-122094541496975585-2316637687468881104-n.webp',
+    icon: 'https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png',
   }
 };
 
