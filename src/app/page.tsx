@@ -267,7 +267,7 @@ export default function Home() {
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
                 <div className="flex items-center justify-center">
                     <Image
-                    src="https://i.postimg.cc/c4smP4MH/12.jpg"
+                    src="https://i.postimg.cc/QNnQYkt6/13.jpg"
                     data-ai-hint="ceo portrait"
                     alt="CEO of Diamond City"
                     width={400}
@@ -282,7 +282,7 @@ export default function Home() {
                     </blockquote>
                     <div className="flex items-center justify-center lg:justify-start gap-4">
                     <Avatar>
-                        <AvatarImage src="https://i.postimg.cc/c4smP4MH/12.jpg" />
+                        <AvatarImage src="https://i.postimg.cc/QNnQYkt6/13.jpg" />
                         <AvatarFallback>RT</AvatarFallback>
                     </Avatar>
                     <div>
