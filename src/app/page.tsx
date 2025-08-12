@@ -127,15 +127,15 @@ export default function Home() {
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
-              <Card key={service.title} className={`text-center ${index === 2 ? 'bg-gray-800 text-white' : ''}`}>
+              <Card key={service.title} className={`text-center ${index === 1 || index === 2 ? 'bg-gray-800 text-white' : ''}`}>
                 <CardHeader>
-                  <div className={`mx-auto rounded-full h-16 w-16 flex items-center justify-center ${index === 2 ? 'bg-white text-gray-800' : 'bg-primary text-primary-foreground'}`}>
+                  <div className={`mx-auto rounded-full h-16 w-16 flex items-center justify-center ${index === 1 || index === 2 ? 'bg-white text-gray-800' : 'bg-primary text-primary-foreground'}`}>
                     <service.icon className="h-8 w-8" />
                   </div>
                   <CardTitle className="mt-4 font-headline">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className={index === 2 ? 'text-gray-300' : 'text-muted-foreground'}>{service.description}</p>
+                  <p className={index === 1 || index === 2 ? 'text-gray-300' : 'text-muted-foreground'}>{service.description}</p>
                 </CardContent>
               </Card>
             ))}
