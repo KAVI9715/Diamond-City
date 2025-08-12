@@ -117,7 +117,7 @@ export function Footer() {
                 </div>
             </div>
         </div>
-        <div className="mt-8 border-t border-border/40 pt-8 flex justify-end text-sm text-muted-foreground">
+        <div className="mt-8 border-t border-border/40 pt-8 flex justify-center text-sm text-muted-foreground">
           <p>&copy; {currentYear} Diamond City. All rights reserved.</p>
         </div>
       </div>
