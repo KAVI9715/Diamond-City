@@ -108,7 +108,7 @@ export default function Home() {
           <div className="mx-auto max-w-4xl flex justify-center mt-8 aspect-video">
             <iframe
               className="w-full h-full rounded-xl"
-              src="https://www.youtube.com/embed/eYq7WapuDLU?si=RjQyL3cRzY9wJ4M2&autoplay=1&mute=1&loop=1&controls=0&playlist=eYq7WapuDLU"
+              src="https://www.youtube.com/embed/S_89z2424gI?si=yBwXJbY5i9vB5yX-&autoplay=1&mute=1&loop=1&controls=0&playlist=S_89z2424gI"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
