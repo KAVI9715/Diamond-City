@@ -117,17 +117,17 @@ export default function Home() {
       </section>
 
        {/* Our Services Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800 text-white">
+      <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Core Services</h2>
-            <p className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed mt-4">
+            <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
               We provide a complete suite of services to build and grow your digital presence.
             </p>
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
-              <Card key={service.title} className="text-center bg-gray-900 border-gray-700 text-white">
+              <Card key={service.title} className="text-center">
                 <CardHeader>
                   <div className="mx-auto bg-primary text-primary-foreground rounded-full h-16 w-16 flex items-center justify-center">
                     <service.icon className="h-8 w-8" />
@@ -135,7 +135,7 @@ export default function Home() {
                   <CardTitle className="mt-4">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-300">{service.description}</p>
+                  <p className="text-muted-foreground">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -300,6 +300,8 @@ export default function Home() {
 
 
 
+
+    
 
     
 
