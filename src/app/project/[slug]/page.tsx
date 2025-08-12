@@ -80,7 +80,7 @@ const allProjects = [
   },
   {
     name: 'DevFinder',
-    image: 'https://images.unsplash.com/photo-1634836023845-eddbfe9937da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGV2ZWxvcGVyJTIwcHJvZmlsZXN8ZW58MHx8fHwxNzU0MzY2NjAwfDA&ixlib.rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1634836023845-eddbfe9937da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGV2ZWxvcGVyJTIwcHJvZmlsZXN8ZW58MHx8fHwxNzU0MzY2NjAwfDA&ixlib-rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "developer profiles",
     description: 'DevFinder is a platform designed to connect companies and recruiters with talented software developers. Using the GitHub API, it provides a searchable and filterable list of developers, allowing you to find the perfect candidate based on their tech stack, location, and experience. DevFinder makes technical recruitment simple and efficient.',
     usage: 'A platform for recruiters and companies to find and connect with software developers.',
@@ -175,12 +175,9 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
 
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
-      }}
+      className="bg-background text-foreground"
     >
-      <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
+      <main className="container mx-auto py-12 px-4 md:px-6">
         <div className="mb-8">
             <Button asChild variant="outline">
                 <Link href="/project">
@@ -189,7 +186,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                 </Link>
             </Button>
         </div>
-        <Card className="bg-card/80">
+        <Card className="bg-card">
             <CardHeader>
             <CardTitle className="text-4xl font-bold text-primary">{project.name}</CardTitle>
             <Badge variant="secondary" className="w-fit">{project['data-ai-hint']}</Badge>
@@ -207,7 +204,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                 </div>
                 <div className="md:col-span-2 space-y-6">
                     <div>
-                        <h3 className="text-2xl font-bold text-accent mb-2">Description</h3>
+                        <h3 className="text-2xl font-bold text-accent-foreground mb-2">Description</h3>
                         <p className="text-muted-foreground leading-relaxed">{project.description}</p>
                     </div>
                 </div>
@@ -215,26 +212,26 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
         </Card>
 
         <div className="grid md:grid-cols-2 gap-8 mt-8">
-            <Card className="bg-card/80">
+            <Card className="bg-card">
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-accent"><Zap className="h-6 w-6" /> Usage</CardTitle>
+                    <CardTitle className="flex items-center gap-2 text-accent-foreground"><Zap className="h-6 w-6" /> Usage</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <p className="text-muted-foreground">{project.usage}</p>
                 </CardContent>
             </Card>
-             <Card className="bg-card/80">
+             <Card className="bg-card">
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-accent"><Cpu className="h-6 w-6" /> Performance</CardTitle>
+                    <CardTitle className="flex items-center gap-2 text-accent-foreground"><Cpu className="h-6 w-6" /> Performance</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <p className="text-muted-foreground">{project.performance}</p>
                 </CardContent>
             </Card>
         </div>
-         <Card className="bg-card/80 mt-8">
+         <Card className="bg-card mt-8">
             <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-accent"><Code className="h-6 w-6" /> Technologies & Features</CardTitle>
+                <CardTitle className="flex items-center gap-2 text-accent-foreground"><Code className="h-6 w-6" /> Technologies & Features</CardTitle>
             </CardHeader>
             <CardContent className="grid md:grid-cols-2 gap-8">
                 <div>

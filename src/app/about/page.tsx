@@ -4,28 +4,25 @@ import { Gem, History, Rocket, Quote, GitCommitHorizontal } from 'lucide-react';
 export default function AboutPage() {
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
-      }}
+      className="bg-background text-foreground"
     >
-      <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
+      <main className="container mx-auto py-12 px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl font-headline text-white">
+            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl font-headline text-foreground">
               About Diamond City
             </h1>
-            <p className="mt-4 text-lg text-gray-300">
+            <p className="mt-4 text-lg text-muted-foreground">
               Discover our journey, our values, and what makes us shine.
             </p>
           </div>
 
           <div className="space-y-12">
             {/* Introduction */}
-            <section className="p-8 rounded-lg shadow-lg bg-card/80">
+            <section className="p-8 rounded-lg shadow-lg bg-card">
               <div className="flex items-center gap-4 mb-4">
-                <Gem className="w-8 h-8 text-accent" />
-                <h2 className="text-3xl font-bold text-accent font-headline">Introduction</h2>
+                <Gem className="w-8 h-8 text-accent-foreground" />
+                <h2 className="text-3xl font-bold text-accent-foreground font-headline">Introduction</h2>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 Diamond City is a digital powerhouse dedicated to crafting bold, modern, and performance-driven websites. We specialize in bringing brands to life through innovative web development, ensuring every project shines with clarity, purpose, and elegance—just like a diamond. Whether you're a startup or a growing enterprise, we build your online identity with precision, creativity, and technology that lasts.
@@ -33,10 +30,10 @@ export default function AboutPage() {
             </section>
 
             {/* History */}
-            <section className="p-8 rounded-lg shadow-lg bg-card/80">
+            <section className="p-8 rounded-lg shadow-lg bg-card">
               <div className="flex items-center gap-4 mb-4">
-                <History className="w-8 h-8 text-accent" />
-                <h2 className="text-3xl font-bold text-accent font-headline">History</h2>
+                <History className="w-8 h-8 text-accent-foreground" />
+                <h2 className="text-3xl font-bold text-accent-foreground font-headline">History</h2>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 Founded in 2021, Diamond City began as a small team of passionate developers with a big vision — to create world-class digital experiences from the heart of South India. Our first few projects were small, but our commitment to quality and trust quickly earned us recognition.
@@ -47,10 +44,10 @@ export default function AboutPage() {
             </section>
 
             {/* Milestones */}
-            <section className="p-8 rounded-lg shadow-lg bg-card/80">
+            <section className="p-8 rounded-lg shadow-lg bg-card">
               <div className="flex items-center gap-4 mb-4">
-                <Rocket className="w-8 h-8 text-accent" />
-                <h2 className="text-3xl font-bold text-accent font-headline">Milestones</h2>
+                <Rocket className="w-8 h-8 text-accent-foreground" />
+                <h2 className="text-3xl font-bold text-accent-foreground font-headline">Milestones</h2>
               </div>
               <ul className="space-y-4 text-muted-foreground">
                 <li><span className="font-bold text-foreground">2021:</span> Diamond City was born. First 3 projects completed in 3 months.</li>
@@ -62,10 +59,10 @@ export default function AboutPage() {
             </section>
 
             {/* Company Motto */}
-            <section className="p-8 rounded-lg shadow-lg bg-card/80">
+            <section className="p-8 rounded-lg shadow-lg bg-card">
                <div className="flex items-center gap-4 mb-4">
-                <Quote className="w-8 h-8 text-accent" />
-                <h2 className="text-3xl font-bold text-accent font-headline">Company Motto</h2>
+                <Quote className="w-8 h-8 text-accent-foreground" />
+                <h2 className="text-3xl font-bold text-accent-foreground font-headline">Company Motto</h2>
               </div>
               <blockquote className="text-2xl font-semibold italic text-center text-primary border-l-4 border-accent pl-4 font-headline">
                 "Built to Shine. Designed to Last."
@@ -76,10 +73,10 @@ export default function AboutPage() {
             </section>
 
             {/* Struggles & Growth */}
-            <section className="p-8 rounded-lg shadow-lg bg-card/80">
+            <section className="p-8 rounded-lg shadow-lg bg-card">
               <div className="flex items-center gap-4 mb-4">
-                <GitCommitHorizontal className="w-8 h-8 text-accent" />
-                <h2 className="text-3xl font-bold text-accent font-headline">Struggles & Growth</h2>
+                <GitCommitHorizontal className="w-8 h-8 text-accent-foreground" />
+                <h2 className="text-3xl font-bold text-accent-foreground font-headline">Struggles & Growth</h2>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 Like every diamond, our journey was shaped under pressure. From managing tight timelines to staying updated with fast-changing technology, we faced early struggles balancing quality with speed. There were late nights, failed prototypes, and constant learning. But every challenge pushed us to think smarter, build cleaner, and deliver better.

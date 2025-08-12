@@ -34,7 +34,7 @@ const allServices = [
     },
     {
       name: 'Educational / LMS Platform',
-      image: 'https://images.unsplash.com/photo-1614793319738-bde496bbe85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlZHVjYXRpb25hbCUyMCUyRiUyMGxtcyUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDM2ODU3OHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1614793319738-bde496bbe85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlZHVjYXRpb25hbCUyMCUyRiUyMGxtcyUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDM2ODU3OHww&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'education platform',
       description: 'Learning management system for online courses. Launch your own online learning platform with course uploads, video content, quizzes, and user progress tracking.',
       clients: ['Tutors', 'Schools', 'E-learning startups'],
@@ -42,7 +42,7 @@ const allServices = [
     },
     {
       name: 'Real Estate Website',
-      image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'real estate',
       description: 'Property listing site with advanced filters. List, manage, and promote properties with map integration, inquiry forms, and search filters for location, price, and type.',
       clients: ['Agents', 'Agencies', 'Developers'],
@@ -50,7 +50,7 @@ const allServices = [
     },
     {
       name: 'Blog or News Platform',
-      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibG9nJTIwbmV3cyUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDM2ODAwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibG9nJTIwbmV3cyUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDM2ODAwMHww&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'blog platform',
       description: 'SEO-optimized blog for personal or public use. Publish content with a clean, SEO-optimized layout. Great for bloggers, writers, or media agencies.',
       clients: ['Bloggers', 'Media companies'],
@@ -153,12 +153,9 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
 
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
-      }}
+      className="bg-background text-foreground"
     >
-        <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
+        <main className="container mx-auto py-12 px-4 md:px-6">
         <div className="mb-8">
             <Button asChild variant="outline">
                 <Link href="/service">
@@ -167,7 +164,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                 </Link>
             </Button>
         </div>
-        <Card className="bg-card/80">
+        <Card className="bg-card">
             <CardHeader>
             <CardTitle className="text-4xl font-bold text-primary">{service.name}</CardTitle>
             </CardHeader>
@@ -184,11 +181,11 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
             </div>
             <div className="space-y-6">
                 <div>
-                <h3 className="text-2xl font-bold text-accent mb-2">Description</h3>
+                <h3 className="text-2xl font-bold text-accent-foreground mb-2">Description</h3>
                 <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                 </div>
                 <div>
-                <h3 className="text-2xl font-bold text-accent mb-2">Ideal For</h3>
+                <h3 className="text-2xl font-bold text-accent-foreground mb-2">Ideal For</h3>
                 <div className="flex flex-wrap gap-2">
                     {service.clients.map((client) => (
                         <Badge key={client} variant="secondary">{client}</Badge>
@@ -196,7 +193,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                 </div>
                 </div>
                 <div>
-                <h3 className="text-2xl font-bold text-accent mb-2">Features</h3>
+                <h3 className="text-2xl font-bold text-accent-foreground mb-2">Features</h3>
                 <ul className="space-y-2 text-muted-foreground">
                     {service.features.map((feature) => (
                         <li key={feature} className="flex items-center gap-2">

@@ -9,30 +9,27 @@ import Link from 'next/link';
 export default function ContactPage() {
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
-      }}
+      className="bg-background text-foreground"
     >
-      <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
+      <main className="container mx-auto py-12 px-4 md:px-6">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl text-white">
+          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl text-foreground">
             Contact Us
           </h1>
-          <p className="mt-4 text-lg text-gray-300">
+          <p className="mt-4 text-lg text-muted-foreground">
             Get in touch with our team. We're here to help and answer any questions you might have.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <Card className="bg-card/80">
+          <Card className="bg-card">
             <CardHeader>
-              <CardTitle className="text-accent">Contact Details</CardTitle>
+              <CardTitle className="text-accent-foreground">Contact Details</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 text-accent mt-1" />
+                <MapPin className="w-6 h-6 text-accent-foreground mt-1" />
                 <div>
                   <h3 className="font-semibold">Our Office</h3>
                   <p className="text-muted-foreground">
@@ -43,30 +40,30 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-accent mt-1" />
+                <Phone className="w-6 h-6 text-accent-foreground mt-1" />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
                   <p className="text-muted-foreground">+91 98765 43210</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 text-accent mt-1" />
+                <Mail className="w-6 h-6 text-accent-foreground mt-1" />
                 <div>
                   <h3 className="font-semibold">Email</h3>
                   <p className="text-muted-foreground">contact@diamondcityweb.com</p>
                 </div>
               </div>
                <div className="flex items-start gap-4">
-                <Globe className="w-6 h-6 text-accent mt-1" />
+                <Globe className="w-6 h-6 text-accent-foreground mt-1" />
                 <div>
                   <h3 className="font-semibold">Website</h3>
-                  <Link href="/" className="text-muted-foreground hover:text-accent">
+                  <Link href="/" className="text-muted-foreground hover:text-accent-foreground">
                     www.diamondcityweb.com
                   </Link>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Clock className="w-6 h-6 text-accent mt-1" />
+                <Clock className="w-6 h-6 text-accent-foreground mt-1" />
                 <div>
                   <h3 className="font-semibold">Working Hours</h3>
                   <p className="text-muted-foreground">
@@ -79,9 +76,9 @@ export default function ContactPage() {
           </Card>
 
           {/* Contact Form */}
-          <Card className="bg-card/80">
+          <Card className="bg-card">
             <CardHeader>
-              <CardTitle className="text-accent">Send us a Message</CardTitle>
+              <CardTitle className="text-accent-foreground">Send us a Message</CardTitle>
             </CardHeader>
             <CardContent>
               <form className="space-y-4">
@@ -108,9 +105,9 @@ export default function ContactPage() {
         
         {/* Google Maps Embed */}
         <div className="mt-12">
-            <Card className="bg-card/80">
+            <Card className="bg-card">
                  <CardHeader>
-                    <CardTitle className="text-accent">Our Location</CardTitle>
+                    <CardTitle className="text-accent-foreground">Our Location</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <div className="aspect-video overflow-hidden rounded-lg">

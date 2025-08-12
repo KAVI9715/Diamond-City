@@ -36,13 +36,13 @@ const allServices = [
   },
   {
     name: 'Blog or News Platform',
-    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibG9nJTIwbmV3cyUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDM2ODAwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibG9nJTIwbmV3cyUyMHBsYXRmb3JtfGVufDB8fHx8MTc1NDM2ODAwMHww&ixlib.rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'blog platform',
     description: 'SEO-optimized blog for personal or public use. Publish content with a clean, SEO-optimized layout. Great for bloggers, writers, or media agencies.',
   },
   {
     name: 'Invoice & Billing System',
-    image: 'https://images.unsplash.com/photo-1735825764457-ffdf0b5aa5dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8aW52b2ljZSUyMHxlbnwwfHx8fDE3NTQzNjg3NjR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1735825764457-ffdf0b5aa5dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8aW52b2ljZSUyMHxlbnwwfHx8fDE3NTQzNjg3NjR8MA&ixlib.rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'billing system',
     description: 'Web-based invoicing for businesses. Generate professional invoices online with download, email, and auto-numbering features — perfect for freelancers and small businesses.',
   },
@@ -54,19 +54,19 @@ const allServices = [
   },
   {
     name: 'Live Chat & Support System',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaXZlJTIwY2hhdCUyMHN1cHBvcnQlMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaXZlJTIwY2hhdCUyMHN1cHBvcnQlMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib.rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'live chat',
     description: 'Real-time chat plugin for websites. Enable real-time messaging on your website for customer queries, support, or sales — integrated with smart responses.',
   },
   {
     name: 'Admin Dashboard / Analytics',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZG1pbiUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZG1pbiUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib.rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'admin dashboard',
     description: 'Data dashboards with custom metrics. Get a powerful admin panel to manage your business data, user activity, reports, and sales insights — all in one place.',
   },
   {
     name: 'User Authentication System',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1c2VyJTIwYXV0aGVudGljYXRpb24lMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1c2VyJTIwYXV0aGVudGljYXRpb24lMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib.rb-4.1.0&q=80&w=1080',
     'data-ai-hint': 'authentication system',
     description: 'Secure login/register with email or OTP. Secure user login and signup system with email verification, password reset, and role-based access controls.',
   },
@@ -107,24 +107,21 @@ const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replac
 export default function ServicePage() {
   return (
      <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
-      }}
+      className="bg-background text-foreground"
     >
-      <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
+      <main className="container mx-auto py-12 px-4 md:px-6">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl text-white">
+          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl text-foreground">
             Services We Offer
           </h1>
-          <p className="mt-4 text-lg text-gray-300">
+          <p className="mt-4 text-lg text-muted-foreground">
             Discover the wide range of expert services we provide to our clients.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {allServices.map((service) => (
             <Link href={`/service/${slugify(service.name)}`} key={service.name} className="flex">
-              <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300 bg-card/80">
+              <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300 bg-card">
                 <Image
                   src={service.image}
                   data-ai-hint={service['data-ai-hint']}

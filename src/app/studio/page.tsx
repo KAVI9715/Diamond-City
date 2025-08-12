@@ -57,32 +57,29 @@ export default function StudioPage() {
 
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat min-h-screen py-12"
-      style={{
-        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
-      }}
+      className="bg-background text-foreground min-h-screen py-12"
     >
-      <main className="container mx-auto px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm py-12 rounded-xl">
+      <main className="container mx-auto px-4 md:px-6 rounded-xl">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl text-white">
+          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl text-foreground">
             Creator Studio
           </h1>
-          <p className="mt-4 text-lg text-gray-300">
+          <p className="mt-4 text-lg text-muted-foreground">
             Bring your ideas to life. Describe a scene and let our AI create a video for you.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="bg-card/80">
+          <Card className="bg-card">
             <CardHeader>
-              <CardTitle className="text-2xl text-accent">Create Your Video</CardTitle>
+              <CardTitle className="text-2xl text-accent-foreground">Create Your Video</CardTitle>
               <CardDescription>
                 Fill in the details below to generate your video.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="prompt" className="text-white">Prompt</Label>
+                <Label htmlFor="prompt" className="text-foreground">Prompt</Label>
                 <Textarea
                   id="prompt"
                   placeholder="e.g., A majestic dragon soaring over a mystical forest at dawn."
@@ -93,7 +90,7 @@ export default function StudioPage() {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="style" className="text-white">Style</Label>
+                <Label htmlFor="style" className="text-foreground">Style</Label>
                 <Select value={style} onValueChange={setStyle}>
                   <SelectTrigger id="style" className="w-full bg-background text-foreground">
                     <SelectValue placeholder="Select a style" />
@@ -130,18 +127,18 @@ export default function StudioPage() {
                 )}
               </Button>
                {isLoading && (
-                <p className="text-sm text-center text-gray-400 mt-2">
+                <p className="text-sm text-center text-muted-foreground mt-2">
                     Video generation can take up to a minute. Please be patient.
                 </p>
             )}
             </CardContent>
           </Card>
 
-          <Card className="bg-card/80 flex items-center justify-center">
+          <Card className="bg-card flex items-center justify-center">
             <CardContent className="p-6 w-full">
               {isLoading && (
-                <div className="flex flex-col items-center justify-center h-full text-white">
-                  <Loader2 className="h-16 w-16 animate-spin text-accent" />
+                <div className="flex flex-col items-center justify-center h-full text-foreground">
+                  <Loader2 className="h-16 w-16 animate-spin text-accent-foreground" />
                   <p className="mt-4 text-lg">Creating your masterpiece...</p>
                 </div>
               )}
@@ -153,8 +150,8 @@ export default function StudioPage() {
                 />
               )}
               {!isLoading && !videoUrl && (
-                <div className="text-center text-gray-400 h-full flex flex-col justify-center">
-                  <Wand2 className="h-16 w-16 mx-auto text-accent" />
+                <div className="text-center text-muted-foreground h-full flex flex-col justify-center">
+                  <Wand2 className="h-16 w-16 mx-auto text-accent-foreground" />
                   <p className="mt-4 text-lg">Your generated video will appear here.</p>
                 </div>
               )}

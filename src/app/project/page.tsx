@@ -18,31 +18,31 @@ const allProjects = [
   },
   {
     name: 'TaskMaster App',
-    image: 'https://images.unsplash.com/photo-1590402494727-0375eeaacf68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0YXNrJTIwbWFuYWdlcnxlbnwwfHx8fDE3NTQzNjY2MDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1590402494727-0375eeaacf68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0YXNrJTIwbWFuYWdlcnxlbnwwfHx8fDE3NTQzNjY2MDB8MA&ixlib.rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "task manager",
     description: 'TaskMaster is a powerful and intuitive task management application. With full CRUD (Create, Read, Update, Delete) functionality and secure user authentication, it helps you stay organized and productive. Whether you\'re managing personal to-do lists or team projects, TaskMaster provides the tools you need to track progress and meet deadlines.',
   },
   {
     name: 'EduBoard LMS',
-    image: 'https://images.unsplash.com/photo-1665766918272-46bd786ffe04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsZWFybmluZyUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NTQzNjY2MDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1665766918272-46bd786ffe04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsZWFybmluZyUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NTQzNjY2MDB8MA&ixlib.rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "learning dashboard",
     description: 'EduBoard is a comprehensive Learning Management System (LMS) designed for the modern educational landscape. It features separate dashboards for admins, students, and teachers, facilitating seamless course management, delivery of video lectures, and effective progress tracking. EduBoard is the perfect solution for creating and managing online learning environments.',
   },
   {
     name: 'eComKart',
-    image: 'https://images.unsplash.com/flagged/photo-1596559880461-bfbef645963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTQzNjY2MDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/flagged/photo-1596559880461-bfbef645963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTQzNjY2MDB8MA&ixlib.rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "ecommerce products",
     description: 'eComKart is a feature-rich e-commerce platform that provides everything you need to sell online. From a beautiful product catalog and intuitive shopping cart to secure payment gateway integration and order tracking, eComKart delivers a smooth and reliable shopping experience for your customers, helping you grow your online business.',
   },
   {
     name: 'BlogVault',
-    image: 'https://images.unsplash.com/photo-1513542992587-cd39ba97057c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxibG9nJTIwbGF5b3V0fGVufDB8fHx8MTc1NDM2NjYwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1513542992587-cd39ba97057c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxibG9nJTIwbGF5b3V0fGVufDB8fHx8MTc1NDM2NjYwMHww&ixlib.rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "blog layout",
     description: 'BlogVault is a powerful blogging platform that empowers content creators. It features a rich text editor for crafting beautiful posts, robust user management for authors and editors, and an engaging comment system to foster community interaction. With a secure backend built on Node.js or Django, BlogVault is both scalable and reliable.',
   },
   {
     name: 'EventMate',
-    image: 'https://images.unsplash.com/photo-1641810644628-50826c8914c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxldmVudCUyMGNhbGVuZGFyfGVufDB8fHx8MTc1NDM2NjYwMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1641810644628-50826c8914c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxldmVudCUyMGNhbGVuZGFyfGVufDB8fHx8MTc1NDM2NjYwMHww&ixlib.rb-4.1.0&q=80&w=1080',
     "data-ai-hint": "event calendar",
     description: 'EventMate is the ultimate solution for event management. It allows organizers to create and manage events effortlessly, send out invitations, handle ticket bookings, and provide attendees with location maps. Whether it\'s a small meetup or a large conference, EventMate streamlines the entire process from planning to execution.',
   },
@@ -101,24 +101,21 @@ const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replac
 export default function ProjectPage() {
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
-      }}
+      className="bg-background text-foreground"
     >
-      <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
+      <main className="container mx-auto py-12 px-4 md:px-6">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl text-white">
+          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl text-foreground">
             Our Projects
           </h1>
-          <p className="mt-4 text-lg text-gray-300">
+          <p className="mt-4 text-lg text-muted-foreground">
             Explore our portfolio of groundbreaking projects and success stories.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {allProjects.map((project) => (
             <Link href={`/project/${slugify(project.name)}`} key={project.name} className="flex">
-              <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300 bg-card/80">
+              <Card className="overflow-hidden flex flex-col w-full hover:shadow-lg transition-shadow duration-300 bg-card">
                 <Image
                   src={project.image}
                   data-ai-hint={project['data-ai-hint']}

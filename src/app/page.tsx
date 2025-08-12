@@ -96,10 +96,7 @@ const testimonials = [
 export default function Home() {
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
-      }}
+      className="bg-background text-foreground"
     >
       <div className="flex flex-col min-w-0 w-full">
         {/* Hero Section */}
@@ -122,19 +119,19 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="bg-slate-900/80 backdrop-blur-sm">
+        <div className="bg-background text-foreground">
             {/* Our Services Section */}
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                 <div className="text-center mb-12">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-white">Our Core Services</h2>
-                    <p className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed mt-4">
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">Our Core Services</h2>
+                    <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
                     We provide a complete suite of services to build and grow your digital presence.
                     </p>
                 </div>
                 <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map((service, index) => (
-                    <Card key={service.title} className="text-center bg-card/80 text-card-foreground">
+                    <Card key={service.title} className="text-center bg-card text-card-foreground">
                         <CardHeader>
                         <div className="mx-auto rounded-full h-16 w-16 flex items-center justify-center bg-primary text-primary-foreground">
                             <service.icon className="h-8 w-8" />
@@ -155,8 +152,8 @@ export default function Home() {
                 <div className="container px-4 md:px-6">
                 <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                     <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center text-white">Fueled by Our People</h2>
-                    <p className="text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center text-foreground">Fueled by Our People</h2>
+                    <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">
                         From a small startup to a leading force in the industry, our journey is one of passion and perseverance.
                     </p>
                     </div>
@@ -178,14 +175,14 @@ export default function Home() {
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-white">Featured Projects</h2>
-                    <p className="max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">Featured Projects</h2>
+                    <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     Take a look at some of the stunning projects we've delivered for our clients.
                     </p>
                 </div>
                 <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                     {projects.map((project) => (
-                    <Card key={project.name} className="bg-card/80 text-card-foreground">
+                    <Card key={project.name} className="bg-card text-card-foreground">
                         <Image
                         src={project.image}
                         data-ai-hint={project['data-ai-hint']}
@@ -197,7 +194,7 @@ export default function Home() {
                         <CardContent className="p-4">
                         <h3 className="text-lg font-semibold font-headline">{project.name}</h3>
                         <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
-                        <Link href={project.link} className="mt-4 inline-flex items-center text-accent hover:underline">
+                        <Link href={project.link} className="mt-4 inline-flex items-center text-accent-foreground hover:underline">
                             View Project <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                         </CardContent>
@@ -216,8 +213,8 @@ export default function Home() {
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                 <div className="text-center mb-12">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-white">Our Achievements</h2>
-                    <p className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed mt-4">
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">Our Achievements</h2>
+                    <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
                     We are proud of the milestones we have achieved over the years.
                     </p>
                 </div>
@@ -225,7 +222,7 @@ export default function Home() {
                     {achievements.map((achievement) => (
                     <div key={achievement.label}>
                         <achievement.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                        <p className="text-4xl font-bold text-white">{achievement.value}</p>
+                        <p className="text-4xl font-bold text-foreground">{achievement.value}</p>
                         <p className="text-muted-foreground">{achievement.label}</p>
                     </div>
                     ))}
@@ -237,16 +234,16 @@ export default function Home() {
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                 <div className="text-center mb-12">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-white">What Our Clients Say</h2>
-                    <p className="max-w-[900px] mx-auto text-gray-300 md:text-xl/relaxed mt-4">
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">What Our Clients Say</h2>
+                    <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
                     We take pride in building strong relationships with our clients. Here's what they have to say.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {testimonials.map((testimonial) => (
-                    <Card key={testimonial.name} className="flex flex-col bg-card/80 text-card-foreground">
+                    <Card key={testimonial.name} className="flex flex-col bg-card text-card-foreground">
                         <CardContent className="p-6 flex-grow">
-                        <Quote className="mb-4 h-8 w-8 text-accent" />
+                        <Quote className="mb-4 h-8 w-8 text-accent-foreground" />
                         <p className="flex-grow text-muted-foreground">"{testimonial.quote}"</p>
                         </CardContent>
                         <CardHeader className="flex flex-row items-center gap-4 pt-0">
@@ -254,7 +251,7 @@ export default function Home() {
                             <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                         </Avatar>
                         <div>
-                            <p className="font-semibold text-white">{testimonial.name}</p>
+                            <p className="font-semibold text-foreground">{testimonial.name}</p>
                             <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                         </div>
                         </CardHeader>
@@ -279,8 +276,8 @@ export default function Home() {
                             />
                         </div>
                         <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
-                            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center text-white">Words from Our CEO</h2>
-                            <blockquote className="text-lg text-gray-300 border-l-4 border-primary pl-4 italic max-w-xl mx-auto lg:mx-0">
+                            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center text-foreground">Words from Our CEO</h2>
+                            <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto lg:mx-0">
                             "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
                             </blockquote>
                             <div className="flex items-center justify-center lg:justify-start gap-4">
@@ -289,7 +286,7 @@ export default function Home() {
                                 <AvatarFallback>RT</AvatarFallback>
                             </Avatar>
                             <div>
-                                <p className="font-semibold text-white">Ratan Tata</p>
+                                <p className="font-semibold text-foreground">Ratan Tata</p>
                                 <p className="text-sm text-muted-foreground">CEO of Diamond City</p>
                             </div>
                             </div>
