@@ -44,7 +44,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="flex flex-col">
             <Link href="/" className="flex items-center gap-2">
-                <Image src="https://inktalks.com/wp-content/uploads/2021/12/large_Ratan_Tata-Web.jpg" alt="Diamond City Logo" width={62} height={80} className="h-12 w-auto" />
+                <Image src="https://i.postimg.cc/4d3QS8T3/528068089-122094541496975585-2316637687468881104-n.webp" alt="Diamond City Logo" width={62} height={80} className="h-12 w-auto" />
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
                 Crafting brilliant digital experiences that stand the test of time. Built to shine, designed to last.

@@ -32,7 +32,7 @@ const projects = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-w-0 w-full overflow-x-hidden">
+    <div className="flex flex-col min-w-0 w-full">
       {/* Hero Video Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
         <div className="container px-4 md:px-6 text-center">
@@ -123,14 +123,24 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
+                <div className="flex items-center justify-center">
+                    <Image
+                    src="https://i.postimg.cc/4d3QS8T3/528068089-122094541496975585-2316637687468881104-n.webp"
+                    data-ai-hint="ceo portrait"
+                    alt="CEO of Diamond City"
+                    width={400}
+                    height={400}
+                    className="mx-auto rounded-full object-cover aspect-square"
+                    />
+                </div>
                 <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center">Words from Our CEO</h2>
-                    <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto lg:mx-0">
+                    <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto">
                     "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
                     </blockquote>
-                    <div className="flex items-center justify-center lg:justify-start gap-4">
+                    <div className="flex items-center justify-center gap-4">
                     <Avatar>
-                        <AvatarImage src="https://inktalks.com/wp-content/uploads/2021/12/large_Ratan_Tata-Web.jpg" />
+                        <AvatarImage src="https://i.postimg.cc/4d3QS8T3/528068089-122094541496975585-2316637687468881104-n.webp" />
                         <AvatarFallback>RT</AvatarFallback>
                     </Avatar>
                     <div>
@@ -138,16 +148,6 @@ export default function Home() {
                         <p className="text-sm text-muted-foreground">CEO of Diamond City</p>
                     </div>
                     </div>
-                </div>
-                 <div className="flex items-center justify-center">
-                    <Image
-                    src="https://inktalks.com/wp-content/uploads/2021/12/large_Ratan_Tata-Web.jpg"
-                    data-ai-hint="ceo portrait"
-                    alt="CEO of Diamond City"
-                    width={400}
-                    height={400}
-                    className="mx-auto rounded-full object-cover aspect-square"
-                    />
                 </div>
             </div>
         </div>

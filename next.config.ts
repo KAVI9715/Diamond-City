@@ -82,6 +82,12 @@ const nextConfig: NextConfig = {
         hostname: 'inktalks.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.postimg.cc',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

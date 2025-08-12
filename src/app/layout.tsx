@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Diamond City',
   description: 'Welcome to Diamond City',
   icons: {
-    icon: 'https://inktalks.com/wp-content/uploads/2021/12/large_Ratan_Tata-Web.jpg',
+    icon: 'https://i.postimg.cc/4d3QS8T3/528068089-122094541496975585-2316637687468881104-n.webp',
   }
 };
 
