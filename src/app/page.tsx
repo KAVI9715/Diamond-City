@@ -97,12 +97,20 @@ export default function Home() {
   return (
     <div className="flex flex-col min-w-0 w-full">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
-        <div className="container px-4 md:px-6 text-center">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-primary">
+       <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+        <iframe
+          src="https://www.youtube.com/embed/g2A54QRB46U?autoplay=1&mute=1&loop=1&playlist=g2A54QRB46U&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0"
+          className="absolute top-1/2 left-1/2 w-full h-full min-w-[177.77vh] min-h-[56.25vw] transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        ></iframe>
+        <div className="container relative px-4 md:px-6 text-center z-20">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
             Built to Shine. Designed to Last.
           </h1>
-          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
+          <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl mt-4">
             Crafting brilliant digital experiences that stand the test of time.
           </p>
         </div>
@@ -286,7 +294,6 @@ export default function Home() {
     </div>
   );
 }
-
     
 
     
