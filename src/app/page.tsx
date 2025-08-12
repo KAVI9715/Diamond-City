@@ -96,7 +96,7 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="flex flex-col min-w-0 w-full">
-      {/* Hero Video Section */}
+      {/* Hero Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
         <div className="container px-4 md:px-6 text-center">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-primary">
@@ -105,17 +105,15 @@ export default function Home() {
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-4">
             Crafting brilliant digital experiences that stand the test of time.
           </p>
-          <div className="mx-auto max-w-4xl flex justify-center">
-            <div className="relative mt-8 overflow-hidden rounded-xl w-full" style={{ paddingTop: '56.25%' }}>
-                <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/--_H5g6546Y?autoplay=1&mute=1&loop=1&playlist=--_H5g6546Y&controls=0"
-                title="Project Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                ></iframe>
-            </div>
+          <div className="mx-auto max-w-4xl flex justify-center mt-8">
+            <Image
+              src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              data-ai-hint="programming technology"
+              alt="Digital Experience"
+              width={1200}
+              height={675}
+              className="rounded-xl object-cover"
+            />
           </div>
         </div>
       </section>
