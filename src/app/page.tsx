@@ -36,7 +36,6 @@ const services = [
     icon: Code,
     title: 'Web Development',
     description: 'We build high-performance, scalable websites and applications tailored to your business needs.',
-    className: 'bg-gradient-to-br from-gray-900 to-gray-800'
   },
   {
     icon: PenTool,
@@ -129,7 +128,7 @@ export default function Home() {
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
-              <Card key={service.title} className={cn("text-center bg-card text-card-foreground", service.className)}>
+              <Card key={service.title} className="text-center bg-card text-card-foreground">
                 <CardHeader>
                   <div className="mx-auto rounded-full h-16 w-16 flex items-center justify-center bg-primary text-primary-foreground">
                     <service.icon className="h-8 w-8" />
