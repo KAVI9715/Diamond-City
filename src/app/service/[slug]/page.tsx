@@ -58,7 +58,7 @@ const allServices = [
     },
     {
       name: 'Invoice & Billing System',
-      image: 'https://images.unsplash.com/photo-1735825764457-ffdf0b5aa5dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8aW52b2ljZSUyMHxlbnwwfHx8fDE3NTQzNjg3NjR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1735825764457-ffdf0b5aa5dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8aW52b2ljZSUyMHxlbnwwfHx8fDE3NTQzNjg3NjR8MA&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'billing system',
       description: 'Web-based invoicing for businesses. Generate professional invoices online with download, email, and auto-numbering features — perfect for freelancers and small businesses.',
       clients: ['Freelancers', 'SMEs'],
@@ -66,7 +66,7 @@ const allServices = [
     },
     {
       name: 'Event Management System',
-      image: 'https://images.unsplash.com/photo-1512573904052-7303e38d683a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8ZXZlbnQlMjBtYW5hZ2VtZW50JTIwc3lzdGVtfGVufDB8fHx8MTc1NDM2ODY3MXww&ixlib-rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1512573904052-7303e38d683a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8ZXZlbnQlMjBtYW5hZ2VtZW50JTIwc3lzdGVtfGVufDB8fHx8MTc1NDM2ODY3MXww&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'event management',
       description: 'Event creation and booking platform. Create and manage public or private events with RSVP, ticket booking, and event scheduling features.',
       clients: ['Event planners', 'Companies', 'Public groups'],
@@ -74,7 +74,7 @@ const allServices = [
     },
     {
       name: 'Live Chat & Support System',
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaXZlJTIwY2hhdCUyMHN1cHBvcnQlMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib-rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaXZlJTIwY2hhdCUyMHN1cHBvcnQlMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'live chat',
       description: 'Real-time chat plugin for websites. Enable real-time messaging on your website for customer queries, support, or sales — integrated with smart responses.',
       clients: ['Customer support', 'E-commerce sites'],
@@ -82,7 +82,7 @@ const allServices = [
     },
     {
       name: 'Admin Dashboard / Analytics',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZG1pbiUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZG1pbiUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'admin dashboard',
       description: 'Data dashboards with custom metrics. Get a powerful admin panel to manage your business data, user activity, reports, and sales insights — all in one place.',
       clients: ['Businesses needing internal analytics'],
@@ -90,7 +90,7 @@ const allServices = [
     },
     {
       name: 'User Authentication System',
-      image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1c2VyJTIwYXV0aGVudGljYXRpb24lMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib-rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1c2VyJTIwYXV0aGVudGljYXRpb24lMjBzeXN0ZW18ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'authentication system',
       description: 'Secure login/register with email or OTP. Secure user login and signup system with email verification, password reset, and role-based access controls.',
       clients: ['Any web app requiring user access'],
@@ -98,7 +98,7 @@ const allServices = [
     },
     {
       name: 'Responsive Mobile Website',
-      image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNwb25zaXZlJTIwbW9iaWxlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNwb25zaXZlJTIwbW9iaWxlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NTQzNjgwMDB8MA&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'responsive design',
       description: 'Mobile-first versions of existing or new sites. Your website — optimized for every screen. We ensure fast, smooth, mobile-friendly designs for better user experience.',
       clients: ['Businesses wanting mobile optimization'],
@@ -106,7 +106,7 @@ const allServices = [
     },
      {
       name: 'Mobile Optimization',
-      image: 'https://images.unsplash.com/photo-1654764450273-59862da1a259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNHx8bW9iaWxlJTIwb3B0aW1pemF0aW9ufGVufDB8fHx8MTc1NDQ3NTcxM3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1654764450273-59862da1a259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNHx8bW9iaWxlJTIwb3B0aW1pemF0aW9ufGVufDB8fHx8MTc1NDQ3NTcxM3ww&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'mobile optimization',
       description: 'Enhance your existing site for mobile users with improved speed, navigation, and readability on all devices.',
       clients: ['Existing website owners', 'Businesses with high mobile traffic'],
@@ -114,7 +114,7 @@ const allServices = [
     },
     {
       name: 'Multi-Language Website',
-      image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdWx0aS1sYW5ndWFnZSUyMHdlYnNpdGV8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdWx0aS1sYW5ndWFnZSUyMHdlYnNpdGV8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'language globe',
       description: 'Translate site content into multiple languages. Expand your reach with websites that support multiple languages and regional formats, including RTL (right-to-left) support.',
       clients: ['International businesses', 'Tourism', 'NGOs'],
@@ -122,7 +122,7 @@ const allServices = [
     },
     {
       name: 'Custom Web Applications',
-      image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjB3ZWIlMjBhcHBsaWNhdGlvbnN8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib-rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXN0b20lMjB3ZWIlMjBhcHBsaWNhdGlvbnN8ZW58MHx8fHwxNzU0MzY4MDAwfDA&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'web application',
       description: 'Advanced solutions like ERPs, CRMs, booking engines. Tailor-made web apps built from scratch to suit your business needs — from ERP tools to booking platforms.',
       clients: ['Enterprises', 'Startups'],
@@ -130,7 +130,7 @@ const allServices = [
     },
     {
       name: 'Website Speed & SEO Optimization',
-      image: 'https://images.unsplash.com/photo-1593438002985-ce805be04da9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwc3BlZWQlMjB8ZW58MHx8fHwxNzU0MzY4OTU4fDA&ixlib-rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1593438002985-ce805be04da9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwc3BlZWQlMjB8ZW58MHx8fHwxNzU0MzY4OTU4fDA&ixlib.rb-4.1.0&q=80&w=1080',
       'data-ai-hint': 'seo optimization',
       description: 'Improve load time and search rankings. Improve your site’s speed, search visibility, and Google ranking with performance and SEO enhancements.',
       clients: ['All website owners'],
@@ -152,57 +152,64 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
   }
 
   return (
-    <main className="container mx-auto py-12 px-4 md:px-6">
-       <div className="mb-8">
-        <Button asChild variant="outline">
-            <Link href="/service">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Services
-            </Link>
-        </Button>
-      </div>
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-4xl font-bold text-primary">{service.name}</CardTitle>
-        </CardHeader>
-        <CardContent className="grid md:grid-cols-2 gap-8">
-          <div>
-            <Image
-              src={service.image}
-              data-ai-hint={service['data-ai-hint']}
-              alt={service.name}
-              width={800}
-              height={600}
-              className="w-full rounded-lg object-cover"
-            />
-          </div>
-          <div className="space-y-6">
+    <div
+      className="bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
+      }}
+    >
+        <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
+        <div className="mb-8">
+            <Button asChild variant="outline">
+                <Link href="/service">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Back to Services
+                </Link>
+            </Button>
+        </div>
+        <Card className="bg-card/80">
+            <CardHeader>
+            <CardTitle className="text-4xl font-bold text-primary">{service.name}</CardTitle>
+            </CardHeader>
+            <CardContent className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-accent mb-2">Description</h3>
-              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                <Image
+                src={service.image}
+                data-ai-hint={service['data-ai-hint']}
+                alt={service.name}
+                width={800}
+                height={600}
+                className="w-full rounded-lg object-cover aspect-video"
+                />
             </div>
-            <div>
-              <h3 className="text-2xl font-bold text-accent mb-2">Ideal For</h3>
-              <div className="flex flex-wrap gap-2">
-                {service.clients.map((client) => (
-                    <Badge key={client} variant="secondary">{client}</Badge>
-                ))}
-              </div>
+            <div className="space-y-6">
+                <div>
+                <h3 className="text-2xl font-bold text-accent mb-2">Description</h3>
+                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                </div>
+                <div>
+                <h3 className="text-2xl font-bold text-accent mb-2">Ideal For</h3>
+                <div className="flex flex-wrap gap-2">
+                    {service.clients.map((client) => (
+                        <Badge key={client} variant="secondary">{client}</Badge>
+                    ))}
+                </div>
+                </div>
+                <div>
+                <h3 className="text-2xl font-bold text-accent mb-2">Features</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                    {service.features.map((feature) => (
+                        <li key={feature} className="flex items-center gap-2">
+                            <CheckCircle className="h-5 w-5 text-green-500" />
+                            <span>{feature}</span>
+                        </li>
+                    ))}
+                </ul>
+                </div>
             </div>
-            <div>
-              <h3 className="text-2xl font-bold text-accent mb-2">Features</h3>
-              <ul className="space-y-2 text-muted-foreground">
-                {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-green-500" />
-                        <span>{feature}</span>
-                    </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    </main>
+            </CardContent>
+        </Card>
+        </main>
+    </div>
   );
 }

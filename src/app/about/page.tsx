@@ -3,21 +3,26 @@ import { Gem, History, Rocket, Quote, GitCommitHorizontal } from 'lucide-react';
 
 export default function AboutPage() {
   return (
-    <div className="bg-background text-foreground">
-      <main className="container mx-auto py-12 px-4 md:px-6">
+    <div
+      className="bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
+      }}
+    >
+      <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl font-headline">
+            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl font-headline text-white">
               About Diamond City
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-4 text-lg text-gray-300">
               Discover our journey, our values, and what makes us shine.
             </p>
           </div>
 
           <div className="space-y-12">
             {/* Introduction */}
-            <section className="p-8 rounded-lg shadow-lg bg-card">
+            <section className="p-8 rounded-lg shadow-lg bg-card/80">
               <div className="flex items-center gap-4 mb-4">
                 <Gem className="w-8 h-8 text-accent" />
                 <h2 className="text-3xl font-bold text-accent font-headline">Introduction</h2>
@@ -28,7 +33,7 @@ export default function AboutPage() {
             </section>
 
             {/* History */}
-            <section className="p-8 rounded-lg shadow-lg bg-card">
+            <section className="p-8 rounded-lg shadow-lg bg-card/80">
               <div className="flex items-center gap-4 mb-4">
                 <History className="w-8 h-8 text-accent" />
                 <h2 className="text-3xl font-bold text-accent font-headline">History</h2>
@@ -42,7 +47,7 @@ export default function AboutPage() {
             </section>
 
             {/* Milestones */}
-            <section className="p-8 rounded-lg shadow-lg bg-card">
+            <section className="p-8 rounded-lg shadow-lg bg-card/80">
               <div className="flex items-center gap-4 mb-4">
                 <Rocket className="w-8 h-8 text-accent" />
                 <h2 className="text-3xl font-bold text-accent font-headline">Milestones</h2>
@@ -57,7 +62,7 @@ export default function AboutPage() {
             </section>
 
             {/* Company Motto */}
-            <section className="p-8 rounded-lg shadow-lg bg-card">
+            <section className="p-8 rounded-lg shadow-lg bg-card/80">
                <div className="flex items-center gap-4 mb-4">
                 <Quote className="w-8 h-8 text-accent" />
                 <h2 className="text-3xl font-bold text-accent font-headline">Company Motto</h2>
@@ -71,7 +76,7 @@ export default function AboutPage() {
             </section>
 
             {/* Struggles & Growth */}
-            <section className="p-8 rounded-lg shadow-lg bg-card">
+            <section className="p-8 rounded-lg shadow-lg bg-card/80">
               <div className="flex items-center gap-4 mb-4">
                 <GitCommitHorizontal className="w-8 h-8 text-accent" />
                 <h2 className="text-3xl font-bold text-accent font-headline">Struggles & Growth</h2>
