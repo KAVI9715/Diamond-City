@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -89,10 +90,10 @@ export function Footer() {
                     </ul>
                 </div>
             </div>
-             <div className="lg:col-span-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h3 className="text-sm font-semibold tracking-wider uppercase">Get in Touch</h3>
-                    <ul className="mt-4 space-y-3">
+             <div className="lg:col-span-4">
+                <h3 className="text-sm font-semibold tracking-wider uppercase">Get in Touch</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                    <ul className="space-y-3">
                     {socialLinks.map((link) => (
                         <li key={link.href}>
                         <a href={link.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent">
@@ -102,21 +103,21 @@ export function Footer() {
                         </li>
                     ))}
                     </ul>
-                </div>
-                 <div className="aspect-video overflow-hidden rounded-lg">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.112648393117!2d79.1350618153093!3d10.79685999230671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab89f50c6a85b%3A0x35653c39a5f7088!2sThanjavur%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1620208119853!5m2!1sen!2sus"
-                        width="100%"
-                        height="250"
-                        style={{ border: 0 }}
-                        allowFullScreen={true}
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
+                    <div className="w-full h-auto overflow-hidden rounded-lg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.112648393117!2d79.1350618153093!3d10.79685999230671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab89f50c6a85b%3A0x35653c39a5f7088!2sThanjavur%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1620208119853!5m2!1sen!2sus"
+                            width="100%"
+                            height="300"
+                            style={{ border: 0 }}
+                            allowFullScreen={true}
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
                 </div>
             </div>
         </div>
-        <div className="mt-8 border-t border-border/40 pt-8 flex justify-center text-sm text-muted-foreground">
+        <div className="mt-8 border-t border-border/40 pt-8 flex justify-end text-sm text-muted-foreground">
           <p>&copy; {currentYear} Diamond City. All rights reserved.</p>
         </div>
       </div>
