@@ -76,6 +76,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.behindwoods.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'inktalks.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
