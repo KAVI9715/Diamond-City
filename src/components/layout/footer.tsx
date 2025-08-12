@@ -89,7 +89,7 @@ export function Footer() {
                     </ul>
                 </div>
             </div>
-             <div className="lg:col-span-4 grid grid-cols-1 gap-8">
+             <div className="lg:col-span-4 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <h3 className="text-sm font-semibold tracking-wider uppercase">Get in Touch</h3>
                     <ul className="mt-4 space-y-3">
