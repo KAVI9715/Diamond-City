@@ -51,8 +51,8 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        'px-3 py-2 text-sm font-medium transition-colors hover:text-accent-foreground rounded-md',
-        pathname === href ? 'text-accent-foreground' : 'text-foreground'
+        'px-3 py-2 text-sm font-medium transition-colors hover:text-accent rounded-md',
+        pathname === href ? 'text-accent font-bold' : 'text-black'
       )}
       onClick={() => setIsMobileMenuOpen(false)}
     >
