@@ -107,7 +107,7 @@ export default function Home() {
           allowFullScreen
         ></iframe>
         <div className="container relative px-4 md:px-6 text-center z-20">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
+          <h1 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
             Built to Shine. Designed to Last.
           </h1>
           <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl mt-4">
@@ -120,7 +120,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Core Services</h2>
+            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Our Core Services</h2>
             <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
               We provide a complete suite of services to build and grow your digital presence.
             </p>
@@ -132,7 +132,7 @@ export default function Home() {
                   <div className="mx-auto bg-primary text-primary-foreground rounded-full h-16 w-16 flex items-center justify-center">
                     <service.icon className="h-8 w-8" />
                   </div>
-                  <CardTitle className="mt-4">{service.title}</CardTitle>
+                  <CardTitle className="mt-4 font-headline">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">{service.description}</p>
@@ -148,7 +148,7 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center">Fueled by Our People</h2>
+              <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center">Fueled by Our People</h2>
               <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">
                 From a small startup to a leading force in the industry, our journey is one of passion and perseverance.
               </p>
@@ -171,7 +171,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
+            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
             <p className="max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Take a look at some of the stunning projects we've delivered for our clients.
             </p>
@@ -188,7 +188,7 @@ export default function Home() {
                   className="aspect-video w-full overflow-hidden rounded-t-lg object-cover"
                 />
                 <CardContent className="p-4">
-                  <h3 className="text-lg font-semibold">{project.name}</h3>
+                  <h3 className="text-lg font-semibold font-headline">{project.name}</h3>
                   <p className="mt-2 text-sm text-gray-300">{project.description}</p>
                   <Link href={project.link} className="mt-4 inline-flex items-center text-accent hover:underline">
                     View Project <ArrowRight className="ml-2 h-4 w-4" />
@@ -209,7 +209,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Achievements</h2>
+            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Our Achievements</h2>
             <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
               We are proud of the milestones we have achieved over the years.
             </p>
@@ -230,7 +230,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What Our Clients Say</h2>
+            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">What Our Clients Say</h2>
             <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
               We take pride in building strong relationships with our clients. Here's what they have to say.
             </p>
@@ -272,7 +272,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center">Words from Our CEO</h2>
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center">Words from Our CEO</h2>
                     <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto lg:mx-0">
                     "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
                     </blockquote>
