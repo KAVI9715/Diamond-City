@@ -99,11 +99,15 @@ export default function StudioPage() {
                     <SelectValue placeholder="Select a style" />
                   </SelectTrigger>
                   <SelectContent>
+                    <SelectItem value="animation">Animation</SelectItem>
                     <SelectItem value="cinematic">Cinematic</SelectItem>
-                    <SelectItem value="realistic">Realistic</SelectItem>
-                    <SelectItem value="animatic">Animatic</SelectItem>
-                    <SelectItem value="vibrant">Vibrant</SelectItem>
                     <SelectItem value="dreamlike">Dreamlike</SelectItem>
+                    <SelectItem value="hero">Hero</SelectItem>
+                    <SelectItem value="master">Master</SelectItem>
+                    <SelectItem value="realistic">Realistic</SelectItem>
+                    <SelectItem value="satisfaction">Satisfaction</SelectItem>
+                    <SelectItem value="thrilling">Thrilling</SelectItem>
+                    <SelectItem value="vibrant">Vibrant</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

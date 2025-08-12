@@ -8,20 +8,25 @@ import Link from 'next/link';
 
 export default function ContactPage() {
   return (
-    <div className="bg-background text-foreground">
-      <main className="container mx-auto py-12 px-4 md:px-6">
+    <div
+      className="bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('https://png.pngtree.com/background/20250105/original/pngtree-abstract-technology-background-with-pink-and-blue-waves-lights-picture-image_15713085.jpg')",
+      }}
+    >
+      <main className="container mx-auto py-12 px-4 md:px-6 bg-slate-900/80 backdrop-blur-sm">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl text-white">
             Contact Us
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-gray-300">
             Get in touch with our team. We're here to help and answer any questions you might have.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <Card className="bg-card">
+          <Card className="bg-card/80">
             <CardHeader>
               <CardTitle className="text-accent">Contact Details</CardTitle>
             </CardHeader>
@@ -74,7 +79,7 @@ export default function ContactPage() {
           </Card>
 
           {/* Contact Form */}
-          <Card className="bg-card">
+          <Card className="bg-card/80">
             <CardHeader>
               <CardTitle className="text-accent">Send us a Message</CardTitle>
             </CardHeader>
@@ -103,7 +108,7 @@ export default function ContactPage() {
         
         {/* Google Maps Embed */}
         <div className="mt-12">
-            <Card>
+            <Card className="bg-card/80">
                  <CardHeader>
                     <CardTitle className="text-accent">Our Location</CardTitle>
                 </CardHeader>
