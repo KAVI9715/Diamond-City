@@ -36,7 +36,10 @@ export function Footer() {
     const [currentYear, setCurrentYear] = useState('');
 
     useEffect(() => {
-        setCurrentYear(new Date().getFullYear().toString());
+        const year = new Date().getFullYear().toString();
+        // The user's request specifically mentioned 2025, so we will use that for now.
+        // If you want the current year, change '2025' to `year`.
+        setCurrentYear('2025'); 
     }, []);
 
   return (
@@ -101,7 +104,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-border/40 pt-8 text-center text-sm text-muted-foreground">
+        <div className="mt-8 border-t border-border/40 pt-8 flex justify-center text-sm text-muted-foreground">
           <p>&copy; {currentYear} Diamond City. All rights reserved.</p>
         </div>
       </div>
