@@ -128,15 +128,15 @@ export default function Home() {
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
-              <Card key={service.title} className={`text-center bg-gray-800 text-white`}>
+              <Card key={service.title} className="text-center bg-gray-800 text-white">
                 <CardHeader>
-                  <div className={`mx-auto rounded-full h-16 w-16 flex items-center justify-center bg-white text-gray-800`}>
+                  <div className="mx-auto rounded-full h-16 w-16 flex items-center justify-center bg-white text-gray-800">
                     <service.icon className="h-8 w-8" />
                   </div>
                   <CardTitle className="mt-4 font-headline">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className={'text-gray-300'}>{service.description}</p>
+                  <p className="text-gray-300">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -238,13 +238,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
-              <Card key={testimonial.name} className={cn(
-                "flex flex-col",
-                (testimonial.name === 'Jane K.' || testimonial.name === 'Mike D.') && 'bg-gray-800 text-white'
-              )}>
+              <Card key={testimonial.name} className="flex flex-col bg-gray-800 text-white">
                 <CardContent className="p-6 flex-grow">
-                  <Quote className={cn("mb-4 h-8 w-8", (testimonial.name === 'Jane K.' || testimonial.name === 'Mike D.') ? 'text-accent' : 'text-primary')} />
-                  <p className={cn("flex-grow", (testimonial.name === 'Jane K.' || testimonial.name === 'Mike D.') ? 'text-gray-300' : 'text-muted-foreground')}>"{testimonial.quote}"</p>
+                  <Quote className="mb-4 h-8 w-8 text-accent" />
+                  <p className="flex-grow text-gray-300">"{testimonial.quote}"</p>
                 </CardContent>
                 <CardHeader className="flex flex-row items-center gap-4">
                   <Avatar>
@@ -252,7 +249,7 @@ export default function Home() {
                   </Avatar>
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
-                    <p className={cn("text-sm", (testimonial.name === 'Jane K.' || testimonial.name === 'Mike D.') ? 'text-gray-400' : 'text-muted-foreground')}>{testimonial.title}</p>
+                    <p className="text-sm text-gray-400">{testimonial.title}</p>
                   </div>
                 </CardHeader>
               </Card>
