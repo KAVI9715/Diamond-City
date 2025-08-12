@@ -72,7 +72,7 @@ export default function Home() {
                     alt="Hardworking Employees"
                     width={600}
                     height={400}
-                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
                   />
             </div>
           </div>
