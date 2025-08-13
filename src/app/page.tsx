@@ -116,10 +116,10 @@ export default function Home() {
             allowFullScreen
           ></iframe>
           <div className="container relative px-4 md:px-6 text-center z-20">
-            <h1 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
+            <h1 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-black">
               Built to Shine. Designed to Last.
             </h1>
-            <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl mt-4">
+            <p className="mx-auto max-w-[700px] text-black md:text-xl mt-4">
               Crafting brilliant digital experiences that stand the test of time.
             </p>
           </div>
