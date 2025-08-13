@@ -103,7 +103,7 @@ export default function Home() {
         <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
           <iframe
-            src="https://www.youtube.com/embed/YMEa-y8LpM0?autoplay=1&mute=1&loop=1&playlist=YMEa-y8LpM0&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0"
+            src="https://www.youtube.com/embed/YMEa-y8LpM0?autoplay=1&mute=1&loop=1&playlist=YMEa-y8LpM0&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0&end=49"
             className="absolute top-1/2 left-1/2 w-full h-full min-w-[177.77vh] min-h-[56.25vw] transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
             frameBorder="0"
             allow="autoplay; encrypted-media"
@@ -283,10 +283,10 @@ export default function Home() {
                             <div className="flex items-center justify-center lg:justify-start gap-4">
                             <Avatar>
                                 <AvatarImage src="https://i.postimg.cc/QNnQYkt6/13.jpg" />
-                                <AvatarFallback>RT</AvatarFallback>
+                                <AvatarFallback>K</AvatarFallback>
                             </Avatar>
                             <div>
-                                <p className="font-semibold text-foreground">Ratan Tata</p>
+                                <p className="font-semibold text-foreground">Kaviyarasan</p>
                                 <p className="text-sm text-muted-foreground">CEO of Diamond City</p>
                             </div>
                             </div>
