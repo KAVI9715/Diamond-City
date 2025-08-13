@@ -45,7 +45,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="flex flex-col">
             <Link href="/" className="flex items-center gap-2">
-                <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={120} height={100} className="h-[100px] w-[120px]" />
+                <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={170} height={120} className="h-[120px] w-[170px]" />
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/80">
                 Crafting brilliant digital experiences that stand the test of time. Built to shine, designed to last.
