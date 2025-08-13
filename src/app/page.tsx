@@ -97,14 +97,8 @@ export default function Home() {
   return (
     <div
       className="bg-background text-foreground"
-      style={{
-        backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hapyllL4jF1UyHiHs__3OyYFn4ynZE1fI3Et7gdSYFmbnQqdzHFwCHWtqDhGA1zwfaY&usqp=CAU')`,
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed',
-        backgroundPosition: 'center',
-      }}
     >
-      <div className="flex flex-col min-w-0 w-full bg-black/50">
+      <div className="flex flex-col min-w-0 w-full">
         {/* Hero Section */}
         <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
