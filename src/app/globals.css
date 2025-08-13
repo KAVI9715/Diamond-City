@@ -8,12 +8,12 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* Changed to white */
-    --foreground: 240 10% 3.9%; /* Changed to a dark gray for text */
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --background: 213 49% 30%; /* Changed from white to dark blue */
+    --foreground: 0 0% 98%; /* Changed from dark gray to light gray for contrast */
+    --card: 213 49% 30%; /* Changed card background to dark blue */
+    --card-foreground: 0 0% 98%; /* Changed card text to light gray */
+    --popover: 213 49% 30%;
+    --popover-foreground: 0 0% 98%;
     --primary: 34 65% 70%;
     --primary-foreground: 240 10% 3.9%;
     --secondary: 240 4.8% 95.9%;
@@ -70,7 +70,7 @@ body {
     @apply bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
-    color: #000000;
+    color: #ffffff;
   }
   p {
     @apply text-foreground;
