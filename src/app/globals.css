@@ -89,4 +89,30 @@ body {
   .text-page-title { @apply text-4xl font-bold tracking-tight text-accent sm:text-5xl; }
   .text-section-title { @apply font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-accent; }
   .text-card-title { @apply text-2xl font-semibold leading-none tracking-tight text-accent; }
+
+  .animated-gradient-text > span {
+    color: transparent;
+    background-image: linear-gradient(90deg, hsl(var(--foreground)) 50%, hsl(var(--foreground)) 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-position 0.5s ease-in-out;
+  }
+  
+  .animated-gradient-text:hover > span,
+  .animated-gradient-text.active > span {
+    background-image: linear-gradient(90deg, hsl(var(--accent)), hsl(var(--primary)), hsl(var(--chart-2)), hsl(var(--accent)));
+    background-position: 0%;
+    animation: gradient-animation 4s infinite alternate;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 }

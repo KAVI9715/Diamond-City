@@ -52,19 +52,22 @@ export function Header() {
     setIsClient(true);
   }, []);
 
-  const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-    <Link
-      href={href}
-      className={cn(
-        'px-3 py-2 text-sm font-medium transition-colors hover:bg-accent/10 hover:text-primary rounded-md',
-        isClient && pathname === href ? 'font-bold text-primary' : 'text-foreground'
-      )}
-      onClick={() => setIsMobileMenuOpen(false)}
-    >
-      {children}
-    </Link>
-  );
-
+  const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+    const isActive = isClient && pathname === href;
+    return (
+      <Link
+        href={href}
+        className={cn(
+          'animated-gradient-text relative px-3 py-2 text-sm font-medium transition-colors rounded-md',
+          isActive ? 'active text-primary' : 'text-foreground'
+        )}
+        onClick={() => setIsMobileMenuOpen(false)}
+      >
+        <span>{children}</span>
+      </Link>
+    );
+  };
+  
   const MobileNavLink = ({ href, children, icon: Icon }: { href: string; children: React.ReactNode; icon?: React.ElementType }) => (
     <SheetClose asChild>
       <Link
@@ -82,7 +85,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-black">
-      <div className="container flex h-24 max-w-7xl items-center justify-between">
+      <div className="container flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 md:gap-16">
           <Link href="/" className="flex items-center gap-2">
             <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={170} height={120} className="h-[120px] w-[170px]" />
