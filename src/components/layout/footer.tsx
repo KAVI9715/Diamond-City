@@ -112,7 +112,7 @@ export function Footer() {
         <Separator className="my-8 bg-primary-foreground/20" />
         
         <div className="text-center text-sm text-white">
-          <p>&copy; {currentYear || new Date().getFullYear().toString()} Diamond City. All rights reserved.</p>
+          {currentYear && <p>&copy; {currentYear} Diamond City. All rights reserved.</p>}
         </div>
       </div>
     </footer>
