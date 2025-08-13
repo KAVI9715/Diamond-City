@@ -56,13 +56,12 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        'relative group px-3 py-2 text-sm font-medium transition-colors hover:text-primary rounded-md',
+        'px-3 py-2 text-sm font-medium transition-colors hover:bg-accent/10 hover:text-primary rounded-md',
         isClient && pathname === href ? 'font-bold text-primary' : 'text-foreground'
       )}
       onClick={() => setIsMobileMenuOpen(false)}
     >
-      <span>{children}</span>
-      <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+      {children}
     </Link>
   );
 
