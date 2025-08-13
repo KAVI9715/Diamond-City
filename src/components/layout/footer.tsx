@@ -30,7 +30,7 @@ const socialLinks = [
 ];
 
 export function Footer() {
-    const [currentYear, setCurrentYear] = useState('');
+    const [currentYear, setCurrentYear] = useState<string | null>(null);
 
     useEffect(() => {
         const year = new Date().getFullYear().toString();
@@ -47,18 +47,18 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
                 <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={80} height={70} className="h-[70px] w-[80px]" />
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground">
+            <p className="mt-4 text-sm text-accent">
                 Crafting brilliant digital experiences that stand the test of time. Built to shine, designed to last.
             </p>
           </div>
           
           {/* Quick Links Column */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-foreground">Quick Links</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase text-accent">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent">
                     {link.label}
                   </Link>
                 </li>
@@ -68,11 +68,11 @@ export function Footer() {
           
           {/* Legal Column */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-foreground">Legal & More</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase text-accent">Legal & More</h3>
             <ul className="mt-4 space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent">
                     {link.label}
                   </Link>
                 </li>
@@ -82,24 +82,24 @@ export function Footer() {
           
           {/* Contact Column */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-foreground">Get in Touch</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase text-accent">Get in Touch</h3>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                 <li className='flex items-center gap-3'>
-                    <MapPin className="h-5 w-5 text-foreground" />
+                    <MapPin className="h-5 w-5 text-accent" />
                     <span>Tanjore, Tamil Nadu, India</span>
                 </li>
                 <li className='flex items-center gap-3'>
-                    <Mail className="h-5 w-5 text-foreground" />
-                    <a href="mailto:contact@diamondcityweb.com" className="hover:text-foreground">contact@diamondcityweb.com</a>
+                    <Mail className="h-5 w-5 text-accent" />
+                    <a href="mailto:contact@diamondcityweb.com" className="hover:text-accent">contact@diamondcityweb.com</a>
                 </li>
                  <li className='flex items-center gap-3'>
-                    <Phone className="h-5 w-5 text-foreground" />
-                    <a href="tel:+919876543210" className="hover:text-foreground">+91 98765 43210</a>
+                    <Phone className="h-5 w-5 text-accent" />
+                    <a href="tel:+919876543210" className="hover:text-accent">+91 98765 43210</a>
                 </li>
             </ul>
             <div className="flex space-x-4 mt-6">
               {socialLinks.map((link) => (
-                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent">
                   <link.Icon className="h-6 w-6" />
                   <span className="sr-only">{link.label}</span>
                 </a>
@@ -111,8 +111,8 @@ export function Footer() {
         
         <Separator className="my-8" />
         
-        <div className="text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} Diamond City. All rights reserved.</p>
+        <div className="text-center text-sm text-accent">
+          <p>&copy; {currentYear || '...'} Diamond City. All rights reserved.</p>
         </div>
       </div>
     </footer>

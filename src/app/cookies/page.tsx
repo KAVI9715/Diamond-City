@@ -39,7 +39,7 @@ const policies = [
 ];
 
 export default function CookiesPage() {
-  const [effectiveDate, setEffectiveDate] = useState('');
+  const [effectiveDate, setEffectiveDate] = useState<string | null>(null);
 
   useEffect(() => {
     setEffectiveDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
@@ -50,13 +50,13 @@ export default function CookiesPage() {
       <main className="container mx-auto py-12 px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+            <h1 className="text-h1">
               Cookie Policy
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-                Effective Date: {effectiveDate}
+            <p className="mt-4 text-lg">
+                Effective Date: {effectiveDate || '...'}
             </p>
-             <p className="mt-6 max-w-2xl mx-auto text-muted-foreground">
+             <p className="mt-6 max-w-2xl mx-auto">
                 At Diamond City Web Solutions, we use cookies to improve your browsing experience, analyze website traffic, and personalize content. This Cookie Policy explains what cookies are, how we use them, and how you can control them. By using our website, you agree to the use of cookies in accordance with this policy.
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function CookiesPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                  <p className="leading-relaxed whitespace-pre-line">
                     {policy.content}
                   </p>
                 </CardContent>
@@ -84,7 +84,7 @@ export default function CookiesPage() {
                         Contact Us
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2 text-muted-foreground leading-relaxed">
+                <CardContent className="space-y-2 leading-relaxed">
                    <p>For questions about this Cookie Policy or your data:</p>
                    <div className="flex items-center gap-2">
                         <Mail className="h-5 w-5" />

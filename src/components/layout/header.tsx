@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import {
@@ -46,13 +46,18 @@ const socialLinks = [
 export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
     <Link
       href={href}
       className={cn(
         'px-3 py-2 text-sm font-medium transition-colors hover:text-white/80 rounded-md text-primary-foreground',
-        pathname === href ? 'font-bold text-white' : ''
+        isClient && pathname === href ? 'font-bold text-white' : ''
       )}
       onClick={() => setIsMobileMenuOpen(false)}
     >
@@ -66,7 +71,7 @@ export function Header() {
         href={href}
         className={cn(
           'flex items-center gap-3 rounded-md px-3 py-2 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground',
-          pathname === href ? 'bg-accent text-accent-foreground' : 'text-foreground'
+          isClient && pathname === href ? 'bg-accent text-accent-foreground' : 'text-foreground'
         )}
       >
         {Icon && <Icon className="h-5 w-5" />}

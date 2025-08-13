@@ -76,10 +76,10 @@ body {
     @apply bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply text-primary;
+    @apply text-accent;
   }
   p {
-    @apply text-muted-foreground;
+    @apply text-accent;
   }
   a:hover {
     @apply text-accent;
@@ -87,10 +87,10 @@ body {
 }
 
 @layer components {
-  .text-h1 { @apply text-4xl font-bold tracking-tight text-primary sm:text-5xl; }
-  .text-h2 { @apply text-3xl font-bold tracking-tight text-primary sm:text-4xl; }
-  .text-h3 { @apply text-2xl font-bold tracking-tight text-primary; }
-  .text-page-title { @apply text-4xl font-bold tracking-tight text-primary sm:text-5xl text-foreground; }
-  .text-section-title { @apply font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-foreground; }
-  .text-card-title { @apply text-2xl font-semibold leading-none tracking-tight; }
+  .text-h1 { @apply text-4xl font-bold tracking-tight text-accent sm:text-5xl; }
+  .text-h2 { @apply text-3xl font-bold tracking-tight text-accent sm:text-4xl; }
+  .text-h3 { @apply text-2xl font-bold tracking-tight text-accent; }
+  .text-page-title { @apply text-4xl font-bold tracking-tight text-accent sm:text-5xl; }
+  .text-section-title { @apply font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-accent; }
+  .text-card-title { @apply text-2xl font-semibold leading-none tracking-tight text-accent; }
 }

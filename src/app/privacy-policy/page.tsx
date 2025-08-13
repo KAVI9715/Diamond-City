@@ -54,7 +54,7 @@ const policies = [
 ];
 
 export default function PrivacyPolicyPage() {
-    const [effectiveDate, setEffectiveDate] = useState('');
+    const [effectiveDate, setEffectiveDate] = useState<string | null>(null);
 
     useEffect(() => {
         setEffectiveDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
@@ -65,13 +65,13 @@ export default function PrivacyPolicyPage() {
       <main className="container mx-auto py-12 px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+            <h1 className="text-h1">
               Privacy Policy
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-                Effective Date: {effectiveDate}
+            <p className="mt-4 text-lg">
+                Effective Date: {effectiveDate || '...'}
             </p>
-             <p className="mt-6 max-w-2xl mx-auto text-muted-foreground">
+             <p className="mt-6 max-w-2xl mx-auto">
                 At Diamond City Web Solutions ("we", "our", or "us"), we respect your privacy and are committed to protecting any personal information you share with us. This Privacy Policy explains how we collect, use, store, and protect your information when you interact with our website or use our services.
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function PrivacyPolicyPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                  <p className="leading-relaxed whitespace-pre-line">
                     {policy.content}
                   </p>
                 </CardContent>
@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
                         Contact Us
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2 text-muted-foreground leading-relaxed">
+                <CardContent className="space-y-2 leading-relaxed">
                    <p>If you have any questions, concerns, or requests regarding this policy, please contact us at:</p>
                    <div className="flex items-center gap-2">
                         <Mail className="h-5 w-5" />

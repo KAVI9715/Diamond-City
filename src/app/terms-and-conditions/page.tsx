@@ -74,7 +74,7 @@ const terms = [
 ];
 
 export default function TermsAndConditionsPage() {
-  const [effectiveDate, setEffectiveDate] = useState('');
+  const [effectiveDate, setEffectiveDate] = useState<string | null>(null);
 
   useEffect(() => {
     setEffectiveDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
@@ -85,13 +85,13 @@ export default function TermsAndConditionsPage() {
       <main className="container mx-auto py-12 px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
+            <h1 className="text-h1">
               Terms & Conditions
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-                Effective Date: {effectiveDate}
+            <p className="mt-4 text-lg">
+                Effective Date: {effectiveDate || '...'}
             </p>
-             <p className="mt-6 max-w-2xl mx-auto text-muted-foreground">
+             <p className="mt-6 max-w-2xl mx-auto">
                 Welcome to Diamond City. These Terms and Conditions ("Terms") govern your use of our website, services, and digital products. By accessing or using any part of our services, you agree to be bound by these Terms.
             </p>
           </div>
@@ -106,7 +106,7 @@ export default function TermsAndConditionsPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                  <p className="leading-relaxed whitespace-pre-line">
                     {term.content}
                   </p>
                 </CardContent>
@@ -119,8 +119,8 @@ export default function TermsAndConditionsPage() {
                         Contact
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2 text-muted-foreground leading-relaxed">
-                   <p>If you have any questions about these Terms, please contact:</p>
+                <CardContent className="space-y-2 leading-relaxed">
+                   <p>If you have any questions about these Terms, please contact us at:</p>
                    <div className="flex items-center gap-2">
                         <Mail className="h-5 w-5" />
                         <a href="mailto:legal@diamondcityweb.com" className="hover:text-accent">legal@diamondcityweb.com</a>
