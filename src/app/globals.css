@@ -13,24 +13,24 @@ body {
 
 @layer base {
   :root {
-    --background: 220 20% 95%; /* Lighter Grey Blue */
-    --foreground: 220 40% 10%; /* Dark Blue */
-    --card: 220 20% 100%; /* White */
-    --card-foreground: 220 40% 10%;
-    --popover: 220 20% 100%;
-    --popover-foreground: 220 40% 10%;
+    --background: 220 40% 5%; /* Very Dark Blue */
+    --foreground: 0 0% 0%; /* black */
+    --card: 220 40% 10%; /* Dark Blue */
+    --card-foreground: 220 20% 90%;
+    --popover: 220 40% 10%;
+    --popover-foreground: 220 20% 90%;
     --primary: 270 90% 65%; /* Vibrant Violet */
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 20% 85%; /* Muted Grey Blue */
-    --secondary-foreground: 220 40% 10%;
-    --muted: 220 20% 85%;
-    --muted-foreground: 220 40% 30%;
+    --secondary: 220 40% 15%; /* Darker Muted Blue */
+    --secondary-foreground: 220 20% 90%;
+    --muted: 220 40% 15%;
+    --muted-foreground: 220 20% 70%;
     --accent: 195 85% 55%; /* Vibrant Cyan */
-    --accent-foreground: 220 40% 10%;
-    --destructive: 0 84% 60%; /* Red */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 74% 55%; /* Bright Red */
     --destructive-foreground: 0 0% 100%;
-    --border: 220 20% 80%;
-    --input: 220 20% 80%;
+    --border: 220 40% 20%;
+    --input: 220 40% 20%;
     --ring: 270 90% 65%;
     --chart-1: 270 90% 65%;
     --chart-2: 195 85% 55%;
@@ -75,7 +75,7 @@ body {
     @apply bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply text-accent;
+    @apply text-black;
   }
   p {
     @apply text-black;
