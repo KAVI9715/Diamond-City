@@ -51,8 +51,8 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        'px-3 py-2 text-sm font-medium transition-colors hover:text-accent rounded-md text-black',
-        pathname === href ? 'font-bold' : ''
+        'px-3 py-2 text-sm font-medium transition-colors hover:text-white/80 rounded-md text-primary-foreground',
+        pathname === href ? 'font-bold text-white' : ''
       )}
       onClick={() => setIsMobileMenuOpen(false)}
     >
@@ -76,7 +76,7 @@ export function Header() {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background">
+    <header className="sticky top-0 z-50 w-full border-b bg-primary text-primary-foreground">
       <div className="container flex h-16 max-w-7xl items-center justify-between pl-8">
         <div className="flex items-center gap-16">
           <Link href="/" className="flex items-center gap-2">
@@ -97,7 +97,7 @@ export function Header() {
           <div className="hidden md:block">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="rounded-md h-9 w-9 text-foreground hover:bg-muted" size="icon">
+                <Button variant="ghost" className="rounded-md h-9 w-9 text-primary-foreground hover:bg-white/10" size="icon">
                   <MoreVertical className="h-5 w-5" />
                   <span className="sr-only">Open app menu</span>
                 </Button>
@@ -128,7 +128,7 @@ export function Header() {
           <div className='md:hidden'>
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="text-foreground hover:bg-muted">
+                <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-white/10">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
