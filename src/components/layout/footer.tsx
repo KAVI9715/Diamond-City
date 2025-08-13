@@ -38,7 +38,7 @@ export function Footer() {
     }, []);
 
   return (
-    <footer className="bg-muted text-muted-foreground border-t">
+    <footer className="bg-primary text-primary-foreground border-t">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
@@ -47,18 +47,18 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
                 <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={80} height={70} className="h-[70px] w-[80px]" />
             </Link>
-            <p className="mt-4 text-sm text-accent">
+            <p className="mt-4 text-sm text-primary-foreground/80">
                 Crafting brilliant digital experiences that stand the test of time. Built to shine, designed to last.
             </p>
           </div>
           
           {/* Quick Links Column */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-accent">Quick Links</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase text-white">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent">
+                  <Link href={link.href} className="text-sm text-primary-foreground/80 hover:text-white">
                     {link.label}
                   </Link>
                 </li>
@@ -68,11 +68,11 @@ export function Footer() {
           
           {/* Legal Column */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-accent">Legal & More</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase text-white">Legal & More</h3>
             <ul className="mt-4 space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent">
+                  <Link href={link.href} className="text-sm text-primary-foreground/80 hover:text-white">
                     {link.label}
                   </Link>
                 </li>
@@ -82,24 +82,24 @@ export function Footer() {
           
           {/* Contact Column */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-accent">Get in Touch</h3>
-            <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
+            <h3 className="text-sm font-semibold tracking-wider uppercase text-white">Get in Touch</h3>
+            <ul className="mt-4 space-y-3 text-sm text-primary-foreground/80">
                 <li className='flex items-center gap-3'>
-                    <MapPin className="h-5 w-5 text-accent" />
+                    <MapPin className="h-5 w-5 text-white" />
                     <span>Tanjore, Tamil Nadu, India</span>
                 </li>
                 <li className='flex items-center gap-3'>
-                    <Mail className="h-5 w-5 text-accent" />
-                    <a href="mailto:contact@diamondcityweb.com" className="hover:text-accent">contact@diamondcityweb.com</a>
+                    <Mail className="h-5 w-5 text-white" />
+                    <a href="mailto:contact@diamondcityweb.com" className="hover:text-white">contact@diamondcityweb.com</a>
                 </li>
                  <li className='flex items-center gap-3'>
-                    <Phone className="h-5 w-5 text-accent" />
-                    <a href="tel:+919876543210" className="hover:text-accent">+91 98765 43210</a>
+                    <Phone className="h-5 w-5 text-white" />
+                    <a href="tel:+919876543210" className="hover:text-white">+91 98765 43210</a>
                 </li>
             </ul>
             <div className="flex space-x-4 mt-6">
               {socialLinks.map((link) => (
-                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent">
+                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-white">
                   <link.Icon className="h-6 w-6" />
                   <span className="sr-only">{link.label}</span>
                 </a>
@@ -109,10 +109,10 @@ export function Footer() {
 
         </div>
         
-        <Separator className="my-8" />
+        <Separator className="my-8 bg-primary-foreground/20" />
         
-        <div className="text-center text-sm text-accent">
-          <p>&copy; {currentYear || '...'} Diamond City. All rights reserved.</p>
+        <div className="text-center text-sm text-white">
+          <p>&copy; {currentYear || new Date().getFullYear().toString()} Diamond City. All rights reserved.</p>
         </div>
       </div>
     </footer>
