@@ -97,13 +97,19 @@ export default function Home() {
   return (
     <div
       className="bg-background text-foreground"
+      style={{
+        backgroundImage: "url('https://i.ytimg.com/vi/v1SabYdIlZI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAdvXSQ1P1_x5ugbyU_8E6HjkU9aA')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
     >
-      <div className="flex flex-col min-w-0 w-full">
+      <div className="flex flex-col min-w-0 w-full bg-black/50">
         {/* Hero Section */}
         <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
           <iframe
-            src="https://www.youtube.com/embed/fzWzPXEhPvA?autoplay=1&mute=1&loop=1&playlist=fzWzPXEhPvA&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0"
+            src="https://www.youtube.com/embed/fzWzPXEhPvA?autoplay=1&mute=1&loop=1&playlist=fzWzPXEhPvA&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0&end=49"
             className="absolute top-1/2 left-1/2 w-full h-full min-w-[177.77vh] min-h-[56.25vw] transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
             frameBorder="0"
             allow="autoplay; encrypted-media"
@@ -119,7 +125,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="bg-background text-foreground">
+        <div className="bg-background/80 backdrop-blur-sm text-foreground">
             {/* Our Services Section */}
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
