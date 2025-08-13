@@ -33,17 +33,17 @@ const projects = [
 const services = [
   {
     icon: Code,
-    title: 'Web Development',
+    title: 'Web Development 💻',
     description: 'We build high-performance, scalable websites and applications tailored to your business needs.',
   },
   {
     icon: PenTool,
-    title: 'UI/UX Design',
+    title: 'UI/UX Design 🎨',
     description: 'Crafting intuitive and beautiful user interfaces that provide an exceptional user experience.',
   },
   {
     icon: Rocket,
-    title: 'SEO & Performance',
+    title: 'SEO & Performance 🚀',
     description: 'Optimizing your site for speed and search engines to help you reach a wider audience.',
   },
 ];
@@ -130,7 +130,7 @@ export default function Home() {
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                 <div className="text-center mb-12">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">Our Core Services</h2>
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-accent">Our Core Services ✨</h2>
                     <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
                     We provide a complete suite of services to build and grow your digital presence.
                     </p>
@@ -142,7 +142,7 @@ export default function Home() {
                         <div className="mx-auto rounded-full h-16 w-16 flex items-center justify-center bg-primary text-primary-foreground">
                             <service.icon className="h-8 w-8" />
                         </div>
-                        <CardTitle className="mt-4 font-headline">{service.title}</CardTitle>
+                        <CardTitle className="mt-4 font-headline text-foreground">{service.title}</CardTitle>
                         </CardHeader>
                         <CardContent>
                         <p className="text-muted-foreground">{service.description}</p>
@@ -158,7 +158,7 @@ export default function Home() {
                 <div className="container px-4 md:px-6">
                 <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                     <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center text-foreground">Fueled by Our People</h2>
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center text-accent">Fueled by Our People 🧑‍🤝‍🧑</h2>
                     <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">
                         From a small startup to a leading force in the industry, our journey is one of passion and perseverance.
                     </p>
@@ -181,7 +181,7 @@ export default function Home() {
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">Featured Projects</h2>
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-accent">Featured Projects 🏆</h2>
                     <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     Take a look at some of the stunning projects we've delivered for our clients.
                     </p>
@@ -198,9 +198,9 @@ export default function Home() {
                         className="aspect-video w-full overflow-hidden rounded-t-lg object-cover"
                         />
                         <CardContent className="p-4">
-                        <h3 className="text-lg font-semibold font-headline">{project.name}</h3>
+                        <h3 className="text-lg font-semibold font-headline text-foreground">{project.name}</h3>
                         <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
-                        <Link href={project.link} className="mt-4 inline-flex items-center text-accent-foreground hover:underline">
+                        <Link href={project.link} className="mt-4 inline-flex items-center text-primary hover:underline">
                             View Project <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                         </CardContent>
@@ -219,7 +219,7 @@ export default function Home() {
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                 <div className="text-center mb-12">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">Our Achievements</h2>
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-accent">Our Achievements 🏅</h2>
                     <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
                     We are proud of the milestones we have achieved over the years.
                     </p>
@@ -240,7 +240,7 @@ export default function Home() {
             <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                 <div className="text-center mb-12">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">What Our Clients Say</h2>
+                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl text-accent">What Our Clients Say ❤️</h2>
                     <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
                     We take pride in building strong relationships with our clients. Here's what they have to say.
                     </p>
@@ -249,7 +249,7 @@ export default function Home() {
                     {testimonials.map((testimonial) => (
                     <Card key={testimonial.name} className="flex flex-col bg-card text-card-foreground">
                         <CardContent className="p-6 flex-grow">
-                        <Quote className="mb-4 h-8 w-8 text-accent-foreground" />
+                        <Quote className="mb-4 h-8 w-8 text-primary" />
                         <p className="flex-grow text-muted-foreground">"{testimonial.quote}"</p>
                         </CardContent>
                         <CardHeader className="flex flex-row items-center gap-4 pt-0">
@@ -282,7 +282,7 @@ export default function Home() {
                             />
                         </div>
                         <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
-                            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center text-foreground">Words from Our CEO</h2>
+                            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-center text-accent">Words from Our CEO 👨‍💼</h2>
                             <blockquote className="text-lg text-muted-foreground border-l-4 border-primary pl-4 italic max-w-xl mx-auto lg:mx-0">
                             "Our success is built on five pillars: unwavering commitment to quality, relentless innovation, genuine client partnerships, a culture of continuous learning, and the passion our team brings to every project. This is how we build digital experiences that don't just function—they shine."
                             </blockquote>
