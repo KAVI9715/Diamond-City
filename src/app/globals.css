@@ -8,25 +8,25 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 4%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 4%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 72% 51%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 0 72% 51%;
-    --accent-foreground: 0 0% 100%;
+    --background: 207 90% 54%;
+    --foreground: 0 0% 100%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 207 90% 54%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48.1%;
     --chart-1: 0 72% 51%;
     --chart-2: 195 85% 55%;
     --chart-3: 350 90% 65%;
@@ -35,25 +35,25 @@ body {
   }
 
   .dark {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 4%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 4%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 72% 51%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 0 72% 51%;
-    --accent-foreground: 0 0% 100%;
+    --background: 207 90% 54%;
+    --foreground: 0 0% 100%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 207 90% 54%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48.1%;
     --chart-1: 0 72% 51%;
     --chart-2: 195 85% 55%;
     --chart-3: 350 90% 65%;
@@ -68,13 +68,16 @@ body {
   }
   body {
     @apply bg-background text-foreground;
-    background-image: linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--background)));
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/022/382/837/small/summer-blue-sky-cloud-gradient-light-white-background-beauty-clear-cloudy-in-sunshine-calm-bright-winter-air-bacground-gloomy-vivid-cyan-landscape-in-environment-day-horizon-skyline-view-spring-wind-photo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply text-foreground;
   }
   p {
-    @apply text-muted-foreground;
+    @apply text-foreground;
   }
   a:hover {
     @apply text-primary;

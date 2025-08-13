@@ -97,12 +97,6 @@ export default function Home() {
   return (
     <div
       className="bg-background text-foreground"
-      style={{
-        backgroundImage: "url('https://i.ytimg.com/vi/v1SabYdIlZI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAdvXSQ1P1_x5ugbyU_8E6HjkU9aA')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-      }}
     >
       <div className="flex flex-col min-w-0 w-full bg-black/50">
         {/* Hero Section */}
