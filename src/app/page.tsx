@@ -119,9 +119,9 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="bg-background/80 backdrop-blur-sm text-foreground">
+        <div className="bg-background text-foreground">
             {/* Our Services Section */}
-            <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+            <section className="w-full py-12 md:py-24 lg:py-32">
                 <div className="container px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Our Core Services ✨</h2>
@@ -131,14 +131,14 @@ export default function Home() {
                 </div>
                 <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map((service, index) => (
-                    <Card key={service.title} className="text-center bg-card text-card-foreground">
+                    <Card key={service.title} className="text-center bg-card text-card-foreground flex flex-col">
                         <CardHeader>
                         <div className="mx-auto rounded-full h-16 w-16 flex items-center justify-center bg-primary text-primary-foreground">
                             <service.icon className="h-8 w-8" />
                         </div>
                         <CardTitle className="mt-4 font-headline text-foreground">{service.title}</CardTitle>
                         </CardHeader>
-                        <CardContent>
+                        <CardContent className="flex-grow">
                         <p className="text-muted-foreground">{service.description}</p>
                         </CardContent>
                     </Card>
@@ -182,7 +182,7 @@ export default function Home() {
                 </div>
                 <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                     {projects.map((project) => (
-                    <Card key={project.name} className="bg-card text-card-foreground">
+                    <Card key={project.name} className="bg-card text-card-foreground flex flex-col">
                         <Image
                         src={project.image}
                         data-ai-hint={project['data-ai-hint']}
@@ -191,8 +191,8 @@ export default function Home() {
                         height={310}
                         className="aspect-video w-full overflow-hidden rounded-t-lg object-cover"
                         />
-                        <CardContent className="p-4">
-                        <h3 className="text-lg font-semibold font-headline text-foreground">{project.name}</h3>
+                        <CardContent className="p-4 flex flex-col flex-grow">
+                        <h3 className="text-lg font-semibold font-headline text-foreground flex-grow">{project.name}</h3>
                         <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
                         <Link href={project.link} className="mt-4 inline-flex items-center text-primary hover:underline">
                             View Project <ArrowRight className="ml-2 h-4 w-4" />
