@@ -58,12 +58,14 @@ export function Header() {
       <Link
         href={href}
         className={cn(
-          'animated-gradient-text relative px-3 py-2 text-sm font-medium transition-colors rounded-md',
-          isActive ? 'active text-primary' : 'text-foreground'
+          'animated-border relative text-sm font-medium',
+          isActive && 'active'
         )}
         onClick={() => setIsMobileMenuOpen(false)}
       >
-        <span>{children}</span>
+        <div className="px-3 py-2">
+            <span>{children}</span>
+        </div>
       </Link>
     );
   };
