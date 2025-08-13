@@ -85,7 +85,7 @@ export function Header() {
       <div className="container flex h-24 max-w-7xl items-center justify-between pl-8">
         <div className="flex items-center gap-16">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={135} height={90} className="h-[90px] w-[135px]" />
+            <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={180} height={120} className="h-[120px] w-[180px]" />
           </Link>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4">
@@ -140,7 +140,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[85vw] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
-                  <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={135} height={90} className="h-[90px] w-[135px]" />
+                  <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={180} height={120} className="h-[120px] w-[180px]" />
                 </Link>
                 <div className="flex flex-col gap-y-4">
                   <div className='flex flex-col gap-y-2'>
