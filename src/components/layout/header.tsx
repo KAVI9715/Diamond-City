@@ -85,7 +85,7 @@ export function Header() {
       <div className="container flex h-24 max-w-7xl items-center justify-between pl-8">
         <div className="flex items-center gap-16">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={170} height={120} className="h-[120px] w-[170px]" />
+            <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={150} height={120} className="h-[120px] w-[150px]" />
           </Link>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4">
@@ -107,7 +107,7 @@ export function Header() {
                   <span className="sr-only">Open app menu</span>
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
+              <DropdownMenuContent align="end" className="w-56">
                 {appMenuItems.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
                     <Link href={item.href} className="flex items-center gap-2">
@@ -140,7 +140,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[85vw] sm:w-[400px]">
                  <Link href="/" className="flex items-center gap-2 mb-8">
-                  <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={170} height={120} className="h-[120px] w-[170px]" />
+                  <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={150} height={120} className="h-[120px] w-[150px]" />
                 </Link>
                 <div className="flex flex-col gap-y-4">
                   <div className='flex flex-col gap-y-2'>
