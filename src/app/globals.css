@@ -32,7 +32,6 @@ body {
     --border: 220 20% 80%;
     --input: 220 20% 80%;
     --ring: 270 90% 65%;
-    --radius: 0.75rem;
     --chart-1: 270 90% 65%;
     --chart-2: 195 85% 55%;
     --chart-3: 350 90% 65%;
@@ -79,7 +78,7 @@ body {
     @apply text-accent;
   }
   p {
-    @apply text-foreground;
+    @apply text-black;
   }
   a:hover {
     @apply text-primary;
