@@ -8,13 +8,13 @@ body {
 
 @layer base {
   :root {
-    --background: 207 90% 54%;
+    --background: 222.2 84% 4.9%;
     --foreground: 0 0% 100%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 207 90% 54%;
+    --primary: 271 91% 65%;
     --primary-foreground: 210 40% 98%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -35,13 +35,13 @@ body {
   }
 
   .dark {
-    --background: 207 90% 54%;
+    --background: 222.2 84% 4.9%;
     --foreground: 0 0% 100%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 207 90% 54%;
+    --primary: 271 91% 65%;
     --primary-foreground: 210 40% 98%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -68,7 +68,7 @@ body {
   }
   body {
     @apply bg-background text-foreground;
-    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/022/382/837/small/summer-blue-sky-cloud-gradient-light-white-background-beauty-clear-cloudy-in-sunshine-calm-bright-winter-air-bacground-gloomy-vivid-cyan-landscape-in-environment-day-horizon-skyline-view-spring-wind-photo.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmrm0p-hx2eRzawqesGdEU-rjyQeRrqZX3Tg&s');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
