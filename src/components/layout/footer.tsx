@@ -54,7 +54,7 @@ export function Footer() {
           
           {/* Quick Links Column */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-white">Quick Links</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -68,7 +68,7 @@ export function Footer() {
           
           {/* Legal Column */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-white">Legal & More</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase">Legal & More</h3>
             <ul className="mt-4 space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.href}>
@@ -82,7 +82,7 @@ export function Footer() {
           
           {/* Contact Column */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider uppercase text-white">Get in Touch</h3>
+            <h3 className="text-sm font-semibold tracking-wider uppercase">Get in Touch</h3>
             <ul className="mt-4 space-y-3 text-sm text-primary-foreground/80">
                 <li className='flex items-center gap-3'>
                     <MapPin className="h-5 w-5 text-white" />
