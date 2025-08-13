@@ -82,7 +82,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
-      <div className="container flex h-20 max-w-7xl items-center justify-between pl-8">
+      <div className="container flex h-24 max-w-7xl items-center justify-between pl-8">
         <div className="flex items-center gap-16">
           <Link href="/" className="flex items-center gap-2">
             <Image src="https://i.postimg.cc/MKfz1xNs/2-removebg-preview.png" alt="Diamond City Logo" width={120} height={80} className="h-[80px] w-[120px]" />
