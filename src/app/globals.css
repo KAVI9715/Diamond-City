@@ -19,19 +19,19 @@ body {
     --card-foreground: 96 29% 15%;
     --popover: 47 48% 92%;
     --popover-foreground: 96 29% 15%;
-    --primary: 96 29% 37%; /* #587c43 */
-    --primary-foreground: 47 48% 92%;
+    --primary: 212 17% 31%; /* #4A5568 */
+    --primary-foreground: 0 0% 100%;
     --secondary: 47 30% 80%; /* muted #ede6d2 */
     --secondary-foreground: 96 29% 15%;
     --muted: 47 30% 80%;
     --muted-foreground: 96 29% 30%;
-    --accent: 195 73% 60%; /* #4cbfe3 */
+    --accent: 270 100% 75%; /* #BF80FF */
     --accent-foreground: 0 0% 100%;
     --destructive: 319 84% 78%; /* #f597da */
     --destructive-foreground: 0 0% 100%;
     --border: 47 30% 75%;
     --input: 47 30% 75%;
-    --ring: 96 29% 37%;
+    --ring: 212 17% 31%;
     --radius: 0.5rem;
     --chart-1: 96 29% 37%;
     --chart-2: 195 73% 60%;
