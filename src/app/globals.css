@@ -85,6 +85,33 @@ body {
   html.underline-links a {
     text-decoration: underline;
   }
+  
+  html.text-spacing {
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+  }
+
+  html.pause-animations *,
+  html.pause-animations *::before,
+  html.pause-animations *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html.hide-images img,
+  html.hide-images [data-nextjs-image] {
+    display: none !important;
+  }
+  
+  html.dyslexia-friendly {
+    font-family: 'Lexend Deca', sans-serif !important;
+  }
+
+  html.big-cursor {
+    cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' style='font-size: 32px;'%3e%3ctext%3e%3cpath d='M13.81 31.898c-.198.33-.23.731-.09 1.107l2.592 6.818c.31.815 1.41.921 1.834.195l4.31-7.32c.243-.414.184-.933-.14-1.258l-6.818-6.818c-.815-.815-2.16-.22-1.688.77z' fill='white' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M13.81 31.898c-.198.33-.23.731-.09 1.107l2.592 6.818c.31.815 1.41.921 1.834.195l4.31-7.32c.243-.414.184-.933-.14-1.258l-6.818-6.818c-.815-.815-2.16-.22-1.688.77z' fill='white' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/text%3e%3c/svg%3e"), auto;
+  }
 }
 
 @layer base {
