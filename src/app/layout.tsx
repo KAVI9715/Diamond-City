@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
+import { AccessibilityMenu } from '@/components/layout/accessibility-menu';
 
 export const metadata: Metadata = {
   title: 'Diamond City',
@@ -30,6 +31,7 @@ export default function RootLayout({
         <main className="flex-grow w-full">{children}</main>
         <Footer />
         <Toaster />
+        <AccessibilityMenu />
       </body>
     </html>
   );
