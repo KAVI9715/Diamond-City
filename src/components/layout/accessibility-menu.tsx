@@ -175,9 +175,9 @@ export function AccessibilityMenu() {
     <Popover>
       <PopoverTrigger asChild>
         <Button
-          variant="secondary"
+          variant="default"
           size="icon"
-          className="fixed bottom-4 right-4 h-14 w-14 rounded-full shadow-lg z-50 bg-primary hover:bg-primary/90 text-primary-foreground"
+          className="fixed bottom-4 right-4 h-14 w-14 rounded-full shadow-lg z-50 animate-pulse-slow hover:animate-none"
           aria-label="Open Accessibility Menu"
         >
           <Accessibility className="h-7 w-7" />
