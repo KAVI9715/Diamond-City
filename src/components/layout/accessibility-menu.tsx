@@ -12,15 +12,18 @@ import {
   Contrast,
   Type,
   ArrowLeftRight,
-  Annoyed,
+  PauseCircle,
   EyeOff,
   BookOpen,
   MousePointer,
+  X,
 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import Cookies from 'js-cookie';
 import { Switch } from '../ui/switch';
 import { Label } from '../ui/label';
+import { Separator } from '../ui/separator';
+import { cn } from '@/lib/utils';
 
 const FONT_SIZE_MIN = 0.8;
 const FONT_SIZE_MAX = 1.2;
@@ -35,6 +38,7 @@ export function AccessibilityMenu() {
   const [hideImages, setHideImages] = useState(false);
   const [dyslexiaFriendly, setDyslexiaFriendly] = useState(false);
   const [bigCursor, setBigCursor] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const { toast } = useToast();
 
@@ -59,8 +63,7 @@ export function AccessibilityMenu() {
   }, []);
 
   useEffect(() => {
-    const root = document.documentElement;
-    root.style.fontSize = `${fontSize}rem`;
+    document.documentElement.style.fontSize = `${fontSize}rem`;
     Cookies.set('fontSize', fontSize.toString(), { expires: 7 });
   }, [fontSize]);
 
@@ -127,52 +130,49 @@ export function AccessibilityMenu() {
   };
 
   const accessibilityOptions = [
-    {
-        icon: Contrast,
-        label: "High Contrast",
-        state: highContrast,
-        action: setHighContrast
-    },
-    {
-        icon: LinkIcon,
-        label: "Highlight Links",
-        state: underlineLinks,
-        action: setUnderlineLinks
-    },
-    {
-        icon: ArrowLeftRight,
-        label: "Text Spacing",
-        state: textSpacing,
-        action: setTextSpacing
-    },
-    {
-        icon: Annoyed,
-        label: "Pause Animations",
-        state: pauseAnimations,
-        action: setPauseAnimations
-    },
-    {
-        icon: EyeOff,
-        label: "Hide Images",
-        state: hideImages,
-        action: setHideImages
-    },
-    {
-        icon: BookOpen,
-        label: "Dyslexia Friendly",
-        state: dyslexiaFriendly,
-        action: setDyslexiaFriendly
-    },
-    {
-        icon: MousePointer,
-        label: "Bigger Cursor",
-        state: bigCursor,
-        action: setBigCursor
-    }
+    { icon: Contrast, label: "High Contrast", state: highContrast, action: setHighContrast },
+    { icon: LinkIcon, label: "Highlight Links", state: underlineLinks, action: setUnderlineLinks },
+    { icon: Type, label: "Bigger Text", state: fontSize, action: adjustFontSize },
+    { icon: ArrowLeftRight, label: "Text Spacing", state: textSpacing, action: setTextSpacing },
+    { icon: PauseCircle, label: "Pause Animations", state: pauseAnimations, action: setPauseAnimations },
+    { icon: EyeOff, label: "Hide Images", state: hideImages, action: setHideImages },
+    { icon: BookOpen, label: "Dyslexia Friendly", state: dyslexiaFriendly, action: setDyslexiaFriendly },
+    { icon: MousePointer, label: "Bigger Cursor", state: bigCursor, action: setBigCursor },
   ];
 
+  const AccessibilityButton = ({ option, isSelected, onToggle }: { option: any, isSelected: boolean, onToggle: (value: any) => void }) => {
+    const isBiggerText = option.label === "Bigger Text";
+
+    return (
+      <div className="flex flex-col items-center gap-2">
+        <Button
+          variant="outline"
+          className={cn(
+            "w-full h-24 flex flex-col gap-2 items-center justify-center bg-card hover:bg-accent hover:text-accent-foreground border-border/50",
+            isSelected && "bg-primary text-primary-foreground hover:bg-primary/90"
+          )}
+          onClick={onToggle}
+        >
+          <option.icon className="h-7 w-7" />
+          <span className="text-xs font-medium">{option.label}</span>
+        </Button>
+        {isBiggerText && (
+          <div className="flex items-center gap-2 mt-1">
+            <Button size="icon" variant="ghost" className="h-6 w-6" onClick={() => adjustFontSize('decrease')} disabled={fontSize <= FONT_SIZE_MIN}>
+              <Minus className="h-4 w-4" />
+            </Button>
+            <span className="text-sm font-semibold tabular-nums w-10 text-center">{Math.round(fontSize * 100)}%</span>
+            <Button size="icon" variant="ghost" className="h-6 w-6" onClick={() => adjustFontSize('increase')} disabled={fontSize >= FONT_SIZE_MAX}>
+              <Plus className="h-4 w-4" />
+            </Button>
+          </div>
+        )}
+      </div>
+    );
+  };
+  
   return (
-    <Popover>
+    <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger asChild>
         <Button
           variant="default"
@@ -183,41 +183,47 @@ export function AccessibilityMenu() {
           <Accessibility className="h-7 w-7" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80 mb-2" align="end">
-        <div className="grid gap-4">
-          <div className="space-y-2">
-            <h4 className="font-medium leading-none text-foreground">Accessibility</h4>
-            <p className="text-sm text-muted-foreground">
-              Adjust your viewing experience.
-            </p>
-          </div>
-          <div className="grid gap-4">
-            <div className="flex items-center justify-between">
-              <Label htmlFor="font-size" className="flex items-center gap-2 text-sm font-medium text-foreground">
-                <Type className="h-4 w-4" /> Bigger Text
-              </Label>
-              <div id="font-size" className="flex items-center gap-2">
-                <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => adjustFontSize('decrease')} disabled={fontSize <= FONT_SIZE_MIN}>
-                  <Minus className="h-4 w-4" />
-                </Button>
-                <span className="text-sm font-semibold tabular-nums w-10 text-center">{Math.round(fontSize * 100)}%</span>
-                <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => adjustFontSize('increase')} disabled={fontSize >= FONT_SIZE_MAX}>
-                  <Plus className="h-4 w-4" />
-                </Button>
-              </div>
+      <PopoverContent className="w-80 mb-2 p-0 border-none shadow-2xl" align="end">
+        <div className="flex flex-col bg-card rounded-lg overflow-hidden">
+          <header className="flex items-center justify-between p-3 bg-destructive text-destructive-foreground">
+            <h4 className="font-semibold">Accessibility Menu</h4>
+            <Button variant="ghost" size="icon" className="h-7 w-7 text-destructive-foreground hover:bg-destructive/80" onClick={() => setIsOpen(false)}>
+              <X className="h-5 w-5" />
+            </Button>
+          </header>
+
+          <div className="p-4 space-y-4">
+            <div className="grid grid-cols-2 gap-3">
+              {accessibilityOptions.map((option) => {
+                const isSelected = option.label === "Bigger Text" ? fontSize > 1 : !!option.state;
+                const onToggle = () => {
+                  if (typeof option.action === 'function') {
+                    if (typeof option.state === 'boolean') {
+                       (option.action as React.Dispatch<React.SetStateAction<boolean>>)(!option.state);
+                    }
+                  }
+                };
+                
+                if (option.label === "Bigger Text") {
+                   return <AccessibilityButton key={option.label} option={option} isSelected={isSelected} onToggle={() => {}} />;
+                }
+
+                return <AccessibilityButton key={option.label} option={option} isSelected={isSelected} onToggle={onToggle} />;
+              })}
             </div>
-            {accessibilityOptions.map(({ icon: Icon, label, state, action }) => (
-                <div key={label} className="flex items-center justify-between">
-                    <Label htmlFor={label} className="flex items-center gap-2 text-sm font-medium text-foreground">
-                        <Icon className="h-4 w-4" /> {label}
-                    </Label>
-                    <Switch id={label} checked={state} onCheckedChange={action} />
-                </div>
-            ))}
           </div>
-          <Button variant="ghost" onClick={handleReset} className="mt-2">Reset to Default</Button>
+          
+          <Separator />
+          
+          <div className="p-3">
+            <Button variant="ghost" onClick={handleReset} className="w-full">
+              Reset to Default
+            </Button>
+          </div>
         </div>
       </PopoverContent>
     </Popover>
   );
 }
+
+    
